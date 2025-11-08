@@ -227,10 +227,10 @@ C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\MvcSample.csproj.Up2Date
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\MvcSample.dll
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\refint\MvcSample.dll
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\MvcSample.pdb
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\MvcSample.genruntimeconfig.cache
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\ref\MvcSample.dll
+C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

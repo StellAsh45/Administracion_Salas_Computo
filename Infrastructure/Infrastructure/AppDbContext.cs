@@ -16,6 +16,11 @@ namespace Infrastructure
         public DbSet<Milk> Milks { get; set; }
         public DbSet<Cow> Cows { get; set; }
         public DbSet<Farm> Farms { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Sala> Salas { get; set; }
+        public DbSet<Computador> Computadores { get; set; }
+        public DbSet<Solicitud> Solicitudes { get; set; }
+        public DbSet<Reporte> Reportes { get; set; }
     }
 
 }

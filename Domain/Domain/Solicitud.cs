@@ -13,8 +13,6 @@ namespace Domain
         public Guid Id { get; set; } = Guid.Empty;
         public Guid UsuarioId { get; set; } = Guid.Empty;
         public Usuario Usuario { get; set; }
-        public Guid SalaId { get; set; } = Guid.Empty;
-        public Sala Sala { get; set; }
         public Guid ComputadorId { get; set; } = Guid.Empty;
         public Computador Computador { get; set; }
         public DateTime FechaInicio { get; set; }
