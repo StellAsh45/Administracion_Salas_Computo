@@ -3,10 +3,75 @@
   "WorkspaceRootPath": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2070EAED-8793-4790-AA35-B5B37C3AA180}|..\\..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\infrastructure\\infrastructure\\migrations\\20251108050948_001.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8AF33060-9A55-407F-8C57-3FE5AE0CBC62}|..\\..\\Domain\\Domain\\Domain.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\domain\\domain\\solicitud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8AF33060-9A55-407F-8C57-3FE5AE0CBC62}|..\\..\\Domain\\Domain\\Domain.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\domain\\domain\\solicitud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\services\\services\\automapper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\services\\services\\models\\modelosreporte\\a\u00F1adirmodeloreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\services\\services\\models\\modelosreporte\\modeloreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AF33060-9A55-407F-8C57-3FE5AE0CBC62}|..\\..\\Domain\\Domain\\Domain.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\domain\\domain\\reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\services\\services\\models\\modelossolicitud\\a\u00F1adirmodelosolicitud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\services\\services\\models\\modelossolicitud\\modelosolicitud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\services\\services\\models\\modelosusuario\\a\u00F1adirmodelousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\services\\services\\models\\modelosusuario\\modelousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\services\\services\\models\\modeloscomputador\\a\u00F1adirmodelocomputador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\services\\services\\models\\modeloscomputador\\modelocomputador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\services\\services\\models\\modelossala\\modelosala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\services\\services\\models\\modelossala\\a\u00F1adirmodelosala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\services\\services\\models\\cowmodels\\cowmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\services\\services\\models\\farmmodels\\farmmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\services\\services\\models\\farmmodels\\addfarmmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2070EAED-8793-4790-AA35-B5B37C3AA180}|..\\..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\infrastructure\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2070EAED-8793-4790-AA35-B5B37C3AA180}|..\\..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\infrastructure\\infrastructure\\repositories\\salarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2070EAED-8793-4790-AA35-B5B37C3AA180}|..\\..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\infrastructure\\infrastructure\\repositories\\isalarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AF33060-9A55-407F-8C57-3FE5AE0CBC62}|..\\..\\Domain\\Domain\\Domain.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\domain\\domain\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2070EAED-8793-4790-AA35-B5B37C3AA180}|..\\..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\infrastructure\\infrastructure\\migrations\\20251108050948_001.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Migrations\\20251108050642_002.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -21,19 +86,8 @@
       "AbsoluteMoniker": "D:0:0:{2070EAED-8793-4790-AA35-B5B37C3AA180}|..\\..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\infrastructure\\infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2070EAED-8793-4790-AA35-B5B37C3AA180}|..\\..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\infrastructure\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2070EAED-8793-4790-AA35-B5B37C3AA180}|..\\..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\infrastructure\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
@@ -44,15 +98,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{2070EAED-8793-4790-AA35-B5B37C3AA180}|..\\..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\infrastructure\\infrastructure\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\services\\services\\automapper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8AF33060-9A55-407F-8C57-3FE5AE0CBC62}|..\\..\\Domain\\Domain\\Domain.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\domain\\domain\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8AF33060-9A55-407F-8C57-3FE5AE0CBC62}|..\\..\\Domain\\Domain\\Domain.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\domain\\domain\\reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8AF33060-9A55-407F-8C57-3FE5AE0CBC62}|..\\..\\Domain\\Domain\\Domain.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\domain\\domain\\milk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -68,11 +113,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 131,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 33,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 24,
               "Title": "Sala.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Sala.cs",
               "RelativeDocumentMoniker": "..\\..\\Domain\\Domain\\Sala.cs",
@@ -82,6 +127,201 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T03:54:45.957Z",
               "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "A\u00F1adirModeloReporte.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosReporte\\A\u00F1adirModeloReporte.cs",
+              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosReporte\\A\u00F1adirModeloReporte.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosReporte\\A\u00F1adirModeloReporte.cs",
+              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\ModelosReporte\\A\u00F1adirModeloReporte.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:44:01.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "A\u00F1adirModeloSolicitud.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosSolicitud\\A\u00F1adirModeloSolicitud.cs",
+              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosSolicitud\\A\u00F1adirModeloSolicitud.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosSolicitud\\A\u00F1adirModeloSolicitud.cs",
+              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\ModelosSolicitud\\A\u00F1adirModeloSolicitud.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:42:03.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "A\u00F1adirModeloUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosUsuario\\A\u00F1adirModeloUsuario.cs",
+              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosUsuario\\A\u00F1adirModeloUsuario.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosUsuario\\A\u00F1adirModeloUsuario.cs",
+              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\ModelosUsuario\\A\u00F1adirModeloUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:40:45.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "A\u00F1adirModeloComputador.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosComputador\\A\u00F1adirModeloComputador.cs",
+              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosComputador\\A\u00F1adirModeloComputador.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosComputador\\A\u00F1adirModeloComputador.cs",
+              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\ModelosComputador\\A\u00F1adirModeloComputador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:38:48.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "A\u00F1adirModeloSala.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosSala\\A\u00F1adirModeloSala.cs",
+              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosSala\\A\u00F1adirModeloSala.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosSala\\A\u00F1adirModeloSala.cs",
+              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\ModelosSala\\A\u00F1adirModeloSala.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:35:33.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AddFarmModel.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\FarmModels\\AddFarmModel.cs",
+              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\FarmModels\\AddFarmModel.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\FarmModels\\AddFarmModel.cs",
+              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\FarmModels\\AddFarmModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:35:06.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FarmModel.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\FarmModels\\FarmModel.cs",
+              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\FarmModels\\FarmModel.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\FarmModels\\FarmModel.cs",
+              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\FarmModels\\FarmModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:35:03.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SalaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Repositories\\SalaRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\Infrastructure\\Infrastructure\\Repositories\\SalaRepository.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Repositories\\SalaRepository.cs",
+              "RelativeToolTip": "..\\..\\Infrastructure\\Infrastructure\\Repositories\\SalaRepository.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAmwAoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:27:22.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ISalaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Repositories\\ISalaRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\Infrastructure\\Infrastructure\\Repositories\\ISalaRepository.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Repositories\\ISalaRepository.cs",
+              "RelativeToolTip": "..\\..\\Infrastructure\\Infrastructure\\Repositories\\ISalaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:27:01.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ModeloReporte.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosReporte\\ModeloReporte.cs",
+              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosReporte\\ModeloReporte.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosReporte\\ModeloReporte.cs",
+              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\ModelosReporte\\ModeloReporte.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:16:59.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ModeloSolicitud.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosSolicitud\\ModeloSolicitud.cs",
+              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosSolicitud\\ModeloSolicitud.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosSolicitud\\ModeloSolicitud.cs",
+              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\ModelosSolicitud\\ModeloSolicitud.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:16:29.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ModeloComputador.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosComputador\\ModeloComputador.cs",
+              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosComputador\\ModeloComputador.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosComputador\\ModeloComputador.cs",
+              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\ModelosComputador\\ModeloComputador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:13:15.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ModeloSala.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosSala\\ModeloSala.cs",
+              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosSala\\ModeloSala.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosSala\\ModeloSala.cs",
+              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\ModelosSala\\ModeloSala.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:12:44.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ModeloUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosUsuario\\ModeloUsuario.cs",
+              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosUsuario\\ModeloUsuario.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosUsuario\\ModeloUsuario.cs",
+              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\ModelosUsuario\\ModeloUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:11:51.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CowModel.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\CowModels\\CowModel.cs",
+              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\CowModels\\CowModel.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\CowModels\\CowModel.cs",
+              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\CowModels\\CowModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T04:09:29.156Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -113,7 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 22,
               "Title": "20251108050948_001.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Migrations\\20251108050948_001.cs",
               "RelativeDocumentMoniker": "..\\..\\Infrastructure\\Infrastructure\\Migrations\\20251108050948_001.cs",
@@ -121,36 +361,35 @@
               "RelativeToolTip": "..\\..\\Infrastructure\\Infrastructure\\Migrations\\20251108050948_001.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T05:09:49.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T05:09:49.216Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 23,
               "Title": "20251108050642_002.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Migrations\\20251108050642_002.cs",
               "RelativeDocumentMoniker": "..\\..\\Infrastructure\\Infrastructure\\Migrations\\20251108050642_002.cs",
               "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Migrations\\20251108050642_002.cs",
               "RelativeToolTip": "..\\..\\Infrastructure\\Infrastructure\\Migrations\\20251108050642_002.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T05:06:43.107Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 21,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
               "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\appsettings.Development.json",
               "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-08T04:46:05.858Z"
+              "WhenOpened": "2025-11-08T04:46:05.858Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 28,
               "Title": "Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
               "RelativeDocumentMoniker": "..\\..\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
@@ -162,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 29,
               "Title": "MvcSample.csproj",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\MvcSample.csproj",
               "RelativeDocumentMoniker": "MvcSample.csproj",
@@ -174,19 +413,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\AutoMapper\\MappingProfile.cs",
               "RelativeDocumentMoniker": "..\\..\\Services\\Services\\AutoMapper\\MappingProfile.cs",
               "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\AutoMapper\\MappingProfile.cs",
               "RelativeToolTip": "..\\..\\Services\\Services\\AutoMapper\\MappingProfile.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAEwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T04:30:24.943Z"
+              "WhenOpened": "2025-11-08T04:30:24.943Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 30,
               "Title": "BaseRepository.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\BaseRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\Infrastructure\\Infrastructure\\BaseRepository.cs",
@@ -198,31 +438,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T04:12:06.955Z"
+              "WhenOpened": "2025-11-08T04:12:06.955Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 17,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "..\\..\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
               "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
               "RelativeToolTip": "..\\..\\Infrastructure\\Infrastructure\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T04:11:53.354Z"
+              "WhenOpened": "2025-11-08T04:11:53.354Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 26,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\AppDbContext.cs",
               "RelativeDocumentMoniker": "..\\..\\Infrastructure\\Infrastructure\\AppDbContext.cs",
@@ -234,19 +476,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Solicitud.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Solicitud.cs",
               "RelativeDocumentMoniker": "..\\..\\Domain\\Domain\\Solicitud.cs",
               "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Solicitud.cs",
               "RelativeToolTip": "..\\..\\Domain\\Domain\\Solicitud.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T03:43:17.572Z"
+              "WhenOpened": "2025-11-08T03:43:17.572Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 5,
               "Title": "Reporte.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Reporte.cs",
               "RelativeDocumentMoniker": "..\\..\\Domain\\Domain\\Reporte.cs",
@@ -254,11 +497,12 @@
               "RelativeToolTip": "..\\..\\Domain\\Domain\\Reporte.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T03:43:03.283Z"
+              "WhenOpened": "2025-11-08T03:43:03.283Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 25,
               "Title": "Computador.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Computador.cs",
               "RelativeDocumentMoniker": "..\\..\\Domain\\Domain\\Computador.cs",
@@ -270,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 32,
               "Title": "Farm.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Farm.cs",
               "RelativeDocumentMoniker": "..\\..\\Domain\\Domain\\Farm.cs",
@@ -282,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 31,
               "Title": "Milk.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Milk.cs",
               "RelativeDocumentMoniker": "..\\..\\Domain\\Domain\\Milk.cs",
@@ -294,7 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Usuario.cs",
               "RelativeDocumentMoniker": "..\\..\\Domain\\Domain\\Usuario.cs",
@@ -302,11 +546,12 @@
               "RelativeToolTip": "..\\..\\Domain\\Domain\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T03:39:34.823Z"
+              "WhenOpened": "2025-11-08T03:39:34.823Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 27,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
