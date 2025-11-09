@@ -8,7 +8,11 @@ namespace Services
         {
           
             services.AddTransient<IFarmService, FarmService>();
-
+            services.AddTransient<IReporteService, ReporteService>();
+            services.AddTransient<ISolicitudService, SolicitudService>();
+            services.AddTransient<IUsuarioService, UsuarioService>();
+            services.AddTransient<IComputadorService, ComputadorService>();
+            services.AddTransient<ISalaService, SalaService>();
 
             return services;
         }
