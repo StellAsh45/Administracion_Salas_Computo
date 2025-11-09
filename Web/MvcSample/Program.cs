@@ -1,6 +1,7 @@
 
 using AutoMapper;
 using Infrastructure;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
 using Services;
@@ -15,6 +16,14 @@ namespace MvcSample
             var builder = WebApplication.CreateBuilder(args);
             var _configuration = builder.Configuration;
             // Add services to the container.
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            .AddCookie(options =>
+            {
+                options.LoginPath = "/Home/IniciarSesion";
+                options.LogoutPath = "/Home/CerrarSesion";
+                options.Cookie.Name = "AppAuth";
+            });
+            builder.Services.AddHttpContextAccessor();
             builder.Services.AddServices();
             builder.Services.AddRepositories(_configuration);
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
@@ -50,6 +59,7 @@ namespace MvcSample
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
             app.UseCors("CORS_Policy");
            

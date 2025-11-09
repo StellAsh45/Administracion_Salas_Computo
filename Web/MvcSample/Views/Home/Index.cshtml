@@ -2,8 +2,23 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <a asp-controller="Milk" asp-action="Cows">  <i class="material-icons edit-icon">mode_edit</i></a>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@if (ViewBag.Success != null)
+{
+    <div class="alert alert-success" role="alert">
+        @ViewBag.Success
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h3>Cuenta</h3>
+        <p>
+            <a class="btn btn-primary" href="@Url.Action("Registro", "Home")">Registrarse</a>
+            <a class="btn btn-secondary" href="@Url.Action("IniciarSesion", "Home")">Iniciar sesión</a>
+        </p>
+    </div>
+    <div class="col-md-6">
+        <h3>Información</h3>
+        <p>Bienvenido al sistema de administración de salas. Usa los enlaces para registrarte o iniciar sesión.</p>
+    </div>
 </div>

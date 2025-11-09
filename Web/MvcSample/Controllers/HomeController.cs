@@ -1,33 +1,87 @@
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using MvcSample.Models;
+using Services;
+using Services.Models.ModelosUsuario;
 using System.Diagnostics;
+using System.Security.Claims;
 
 namespace MvcSample.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IUsuarioService _usuarioService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IUsuarioService usuarioService)
         {
-           
             _logger = logger;
+            _usuarioService = usuarioService;
         }
 
         public IActionResult Index()
         {
+            ViewBag.Success = TempData["Success"];
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpGet]
+        public IActionResult Registro()
+        {
+            return View(new AñadirModeloUsuario());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Registro(AñadirModeloUsuario model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            if (string.IsNullOrWhiteSpace(model.Rol)) model.Rol = "Usuario";
+            await _usuarioService.AddUsuario(model);
+            TempData["Success"] = "Registro exitoso. Ahora puedes iniciar sesión.";
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        public IActionResult IniciarSesion()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> IniciarSesion(string correo, string contrasena)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            var user = await _usuarioService.GetByEmail(correo);
+            if (user == null || user.Contrasena != contrasena)
+            {
+                ModelState.AddModelError(string.Empty, "Correo o contraseña inválidos.");
+                return View();
+            }
+
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new Claim(ClaimTypes.Email, user.Correo ?? string.Empty),
+                new Claim(ClaimTypes.Name, user.Correo ?? string.Empty),
+                new Claim(ClaimTypes.Role, user.Rol ?? string.Empty)
+            };
+
+            var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            var principal = new ClaimsPrincipal(identity);
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CerrarSesion()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction(nameof(Index));
         }
     }
 }

@@ -1,0 +1,33 @@
+﻿csharp Views\Home\Login.cshtml
+@{
+    ViewData["Title"] = "Iniciar sesión";
+}
+
+<h2>Iniciar sesión</h2>
+
+<form asp-action="IniciarSesion" asp-controller="Home" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label for="correo">Correo</label>
+        <input name="correo" id="correo" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="contrasena">Contraseña</label>
+        <input name="contrasena" id="contrasena" type="password" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Entrar</button>
+    <a class="btn btn-link" href="@Url.Action("Index", "Home")">Volver</a>
+</form>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="text-danger">
+        @foreach (var err in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <div>@err.ErrorMessage</div>
+        }
+    </div>
+}
