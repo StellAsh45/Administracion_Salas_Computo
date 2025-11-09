@@ -44,7 +44,7 @@ namespace Infrastructure.Migrations
 
                     b.HasIndex("UsuarioId");
 
-                    b.ToTable("Computadores", (string)null);
+                    b.ToTable("Computadores");
                 });
 
             modelBuilder.Entity("Domain.Cow", b =>
@@ -64,7 +64,7 @@ namespace Infrastructure.Migrations
 
                     b.HasIndex("FarmId");
 
-                    b.ToTable("Cows", (string)null);
+                    b.ToTable("Cows");
                 });
 
             modelBuilder.Entity("Domain.Farm", b =>
@@ -83,7 +83,7 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Farms", (string)null);
+                    b.ToTable("Farms");
                 });
 
             modelBuilder.Entity("Domain.Milk", b =>
@@ -108,7 +108,7 @@ namespace Infrastructure.Migrations
 
                     b.HasIndex("CowId");
 
-                    b.ToTable("Milks", (string)null);
+                    b.ToTable("Milks");
                 });
 
             modelBuilder.Entity("Domain.Reporte", b =>
@@ -131,7 +131,7 @@ namespace Infrastructure.Migrations
 
                     b.HasIndex("UsuarioId");
 
-                    b.ToTable("Reportes", (string)null);
+                    b.ToTable("Reportes");
                 });
 
             modelBuilder.Entity("Domain.Sala", b =>
@@ -152,7 +152,7 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Salas", (string)null);
+                    b.ToTable("Salas");
                 });
 
             modelBuilder.Entity("Domain.Solicitud", b =>
@@ -183,7 +183,7 @@ namespace Infrastructure.Migrations
 
                     b.HasIndex("UsuarioId");
 
-                    b.ToTable("Solicitudes", (string)null);
+                    b.ToTable("Solicitudes");
                 });
 
             modelBuilder.Entity("Domain.Usuario", b =>
@@ -206,7 +206,7 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Usuarios", (string)null);
+                    b.ToTable("Usuarios");
                 });
 
             modelBuilder.Entity("Domain.Computador", b =>
