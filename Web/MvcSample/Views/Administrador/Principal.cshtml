@@ -1,0 +1,16 @@
+﻿csharp Views\Administrador\Principal.cshtml
+@{
+    ViewData["Title"] = "Panel Administrador";
+}
+
+<h2>Panel del Administrador</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+<div class="mb-3">
+    <a class="btn btn-primary" asp-controller="Administrador" asp-action="RegistroUsuarios">Registro de usuarios</a>
+</div>
+

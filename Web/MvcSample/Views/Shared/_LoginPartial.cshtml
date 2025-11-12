@@ -1,11 +1,25 @@
 ﻿@using System.Security.Claims
-@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 
 <ul class="navbar-nav">
     @if (User?.Identity?.IsAuthenticated ?? false)
     {
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index" title="Manage">Hola @User.Identity.Name</a>
+            @{
+                // Obtener rol y usuario desde claims (fallbacks)
+                var roleClaim = User.FindFirstValue(ClaimTypes.Role) ?? string.Empty;
+                var email = User.FindFirstValue(ClaimTypes.Email)
+                ?? User.Identity?.Name
+                ?? User.FindFirstValue(ClaimTypes.NameIdentifier)
+                ?? "usuario";
+
+                string roleDisplay = roleClaim switch
+                {
+                    "Coordinador de Sala" => "Coordinador de Sala",
+                    "Administrador" => "Administrador",
+                    "Usuario" => "Usuario",
+                };
+            }
+            <span class="nav-link text-dark">Bienvenido @roleDisplay @email</span>
         </li>
         <li class="nav-item">
             <form class="form-inline" asp-controller="Home" asp-action="CerrarSesion" method="post">
@@ -16,9 +30,6 @@
     }
     else
     {
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-controller="Home" asp-action="Registro">Registrarse</a>
-        </li>
         <li class="nav-item">
             <a class="nav-link text-dark" asp-controller="Home" asp-action="IniciarSesion">Iniciar sesión</a>
         </li>

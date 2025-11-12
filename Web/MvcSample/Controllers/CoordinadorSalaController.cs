@@ -1,19 +1,20 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Services;
-using Services.Models.ModelosUsuario;
 
 namespace MvcSample.Controllers
 {
-    [Authorize(Roles = "Usuario")]
-    public class UsuarioController : Controller
+    [Authorize(Roles = "Coordinador de Sala")]
+    public class CoordinadorSalaController : Controller
     {
         private readonly IUsuarioService _usuarioService;
 
-        public UsuarioController(IUsuarioService usuarioService)
+        public CoordinadorSalaController(IUsuarioService usuarioService)
         {
             _usuarioService = usuarioService;
         }
+
+        [HttpGet]
         public IActionResult Principal()
         {
             //ViewBag.Success = TempData["Success"];
@@ -21,4 +22,3 @@ namespace MvcSample.Controllers
         }
     }
 }
-

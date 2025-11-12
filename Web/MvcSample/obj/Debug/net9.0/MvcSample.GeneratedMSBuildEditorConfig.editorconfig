@@ -28,6 +28,18 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Administrador/Principal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxQcmluY2lwYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Administrador/RegistroUsuarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxSZWdpc3Ryb1VzdWFyaW9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/CoordinadorSala/Principal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29vcmRpbmFkb3JTYWxhXFByaW5jaXBhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Farm/AddCow.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybVxBZGRDb3cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,10 +68,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Home/Registro.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Ryby5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -70,6 +78,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Usuario/Principal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xQcmluY2lwYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/_ViewImports.cshtml]

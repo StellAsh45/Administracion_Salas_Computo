@@ -27,24 +27,6 @@ namespace MvcSample.Controllers
         }
 
         [HttpGet]
-        public IActionResult Registro()
-        {
-            return View(new AñadirModeloUsuario());
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Registro(AñadirModeloUsuario model)
-        {
-            if (!ModelState.IsValid) return View(model);
-
-            if (string.IsNullOrWhiteSpace(model.Rol)) model.Rol = "Usuario";
-            await _usuarioService.AddUsuario(model);
-            TempData["Success"] = "Registro exitoso. Ahora puedes iniciar sesión.";
-            return RedirectToAction(nameof(Index));
-        }
-
-        [HttpGet]
         public IActionResult IniciarSesion()
         {
             return View();
@@ -62,16 +44,34 @@ namespace MvcSample.Controllers
             }
 
             var claims = new List<Claim>
-            {
+    {
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                 new Claim(ClaimTypes.Email, user.Correo ?? string.Empty),
                 new Claim(ClaimTypes.Name, user.Correo ?? string.Empty),
                 new Claim(ClaimTypes.Role, user.Rol ?? string.Empty)
-            };
+    };
 
             var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             var principal = new ClaimsPrincipal(identity);
+
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+
+            // Redirecciones por rol
+            if (!string.IsNullOrWhiteSpace(user.Rol) && user.Rol.Equals("Administrador", StringComparison.OrdinalIgnoreCase))
+            {
+                return RedirectToAction("Principal", "Administrador");
+            }
+
+            if (!string.IsNullOrWhiteSpace(user.Rol) && user.Rol.Equals("Usuario", StringComparison.OrdinalIgnoreCase))
+            {
+                return RedirectToAction("Principal", "Usuario");
+            }
+
+            if (!string.IsNullOrWhiteSpace(user.Rol) &&
+                user.Rol.IndexOf("Coordinador", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                return RedirectToAction("Principal", "CoordinadorSala");
+            }
 
             return RedirectToAction(nameof(Index));
         }
