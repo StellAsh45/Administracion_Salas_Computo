@@ -8,7 +8,6 @@
 
 <form asp-action="EditarUsuario" asp-controller="Administrador" method="post">
     @Html.AntiForgeryToken()
-    <div asp-validation-summary="All" class="text-danger"></div>
     <input type="hidden" asp-for="Id" />
 
     <div class="form-group">
@@ -19,7 +18,7 @@
 
     <div class="form-group">
         <label asp-for="Correo"></label>
-        <input asp-for="Correo" class="form-control" />
+        <input asp-for="Correo" class="form-control" readonly="readonly" />
         <span asp-validation-for="Correo" class="text-danger"></span>
     </div>
 
@@ -32,16 +31,16 @@
     <div class="form-group">
         <label asp-for="Rol"></label>
         <select asp-for="Rol" class="form-control">
-            <option value="" selected disabled>-- Selecciona un rol --</option>
-            <option value="Usuario" selected="@Model.Rol == " Usuario"">Usuario</option>
-            <option value="Coordinador de Sala" selected="@Model.Rol == " Coordinador de Sala"">Coordinador de Sala</option>
-            <option value="Administrador" selected="@Model.Rol == " Administrador"">Administrador</option>
+            <option value="">-- Selecciona un rol --</option>
+            <option value="Usuario">Usuario</option>
+            <option value="Coordinador de Sala">Coordinador de Sala</option>
+            <option value="Administrador">Administrador</option>
         </select>
         <span asp-validation-for="Rol" class="text-danger"></span>
     </div>
-
+    <div asp-validation-summary="All" class="text-danger"></div>
     <button type="submit" class="btn btn-primary">Guardar</button>
-    <a class="btn btn-link" asp-controller="Administrador" asp-action="VerUsuarios">Volver</a>
+    <a class="btn btn-light text-primary fw-bold" asp-controller="Administrador" asp-action="VerUsuarios">Volver</a>
 </form>
 
 @section Scripts {

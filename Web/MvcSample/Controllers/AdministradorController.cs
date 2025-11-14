@@ -48,7 +48,7 @@ namespace MvcSample.Controllers
                 if (string.IsNullOrWhiteSpace(model.Rol)) model.Rol = "Usuario";
                 await _usuarioService.AddUsuario(model);
                 TempData["Success"] = "Registro exitoso. El usuario fue creado correctamente.";
-                return RedirectToAction(nameof(Principal));
+                return RedirectToAction("VerUsuarios");
             }
             catch (InvalidOperationException ex)
             {
@@ -84,15 +84,6 @@ namespace MvcSample.Controllers
                 ModelState.AddModelError(string.Empty, ex.Message);
                 return View("EditarUsuario", model); 
             }
-        }
-
-        // Eliminar confirmación - GET
-        [HttpGet]
-        public async Task<IActionResult> BorrarUsuario(Guid id)
-        {
-            var usuario = await _usuarioService.GetUsuario(id);
-            if (usuario == null) return NotFound();
-            return View("BorrarUsuario", usuario);
         }
 
         // Eliminar - POST

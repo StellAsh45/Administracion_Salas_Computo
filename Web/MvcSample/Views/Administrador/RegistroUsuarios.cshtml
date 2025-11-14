@@ -22,7 +22,7 @@
     </div>
 
     <div class="form-group">
-        <label asp-for="Contrasena"></label>
+        <label for="contrasena" class="text-white">Contraseña</label>
         <input asp-for="Contrasena" class="form-control" type="password" />
         <span asp-validation-for="Contrasena" class="text-danger"></span>
     </div>
@@ -41,7 +41,7 @@
     <div asp-validation-summary="All" class="text-danger"></div>
 
     <button type="submit" class="btn btn-primary">Registrar</button>
-    <a class="btn btn-link" asp-controller="Administrador" asp-action="VerUsuarios">Volver</a>
+    <a class="btn btn-light text-primary fw-bold" asp-controller="Administrador" asp-action="VerUsuarios">Volver</a>
     
 </form>
 
