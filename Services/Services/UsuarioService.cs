@@ -37,6 +37,12 @@ namespace Services
 
         public async Task AddUsuario(AñadirModeloUsuario model)
         {
+            var exists = await repo.GetByEmail(model.Correo);
+            if (exists != null)
+            {
+                throw new InvalidOperationException("El correo ingresado ya ha sido registrado");
+            }
+
             await repo.Save(mapper.Map<Domain.Usuario>(model));
         }
 

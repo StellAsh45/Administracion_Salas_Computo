@@ -17,81 +17,93 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MvcSample
 build_property.RootNamespace = MvcSample
-build_property.ProjectDir = C:\Users\glori\Downloads\GestionProyecto\Proyecto-Gestion\Administracion_Salas_Computo\Web\MvcSample\
+build_property.ProjectDir = C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\glori\Downloads\GestionProyecto\Proyecto-Gestion\Administracion_Salas_Computo\Web\MvcSample
+build_property.MSBuildProjectDirectory = C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/glori/Downloads/GestionProyecto/Proyecto-Gestion/Administracion_Salas_Computo/Web/MvcSample/Views/Administrador/Principal.cshtml]
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Administrador/BorrarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxCb3JyYXJVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Administrador/EditarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxFZGl0YXJVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Administrador/Principal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxQcmluY2lwYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glori/Downloads/GestionProyecto/Proyecto-Gestion/Administracion_Salas_Computo/Web/MvcSample/Views/Administrador/RegistroUsuarios.cshtml]
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Administrador/RegistroUsuarios.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxSZWdpc3Ryb1VzdWFyaW9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glori/Downloads/GestionProyecto/Proyecto-Gestion/Administracion_Salas_Computo/Web/MvcSample/Views/CoordinadorSala/Principal.cshtml]
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Administrador/VerUsuarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxWZXJVc3Vhcmlvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/CoordinadorSala/Principal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29vcmRpbmFkb3JTYWxhXFByaW5jaXBhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glori/Downloads/GestionProyecto/Proyecto-Gestion/Administracion_Salas_Computo/Web/MvcSample/Views/Farm/AddCow.cshtml]
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Farm/AddCow.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybVxBZGRDb3cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glori/Downloads/GestionProyecto/Proyecto-Gestion/Administracion_Salas_Computo/Web/MvcSample/Views/Farm/AddFarm.cshtml]
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Farm/AddFarm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybVxBZGRGYXJtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glori/Downloads/GestionProyecto/Proyecto-Gestion/Administracion_Salas_Computo/Web/MvcSample/Views/Farm/Cows.cshtml]
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Farm/Cows.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybVxDb3dzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glori/Downloads/GestionProyecto/Proyecto-Gestion/Administracion_Salas_Computo/Web/MvcSample/Views/Farm/Index.cshtml]
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Farm/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glori/Downloads/GestionProyecto/Proyecto-Gestion/Administracion_Salas_Computo/Web/MvcSample/Views/Home/Index.cshtml]
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glori/Downloads/GestionProyecto/Proyecto-Gestion/Administracion_Salas_Computo/Web/MvcSample/Views/Home/IniciarSesion.cshtml]
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Home/IniciarSesion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmljaWFyU2VzaW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glori/Downloads/GestionProyecto/Proyecto-Gestion/Administracion_Salas_Computo/Web/MvcSample/Views/Home/Privacy.cshtml]
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glori/Downloads/GestionProyecto/Proyecto-Gestion/Administracion_Salas_Computo/Web/MvcSample/Views/Shared/Error.cshtml]
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glori/Downloads/GestionProyecto/Proyecto-Gestion/Administracion_Salas_Computo/Web/MvcSample/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glori/Downloads/GestionProyecto/Proyecto-Gestion/Administracion_Salas_Computo/Web/MvcSample/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glori/Downloads/GestionProyecto/Proyecto-Gestion/Administracion_Salas_Computo/Web/MvcSample/Views/Usuario/Principal.cshtml]
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Usuario/Principal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xQcmluY2lwYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glori/Downloads/GestionProyecto/Proyecto-Gestion/Administracion_Salas_Computo/Web/MvcSample/Views/_ViewImports.cshtml]
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glori/Downloads/GestionProyecto/Proyecto-Gestion/Administracion_Salas_Computo/Web/MvcSample/Views/_ViewStart.cshtml]
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glori/Downloads/GestionProyecto/Proyecto-Gestion/Administracion_Salas_Computo/Web/MvcSample/Views/Shared/_Layout.cshtml]
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2sss1o9de5

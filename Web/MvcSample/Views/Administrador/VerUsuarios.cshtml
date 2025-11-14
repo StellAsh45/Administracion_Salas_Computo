@@ -1,0 +1,39 @@
+﻿@model IList<Services.Models.ModelosUsuario.ModeloUsuario>
+
+@{
+    ViewData["Title"] = "Usuarios registrados";
+}
+
+<h2>Usuarios registrados</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+<p>
+    <a class="btn btn-primary" asp-controller="Administrador" asp-action="RegistroUsuarios">Registrar usuario</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Correo</th>
+            <th>Rol</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var u in Model)
+        {
+            <tr>
+                <td>@u.Correo</td>
+                <td>@u.Rol</td>
+                <td>
+                    <a class="btn btn-sm btn-secondary" asp-controller="Administrador" asp-action="EditarUsuario" asp-route-id="@u.Id">Editar</a>
+                    <a class="btn btn-sm btn-danger" asp-controller="Administrador" asp-action="BorrarUsuario" asp-route-id="@u.Id">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

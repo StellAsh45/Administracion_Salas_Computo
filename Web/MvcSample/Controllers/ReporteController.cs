@@ -35,7 +35,6 @@ namespace MvcSample.Controllers
         {
             if (!ModelState.IsValid) return View(model);
 
-            // si no se incluye UsuarioId en el form, se puede tomar del claim:
             if (model.UsuarioId == Guid.Empty)
             {
                 var userIdStr = User.FindFirstValue(ClaimTypes.NameIdentifier);

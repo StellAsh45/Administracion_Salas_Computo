@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Domain;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Services;
 using Services.Models.ModelosUsuario;
@@ -23,6 +24,14 @@ namespace MvcSample.Controllers
         }
 
         [HttpGet]
+        public async Task<IActionResult> VerUsuarios()
+        {
+            var usuarios = await _usuarioService.GetUsuarios();
+            usuarios ??= new List<ModeloUsuario>();
+            return View(usuarios);
+        }
+
+        [HttpGet]
         public IActionResult RegistroUsuarios()
         {
             return View(new AñadirModeloUsuario());
@@ -34,11 +43,66 @@ namespace MvcSample.Controllers
         {
             if (!ModelState.IsValid) return View("RegistroUsuarios", model);
 
-            if (string.IsNullOrWhiteSpace(model.Rol)) model.Rol = "Usuario";
-            await _usuarioService.AddUsuario(model);
-            TempData["Success"] = "Registro exitoso. El usuario fue creado correctamente.";
+            try
+            {
+                if (string.IsNullOrWhiteSpace(model.Rol)) model.Rol = "Usuario";
+                await _usuarioService.AddUsuario(model);
+                TempData["Success"] = "Registro exitoso. El usuario fue creado correctamente.";
+                return RedirectToAction(nameof(Principal));
+            }
+            catch (InvalidOperationException ex)
+            {
+                ModelState.AddModelError(string.Empty, ex.Message);
+                return View("RegistroUsuarios", model);
+            }
+        }
 
-            return RedirectToAction("Principal");
+        // Editar - GET
+        [HttpGet]
+        public async Task<IActionResult> EditarUsuario(Guid id)
+        {
+            var usuario = await _usuarioService.GetUsuario(id);
+            if (usuario == null) return NotFound();
+            return View("EditarUsuario", usuario); 
+        }
+
+        // Editar - POST
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditarUsuario(ModeloUsuario model)
+        {
+            if (!ModelState.IsValid) return View("EditarUsuario", model); 
+
+            try
+            {
+                await _usuarioService.UpdateUsuario(model);
+                TempData["Success"] = "Usuario actualizado correctamente.";
+                return RedirectToAction("VerUsuarios");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, ex.Message);
+                return View("EditarUsuario", model); 
+            }
+        }
+
+        // Eliminar confirmación - GET
+        [HttpGet]
+        public async Task<IActionResult> BorrarUsuario(Guid id)
+        {
+            var usuario = await _usuarioService.GetUsuario(id);
+            if (usuario == null) return NotFound();
+            return View("BorrarUsuario", usuario);
+        }
+
+        // Eliminar - POST
+        [HttpPost, ActionName("BorrarUsuario")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> BorrarUsuarioConfirmed(Guid id)
+        {
+            await _usuarioService.DeleteUsuario(id);
+            TempData["Success"] = "Usuario eliminado correctamente.";
+            return RedirectToAction("VerUsuarios");
         }
     }
 }

@@ -18,16 +18,18 @@
         <input name="contrasena" id="contrasena" type="password" class="form-control" />
     </div>
 
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="text-danger">
+            @foreach (var err in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <div>@err.ErrorMessage</div>
+            }
+        </div>
+    }
+
     <button type="submit" class="btn btn-primary">Entrar</button>
     <a class="btn btn-link" href="@Url.Action("Index", "Home")">Volver</a>
 </form>
 
-@if (!ViewData.ModelState.IsValid)
-{
-    <div class="text-danger">
-        @foreach (var err in ViewData.ModelState.Values.SelectMany(v => v.Errors))
-        {
-            <div>@err.ErrorMessage</div>
-        }
-    </div>
-}
+
