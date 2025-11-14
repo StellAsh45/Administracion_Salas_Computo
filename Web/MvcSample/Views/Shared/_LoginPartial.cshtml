@@ -23,15 +23,8 @@
         </li>
         <li class="nav-item">
             <form class="form-inline" asp-controller="Home" asp-action="CerrarSesion" method="post">
-                @Html.AntiForgeryToken()
                 <button type="submit" class="nav-link btn btn-link text-dark">Cerrar sesión</button>
             </form>
-        </li>
-    }
-    else
-    {
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-controller="Home" asp-action="IniciarSesion">Iniciar sesión</a>
         </li>
     }
 </ul>

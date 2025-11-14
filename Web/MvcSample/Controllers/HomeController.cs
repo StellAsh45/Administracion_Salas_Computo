@@ -20,15 +20,11 @@ namespace MvcSample.Controllers
             _usuarioService = usuarioService;
         }
 
-        public IActionResult Index()
-        {
-            ViewBag.Success = TempData["Success"];
-            return View();
-        }
-
         [HttpGet]
         public IActionResult IniciarSesion()
         {
+            //HttpContext.SignOutAsync();
+            ViewBag.Success = TempData["Success"];
             return View();
         }
 
@@ -73,7 +69,7 @@ namespace MvcSample.Controllers
                 return RedirectToAction("Principal", "CoordinadorSala");
             }
 
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(IniciarSesion));
         }
 
         [HttpPost]
@@ -81,7 +77,7 @@ namespace MvcSample.Controllers
         public async Task<IActionResult> CerrarSesion()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(IniciarSesion));
         }
     }
 }

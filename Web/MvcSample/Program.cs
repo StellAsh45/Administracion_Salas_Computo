@@ -22,6 +22,7 @@ namespace MvcSample
                 options.LoginPath = "/Home/IniciarSesion";
                 options.LogoutPath = "/Home/CerrarSesion";
                 options.Cookie.Name = "AppAuth";
+
             });
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddServices();
@@ -67,7 +68,7 @@ namespace MvcSample
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Home}/{action=IniciarSesion}/{id?}");
             //app.MapRazorPages();
 
             app.Run();
