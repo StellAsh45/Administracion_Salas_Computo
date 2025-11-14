@@ -1,22 +1,36 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* Esto es aplicado a los bodys en general del aplicativo */
 body {
-  margin-bottom: 60px;
+    background: linear-gradient(to bottom right, #15a598, #1a72a9, #4e31a8);
+    min-height: 100vh;
+    color: white;
+}
+
+/* Items que se ubican en la vista de Iniciar sesion */
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.feature-item i {
+    font-size: 2rem;
+    margin-right: 15px;
+    color: #cfeaff;
+}
+
+.feature-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.feature-text {
+    margin: 0;
+    opacity: 0.85;
+}
+
+.card-login {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    padding: 25px;
+    border-radius: 12px;
 }

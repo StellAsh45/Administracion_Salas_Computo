@@ -28,7 +28,7 @@
         <select asp-for="Rol" class="form-control">
             <option value="" selected disabled>-- Selecciona un rol --</option>
             <option value="Usuario" selected="@Model.Rol == " Usuario"">Usuario</option>
-            <option value="Coordinador" selected="@Model.Rol == " Coordinador"">Coordinador de Sala</option>
+            <option value="Coordinador de Sala" selected="@Model.Rol == " Coordinador de Sala"">Coordinador de Sala</option>
             <option value="Administrador" selected="@Model.Rol == " Administrador"">Administrador</option>
         </select>
         <span asp-validation-for="Rol" class="text-danger"></span>

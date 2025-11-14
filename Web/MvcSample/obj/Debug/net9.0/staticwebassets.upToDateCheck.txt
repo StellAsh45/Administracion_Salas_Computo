@@ -59,6 +59,7 @@ C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\img\USC.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

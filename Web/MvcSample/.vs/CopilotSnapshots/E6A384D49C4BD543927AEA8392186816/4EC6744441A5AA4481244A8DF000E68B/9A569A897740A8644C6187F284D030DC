@@ -16,14 +16,13 @@
         <div class="col-md-7 text-white">
 
             <div class="mb-4">
-                <div class="d-inline-flex align-items-center bg-light text-primary p-2 rounded"
-                    style="gap:12px; max-width:360px;">
-                    <img src="~/img/USC.png" alt="USC Logo" style="width:80px; height:auto; flex:00 auto;" />
-                    <div class="text-start" style="line-height:1.05; flex:13 auto; min-width:0;">
-                        <strong class="d-block">Sistema de Gestión salas de Cómputo</strong>
-                        <small class="d-block">Universidad Santiago de Cali</small>
+                <span class="badge bg-light text-primary p-3 align-items-center" style="gap:10px">
+                    <img src="~/img/USC.png" alt="USC Logo" style="width:80px; height:auto" />
+                    <div class="text-start" style="line-height: 1.1;">
+                        <strong>Sistema de Gestión</strong><br />
+                        Universidad Santiago de Cali
                     </div>
-                </div>
+                </span>
             </div>
 
             <h1 class="fw-bold mb-3">
@@ -34,40 +33,38 @@
                 Controla inventario, asignaciones y el estado de tus recursos en un solo lugar.
             </p>
 
-            <div class="feature-item d-flex mb-3">
-                <i class="bi bi-building fs-3 me-3"></i>
+            <div class="feature-item">
+                <i class="bi bi-building"></i>
                 <div>
                     <div class="feature-title">Salas</div>
-                    <p class="feature-text mb-0">Inventario de espacios disponible.</p>
+                    <p class="feature-text">Inventario de espacios disponible.</p>
                 </div>
             </div>
 
-            <div class="feature-item d-flex mb-3">
-                <i class="bi bi-hdd-network fs-3 me-3"></i>
+            <div class="feature-item">
+                <i class="bi bi-hdd-network"></i>
                 <div>
                     <div class="feature-title">Equipos</div>
-                    <p class="feature-text mb-0">Control y estado de equipos.</p>
+                    <p class="feature-text">Control y estado de equipos.</p>
                 </div>
             </div>
 
-            <div class="feature-item d-flex mb-3">
-                <i class="bi bi-people fs-3 me-3"></i>
+            <div class="feature-item">
+                <i class="bi bi-people"></i>
                 <div>
                     <div class="feature-title">Usuarios</div>
-                    <p class="feature-text mb-0">Roles y permisos por perfil.</p>
+                    <p class="feature-text">Roles y permisos por perfil.</p>
                 </div>
             </div>
 
         </div>
 
         <!-- DERECHA: Formulario login -->
-        <div class="col-md-5 mt-5">
-            <div class="card-login mt-5">
+        <div class="col-md-5">
+            <div class="card-login mt-4">
 
                 <h3 class="text-white mb-4">Iniciar sesión</h3>
-                <p class="mb-0">
-                Ingresa tus credenciales
-                </p>
+
                 <form asp-action="IniciarSesion" asp-controller="Home" method="post">
                     @Html.AntiForgeryToken()
 
@@ -92,7 +89,7 @@
                     }
 
                     <button type="submit" class="btn btn-light text-primary w-100 fw-bold">
-                        Iniciar Sesión→
+                        Entrar→
                     </button>
                 </form>
             </div>

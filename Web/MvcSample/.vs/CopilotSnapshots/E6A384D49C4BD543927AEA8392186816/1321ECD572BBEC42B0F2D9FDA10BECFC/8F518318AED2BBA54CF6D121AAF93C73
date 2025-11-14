@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (ViewBag.Success != null)
+{
+   <div class="alert alert-success" role="alert">
+   @ViewBag.Success
+   </div>
+}
+
+<div class="container py-5">
+   <div class="row">
+
+      <!-- IZQUIERDA: Información (como la foto) -->
+      <div class="col-md-7 text-white">
+         <div class="mb-4">
+            <span class="badge bg-light text-primary p-3 d-flex align-items-center">
+            <img asp-append-version="true" src="~/img/USC.png"
+             alt="Logo USC"
+             class="me-2"
+             style="width:48px; height:auto;" />
+
+            <div>
+               <strong>USC</strong> &nbsp; Sistema de Gestión<br />
+               Universidad Santiago de Cali
+            </div>
+            </span>
+         </div>
+
+         <h1 class="fw-bold mb-3">
+            Gestiona tus salas y equipos de manera eficiente
+         </h1>
+
+         <p class="mb-4">
+            Controla inventario, asignaciones y el estado de tus recursos en un solo lugar.
+         </p>
+
+         <div class="feature-item d-flex mb-3">
+            <i class="bi bi-building fs-3 me-3"></i>
+            <div>
+               <div class="feature-title">Salas</div>
+               <p class="feature-text mb-0">Inventario de espacios disponible.</p>
+            </div>
+         </div>
+
+         <div class="feature-item d-flex mb-3">
+            <i class="bi bi-hdd-network fs-3 me-3"></i>
+            <div>
+               <div class="feature-title">Equipos</div>
+               <p class="feature-text mb-0">Control y estado de equipos.</p>
+            </div>
+         </div>
+
+         <div class="feature-item d-flex mb-3">
+            <i class="bi bi-people fs-3 me-3"></i>
+            <div>
+               <div class="feature-title">Usuarios</div>
+               <p class="feature-text mb-0">Roles y permisos por perfil.</p>
+            </div>
+         </div>
+
+      </div>
+
+      <!-- DERECHA: Formulario login -->
+      <div class="col-md-5">
+         <div class="card-login mt-4 p-4 bg-primary rounded-3">
+
+            <h3 class="text-white mb-4">Iniciar sesión</h3>
+
+            <form asp-action="IniciarSesion" asp-controller="Home" method="post">
+               @Html.AntiForgeryToken()
+
+               <div class="form-group mb-3">
+                  <label for="correo" class="text-white">Correo</label>
+                  <input name="correo" id="correo" class="form-control" />
+               </div>
+
+               <div class="form-group mb-3">
+                  <label for="contrasena" class="text-white">Contraseña</label>
+                  <input name="contrasena" id="contrasena" type="password" class="form-control" />
+               </div>
+
+               @if (!ViewData.ModelState.IsValid)
+               {
+                  <div class="text-warning mb-3">
+                     @foreach (var err in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                     {
+                     <div>@err.ErrorMessage</div>
+                     }
+                  </div>
+               }
+
+               <button type="submit" class="btn btn-light text-primary w-100 fw-bold">
+               Entrar →
+               </button>
+            </form>
+         </div>
+      </div>
+
+   </div>
+</div>

@@ -19,7 +19,7 @@ namespace MvcSample.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "Coordinador,Administrador")]
+        [Authorize(Roles = "Coordinador de Sala,Administrador")]
         public async Task<IActionResult> Index(string estado = "Pendiente")
         {
             var list = await _solicitudService.GetByEstado(estado);
@@ -56,7 +56,7 @@ namespace MvcSample.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Coordinador,Administrador")]
+        [Authorize(Roles = "Coordinador de Sala,Administrador")]
         public async Task<IActionResult> Accept(Guid id)
         {
             await _solicitudService.AcceptSolicitud(id);
@@ -64,7 +64,7 @@ namespace MvcSample.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Coordinador,Administrador")]
+        [Authorize(Roles = "Coordinador de Sala,Administrador")]
         public async Task<IActionResult> Deny(Guid id)
         {
             await _solicitudService.DenySolicitud(id);

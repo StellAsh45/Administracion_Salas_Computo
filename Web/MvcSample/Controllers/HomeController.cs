@@ -64,7 +64,7 @@ namespace MvcSample.Controllers
             }
 
             if (!string.IsNullOrWhiteSpace(user.Rol) &&
-                user.Rol.IndexOf("Coordinador", StringComparison.OrdinalIgnoreCase) >= 0)
+                user.Rol.IndexOf("Coordinador de Sala", StringComparison.OrdinalIgnoreCase) >= 0)
             {
                 return RedirectToAction("Principal", "CoordinadorSala");
             }

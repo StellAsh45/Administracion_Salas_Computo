@@ -18,9 +18,9 @@
             <div class="mb-4">
                 <div class="d-inline-flex align-items-center bg-light text-primary p-2 rounded"
                     style="gap:12px; max-width:360px;">
-                    <img src="~/img/USC.png" alt="USC Logo" style="width:80px; height:auto; flex:00 auto;" />
-                    <div class="text-start" style="line-height:1.05; flex:13 auto; min-width:0;">
-                        <strong class="d-block">Sistema de Gestión salas de Cómputo</strong>
+                    <img src="~/img/USC.png" alt="USC Logo" style="width:64px; height:auto; flex:00 auto;" />
+                    <div class="text-start" style="line-height:1.05; flex:11 auto; min-width:0;">
+                        <strong class="d-block">Sistema de Gestión</strong>
                         <small class="d-block">Universidad Santiago de Cali</small>
                     </div>
                 </div>
@@ -61,13 +61,11 @@
         </div>
 
         <!-- DERECHA: Formulario login -->
-        <div class="col-md-5 mt-5">
-            <div class="card-login mt-5">
+        <div class="col-md-5">
+            <div class="card-login mt-4 p-4 bg-primary rounded-3">
 
                 <h3 class="text-white mb-4">Iniciar sesión</h3>
-                <p class="mb-0">
-                Ingresa tus credenciales
-                </p>
+
                 <form asp-action="IniciarSesion" asp-controller="Home" method="post">
                     @Html.AntiForgeryToken()
 
@@ -92,7 +90,7 @@
                     }
 
                     <button type="submit" class="btn btn-light text-primary w-100 fw-bold">
-                        Iniciar Sesión→
+                        Entrar →
                     </button>
                 </form>
             </div>
