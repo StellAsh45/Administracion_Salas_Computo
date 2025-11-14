@@ -43,7 +43,7 @@ namespace MvcSample.Controllers
     {
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                 new Claim(ClaimTypes.Email, user.Correo ?? string.Empty),
-                new Claim(ClaimTypes.Name, user.Correo ?? string.Empty),
+                new Claim(ClaimTypes.Name, string.IsNullOrWhiteSpace(user.Nombre) ? user.Correo ?? string.Empty : user.Nombre),
                 new Claim(ClaimTypes.Role, user.Rol ?? string.Empty)
     };
 

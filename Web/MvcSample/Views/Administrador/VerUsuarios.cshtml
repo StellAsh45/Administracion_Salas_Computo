@@ -18,6 +18,7 @@
 <table class="table table-striped">
     <thead>
         <tr>
+            <th>Nombre</th>
             <th>Correo</th>
             <th>Rol</th>
             <th>Acciones</th>
@@ -27,6 +28,7 @@
         @foreach (var u in Model)
         {
             <tr>
+                <td>@u.Nombre</td>
                 <td>@u.Correo</td>
                 <td>@u.Rol</td>
                 <td>

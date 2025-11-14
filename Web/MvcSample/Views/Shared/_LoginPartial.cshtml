@@ -5,12 +5,11 @@
     {
         <li class="nav-item">
             @{
-                // Obtener rol y usuario desde claims (fallbacks)
                 var roleClaim = User.FindFirstValue(ClaimTypes.Role) ?? string.Empty;
-                var email = User.FindFirstValue(ClaimTypes.Email)
-                ?? User.Identity?.Name
-                ?? User.FindFirstValue(ClaimTypes.NameIdentifier)
-                ?? "usuario";
+                var displayName = User.FindFirstValue(ClaimTypes.Name)
+                                  ?? User.FindFirstValue(ClaimTypes.Email)
+                                  ?? User.Identity?.Name
+                                  ?? "usuario";
 
                 string roleDisplay = roleClaim switch
                 {
@@ -19,10 +18,11 @@
                     "Usuario" => "Usuario",
                 };
             }
-            <span class="nav-link text-dark">Bienvenido @roleDisplay @email</span>
+            <span class="nav-link text-dark">Bienvenido @roleDisplay @displayName</span>
         </li>
         <li class="nav-item">
             <form class="form-inline" asp-controller="Home" asp-action="CerrarSesion" method="post">
+                @Html.AntiForgeryToken()
                 <button type="submit" class="nav-link btn btn-link text-dark">Cerrar sesión</button>
             </form>
         </li>

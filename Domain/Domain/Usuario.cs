@@ -14,6 +14,7 @@ namespace Domain
         public string Correo { get; set; } = string.Empty;
         public string Contrasena { get; set; } = string.Empty;
         public string Rol { get; set; } = string.Empty;
+        public string? Nombre { get; set; }
         public IList<Solicitud> Solicitudes { get; set; } = new List<Solicitud>();
         public IList<Reporte> Reportes { get; set; } = new List<Reporte>();
     }
