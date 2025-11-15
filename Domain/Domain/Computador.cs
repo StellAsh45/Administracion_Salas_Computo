@@ -13,8 +13,8 @@ namespace Domain
         public Guid Id { get; set; }
         public string Estado { get; set; } // Ejemplo: Disponible, Ocupado, Mantenimiento
 
-        public Guid SalaId { get; set; }
-        public Sala Sala { get; set; }
+        public Guid? SalaId { get; set; } // Puede ser nulo si el computador no está asignado a ninguna sala
+        public Sala? Sala { get; set; }
 
         public Guid? UsuarioId { get; set; }
         public Usuario Usuario { get; set; }

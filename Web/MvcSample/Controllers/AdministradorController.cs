@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Services;
 using Services.Models.ModelosUsuario;
+using Services.Models.ModelosSala;
 
 namespace MvcSample.Controllers
 {
@@ -10,10 +11,12 @@ namespace MvcSample.Controllers
     public class AdministradorController : Controller
     {
         private readonly IUsuarioService _usuarioService;
+        private readonly ISalaService _salaService;
 
-        public AdministradorController(IUsuarioService usuarioService)
+        public AdministradorController(IUsuarioService usuarioService, ISalaService salaService)
         {
             _usuarioService = usuarioService;
+            _salaService = salaService;   
         }
 
         [HttpGet]
@@ -45,6 +48,14 @@ namespace MvcSample.Controllers
 
             try
             {
+                // Verificar si ya existe un administrador
+                var usuarios = await _usuarioService.GetUsuarios();
+                if (model.Rol == "Administrador" && usuarios.Any(u => u.Rol == "Administrador"))
+                {
+                    ModelState.AddModelError(string.Empty, "Ya existe un administrador registrado. No se pueden registrar más administradores.");
+                    return View("RegistroUsuarios", model);
+                }
+
                 if (string.IsNullOrWhiteSpace(model.Rol)) model.Rol = "Usuario";
                 await _usuarioService.AddUsuario(model);
                 TempData["Success"] = "Registro exitoso. El usuario fue creado correctamente.";
@@ -94,6 +105,20 @@ namespace MvcSample.Controllers
             await _usuarioService.DeleteUsuario(id);
             TempData["Success"] = "Usuario eliminado correctamente.";
             return RedirectToAction("VerUsuarios");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> VerSalas()
+        {
+            var salas = await _salaService.GetSalas();
+            salas ??= new List<ModeloSala>();
+            return View("VerSalas", salas);
+        }
+
+        [HttpGet]
+        public IActionResult RegistroSala()
+        {
+            return View(new AñadirModeloSala());
         }
     }
 }
