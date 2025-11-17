@@ -2,4 +2,61 @@
     ViewData["Title"] = "Panel Coordinador de Sala";
 }
 
-<h2>Panel del Coordinador de Sala</h2>
+<div class="panel-bg">
+
+    <!-- TITULOS -->
+    <div class="panel-title mt-4">
+        <h1>Panel del Coordinador de Sala</h1>
+        <h4>Bienvenido Coordinador</h4>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success w-50 mx-auto mt-4">@TempData["Success"]</div>
+    }
+
+    <!-- CARDS -->
+    <div class="d-flex justify-content-center mt-5 gap-5 flex-wrap">
+
+        <!-- TARJETA USUARIOS -->
+        <div class="panel-card">
+            <div class="icon-wrapper">
+                <i class="bi bi-people-fill"></i>
+            </div>
+            <h5 class="fw-bold">Solicitudes de Usuarios</h5>
+            <p class="text-muted">Ver solicitudes de Prestamo</p>
+
+            <a asp-controller="CoordinadorSala" asp-action="VerUsuarios" class="btn btn-open">
+                Abrir
+            </a>
+        </div>
+
+        <!-- TARJETA SALAS -->
+        <div class="panel-card">
+            <div class="icon-wrapper">
+                <i class="bi bi-door-open-fill"></i>
+            </div>
+            <h5 class="fw-bold">Disponibilidad de Salas</h5>
+            <p class="text-muted">Administrar salas</p>
+
+            <a asp-controller="CoordinadorSala" asp-action="VerSalas" class="btn btn-open">
+                Abrir
+            </a>
+        </div>
+
+        <!-- TARJETA EQUIPOS -->
+        <div class="panel-card">
+            <div class="icon-wrapper">
+                <i class="bi bi-display-fill"></i>
+            </div>
+            <h5 class="fw-bold">Gestión de Equipos</h5>
+            <p class="text-muted">Disponibilidad de equipos</p>
+
+            <a asp-controller="CoordinadorSala" asp-action="VerEquipos" class="btn btn-open">
+                Abrir
+            </a>
+        </div>
+
+    </div>
+
+</div>

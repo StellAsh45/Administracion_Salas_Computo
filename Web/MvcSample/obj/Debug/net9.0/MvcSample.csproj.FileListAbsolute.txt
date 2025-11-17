@@ -1325,7 +1325,6 @@ C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSa
 C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\scopedcss\bundle\MvcSample.styles.css
 C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\scopedcss\projectbundle\MvcSample.bundle.scp.css
-C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\compressed\0g9ctsh4i3-o1rh6i7cc6.gz
 C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\compressed\muxs2c8lbg-61n19gt1b8.gz
 C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\compressed\05yzizpygo-xtxxf3hu2r.gz
 C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\compressed\szjd8lby8i-nakmwdwsxp.gz
@@ -1398,3 +1397,4 @@ C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSa
 C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\MvcSample.genruntimeconfig.cache
 C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\ref\MvcSample.dll
 C:\Users\USER\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\compressed\0g9ctsh4i3-qa5qzpxt0e.gz
+C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\compressed\0g9ctsh4i3-qa5qzpxt0e.gz

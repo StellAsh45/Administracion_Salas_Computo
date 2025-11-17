@@ -17,7 +17,7 @@ namespace MvcSample.Controllers
         [HttpGet]
         public IActionResult Principal()
         {
-            //ViewBag.Success = TempData["Success"];
+            ViewBag.Success = TempData["Success"];
             return View();
         }
     }
