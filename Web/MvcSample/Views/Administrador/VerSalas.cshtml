@@ -1,16 +1,24 @@
 ﻿<div class="salas-table-container">
 
-    <h2>Salas registradas</h2>
+    <div class="header-salas">
+        <h2>Salas registradas</h2>
+
+        <div class="acciones-derecha">
+            <a class="btn-agregar-sala" asp-controller="Administrador" asp-action="RegistroSala">
+                + Registrar sala
+            </a>
+
+            <a class="btn-agregar-sala" asp-controller="Administrador" asp-action="Principal">
+                Volver
+            </a>
+        </div>
+
+    </div>
 
     @if (TempData["Success"] != null)
     {
         <div class="alert alert-success">@TempData["Success"]</div>
     }
-
-    <p>
-        <a class="btn-agregar-sala" asp-controller="Administrador" asp-action="RegistroSala">Registrar sala</a>
-        <a class="btn-volver-sala" asp-controller="Administrador" asp-action="Principal">Volver</a>
-    </p>
 
     <table class="table table-striped salas-table">
         <thead>
