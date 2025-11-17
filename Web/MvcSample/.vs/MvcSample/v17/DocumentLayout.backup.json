@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\user\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\user\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\versalas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\administrador\\versalas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\user\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\registrosala.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\administrador\\registrosala.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\user\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\verequipos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\administrador\\verequipos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\user\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\user\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 131,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 13,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\wwwroot\\css\\site.css*",
-              "RelativeToolTip": "wwwroot\\css\\site.css*",
-              "ViewState": "AgIAAEcBAAAAAAAAAAAqwEEBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-17T20:12:37.119Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -72,12 +71,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "RegistroSala.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\RegistroSala.cshtml",
+              "RelativeDocumentMoniker": "Views\\Administrador\\RegistroSala.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\RegistroSala.cshtml*",
+              "RelativeToolTip": "Views\\Administrador\\RegistroSala.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-17T21:48:52.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdministradorController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Controllers\\AdministradorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdministradorController.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Controllers\\AdministradorController.cs*",
+              "RelativeToolTip": "Controllers\\AdministradorController.cs*",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAswHoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T21:32:48.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VerEquipos.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\VerEquipos.cshtml",
+              "RelativeDocumentMoniker": "Views\\Administrador\\VerEquipos.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\VerEquipos.cshtml",
+              "RelativeToolTip": "Views\\Administrador\\VerEquipos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-17T21:29:16.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAEcBAAAAAAAAAAAqwEEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-17T20:12:37.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "VerSalas.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\VerSalas.cshtml",
               "RelativeDocumentMoniker": "Views\\Administrador\\VerSalas.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\VerSalas.cshtml",
-              "RelativeToolTip": "Views\\Administrador\\VerSalas.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\VerSalas.cshtml*",
+              "RelativeToolTip": "Views\\Administrador\\VerSalas.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-17T17:57:26.09Z",
               "EditorCaption": ""

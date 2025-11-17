@@ -1,10 +1,11 @@
 ﻿using Domain;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Services;
-using Services.Models.ModelosUsuario;
-using Services.Models.ModelosSala;
 using Services.Models.ModelosComputador;
+using Services.Models.ModelosSala;
+using Services.Models.ModelosUsuario;
 
 namespace MvcSample.Controllers
 {
@@ -117,6 +118,30 @@ namespace MvcSample.Controllers
             salas ??= new List<ModeloSala>();
             return View("VerSalas", salas);
         }
+
+        // REGISTRO SALAS - GET
+        [HttpGet]
+        public IActionResult RegistroSala()
+        {
+            return View("RegistroSala", new AñadirModeloSala());
+        }
+
+        // REGISTRO SALAS - POST
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> RegistroSala(AñadirModeloSala model)
+        {
+            if (!ModelState.IsValid)
+                return View("RegistroSala", model);
+
+            await _salaService.AddSala(model);
+
+            TempData["Success"] = "Sala registrada correctamente.";
+            return RedirectToAction("VerSalas");
+        }
+
+
+
         [HttpGet]
         public async Task<IActionResult> VerEquipos()
         {
@@ -131,14 +156,16 @@ namespace MvcSample.Controllers
         public async Task<IActionResult> RegistroEquipos()
         {
             var salas = await _salaService.GetSalas();
-            ViewBag.Salas = salas.Select(s => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+
+            ViewBag.Salas = salas.Select(s => new SelectListItem
             {
                 Value = s.Id.ToString(),
-                //Text = s.NumeroSalon
+                Text = s.NumeroSalon.ToString()   // <-- ESTO ES LO QUE FALTABA
             }).ToList();
 
             return View(new AñadirModeloComputador());
         }
+
 
         // REGISTRO POST
         [HttpPost]
@@ -207,5 +234,6 @@ namespace MvcSample.Controllers
                 //Text = s.NumeroSalon
             }).ToList();
         }
+
     }
 }
