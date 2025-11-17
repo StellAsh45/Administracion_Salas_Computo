@@ -1,5 +1,51 @@
 ﻿@{
-    ViewData["Title"] = "Panel Usuario";
+    ViewData["Title"] = "Panel del Usuario";
 }
 
-<h2>Panel del Usuario</h2>
+<div class="panel-bg">
+
+    <!-- TITULO -->
+    <div class="panel-title mt-4">
+        <h1>Panel del Usuario</h1>
+        <h4>Bienvenido @User.Identity.Name</h4>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success w-50 mx-auto mt-4">@TempData["Success"]</div>
+    }
+
+    <!-- TARJETAS DEL USUARIO -->
+    <div class="d-flex justify-content-center mt-5 gap-5 flex-wrap">
+
+        <!-- VER EQUIPOS -->
+        <div class="panel-card">
+            <div class="icon-wrapper">
+                <i class="bi bi-display"></i>
+            </div>
+
+            <h5 class="fw-bold">Ver equipos</h5>
+            <p class="text-muted">Consultar los equipos disponibles</p>
+
+            <a asp-controller="Usuario" asp-action="VerEquipos" class="btn btn-open">
+                Abrir
+            </a>
+        </div>
+
+        <!-- SOLICITUDES -->
+        <div class="panel-card">
+            <div class="icon-wrapper">
+                <i class="bi bi-envelope-fill"></i>
+            </div>
+
+            <h5 class="fw-bold">Mis Solicitudes</h5>
+            <p class="text-muted">Ver el estado de tus solicitudes</p>
+
+            <a asp-controller="Usuario" asp-action="VerSolicitudes" class="btn btn-open">
+                Abrir
+            </a>
+        </div>
+
+    </div>
+
+</div>
