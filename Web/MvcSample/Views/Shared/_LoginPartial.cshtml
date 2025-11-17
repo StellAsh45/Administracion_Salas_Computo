@@ -1,29 +1,40 @@
 ﻿@using System.Security.Claims
 
-<ul class="navbar-nav">
+<!-- Saludo a la izquierda -->
+<ul class="navbar-nav me-auto">
     @if (User?.Identity?.IsAuthenticated ?? false)
     {
         <li class="nav-item">
             @{
                 var roleClaim = User.FindFirstValue(ClaimTypes.Role) ?? string.Empty;
                 var displayName = User.FindFirstValue(ClaimTypes.Name)
-                                  ?? User.FindFirstValue(ClaimTypes.Email)
-                                  ?? User.Identity?.Name
-                                  ?? "usuario";
+                ?? User.FindFirstValue(ClaimTypes.Email)
+                ?? User.Identity?.Name
+                ?? "usuario";
 
                 string roleDisplay = roleClaim switch
                 {
                     "Coordinador de Sala" => "Coordinador de Sala",
                     "Administrador" => "Administrador",
                     "Usuario" => "Usuario",
+                    _ => "Usuario"
                 };
             }
             <span class="nav-link text-dark">Bienvenido @roleDisplay @displayName</span>
         </li>
+    }
+</ul>
+
+<!-- Cerrar sesión a la derecha -->
+<ul class="navbar-nav ms-auto">
+    @if (User?.Identity?.IsAuthenticated ?? false)
+    {
         <li class="nav-item">
             <form class="form-inline" asp-controller="Home" asp-action="CerrarSesion" method="post">
                 @Html.AntiForgeryToken()
-                <button type="submit" class="nav-link btn btn-link text-dark">Cerrar sesión</button>
+                <button type="submit" class="nav-link btn btn-link text-dark">
+                    Cerrar sesión
+                </button>
             </form>
         </li>
     }

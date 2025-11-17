@@ -36,27 +36,28 @@ body {
 }
 /* Fondo degradado como la imagen */
 .panel-bg {
-    min-height: 100vh;
-    background: linear-gradient(to bottom right, #03a9f4, #673ab7);
+    padding: 10px;
+    min-height: 70vh;
+    background: white;
     padding-bottom: 60px;
 }
 
 /* Navbar */
 .custom-navbar {
     background: transparent;
-    color: white;
+    color: #1e5bd4;
     padding: 20px 40px;
     font-size: 18px;
 }
 
     .custom-navbar a {
-        color: white;
+        color: #1e5bd4;
         text-decoration: none;
     }
 
 /* Tarjetas */
 .panel-card {
-    background: white;
+    background: #d6eadf;
     border-radius: 18px;
     padding: 35px 25px;
     text-align: center;
@@ -76,16 +77,18 @@ body {
         font-size: 32px;
         margin: 0 auto 15px;
     }
-
-/* Botón Abrir */
-.btn-open {
-    width: 100%;
-    background: #1e5bd4;
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 20px;
-}
+    .panel-card .fw-bold{
+        color: black;
+    }
+    /* Botón Abrir */
+    .btn-open {
+        width: 100%;
+        background: #1e5bd4;
+        color: white;
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
 
     .btn-open:hover {
         background: #144aaf;
@@ -93,7 +96,7 @@ body {
 
 /* Texto blanco superior */
 .panel-title {
-    color: white;
+    color: black;
     padding-left: 40px;
 }
 
@@ -186,79 +189,4 @@ body {
     background: #ffbaba;
 }
 
-
-/*estulos versalas*/
-
-/* Contenedor general igual al módulo de usuarios */
-.salas-table-container {
-    background: #fff;
-    padding: 30px;
-    border-radius: 16px;
-    border: 1px solid #ddd;
-    margin-top: 20px;
-}
-
-    /* Título */
-    .salas-table-container h2 {
-        font-size: 22px;
-        font-weight: bold;
-        color: #000;
-    }
-
-/* Botón Registrar sala */
-.btn-agregar-sala {
-    background: #0b0b32;
-    color: white !important;
-    padding: 10px 10px;
-    margin: 5px;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-    .btn-agregar-sala:hover {
-        background: #121241;
-    }
-
-/* Botón Volver */
-.btn-volver-sala {
-    background: #f1f1f5;
-    border-radius: 8px;
-    padding: 6px 10px;
-    margin-right: 6px;
-    text-decoration: none;
-    display: inline-block;
-    color: #000;
-}
-
-    .btn-volver-sala:hover {
-        background: #e4e4e6;
-    }
-
-/* Títulos de tabla igual que usuarios */
-.salas-table th {
-    color: #000 !important;
-    font-weight: bold;
-}
-
-/* Acciones tipo “icon-btn” como usuarios */
-.icon-btn {
-    background: #f1f1f5;
-    border-radius: 8px;
-    padding: 6px 10px;
-    margin-right: 6px;
-    text-decoration: none;
-    display: inline-block;
-    color: #000;
-}
-
-    .icon-btn:hover {
-        background: #e4e4e6;
-    }
-
-    .icon-btn.delete {
-        background: #ffe0e0;
-    }
-
-        .icon-btn.delete:hover {
-            background: #ffbaba;
-        }
+/*Nav-bar*/
