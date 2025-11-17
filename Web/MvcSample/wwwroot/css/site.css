@@ -36,27 +36,28 @@ body {
 }
 /* Fondo degradado como la imagen */
 .panel-bg {
-    min-height: 100vh;
-    background: linear-gradient(to bottom right, #03a9f4, #673ab7);
+    padding: 10px;
+    min-height: 70vh;
+    background: white;
     padding-bottom: 60px;
 }
 
 /* Navbar */
 .custom-navbar {
     background: transparent;
-    color: white;
+    color: #1e5bd4;
     padding: 20px 40px;
     font-size: 18px;
 }
 
     .custom-navbar a {
-        color: white;
+        color: #1e5bd4;
         text-decoration: none;
     }
 
 /* Tarjetas */
 .panel-card {
-    background: white;
+    background: #d6eadf;
     border-radius: 18px;
     padding: 35px 25px;
     text-align: center;
@@ -76,16 +77,18 @@ body {
         font-size: 32px;
         margin: 0 auto 15px;
     }
-
-/* Botón Abrir */
-.btn-open {
-    width: 100%;
-    background: #1e5bd4;
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 20px;
-}
+    .panel-card .fw-bold{
+        color: black;
+    }
+    /* Botón Abrir */
+    .btn-open {
+        width: 100%;
+        background: #1e5bd4;
+        color: white;
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
 
     .btn-open:hover {
         background: #144aaf;
@@ -93,7 +96,7 @@ body {
 
 /* Texto blanco superior */
 .panel-title {
-    color: white;
+    color: black;
     padding-left: 40px;
 }
 
@@ -185,3 +188,5 @@ body {
 .icon-btn.delete:hover {
     background: #ffbaba;
 }
+
+/*Nav-bar*/

@@ -1,85 +1,83 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\",
+  "WorkspaceRootPath": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\user\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\gestion_equipos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\administrador\\gestion_equipos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\user\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\principal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\principal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\administrador\\principal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 100,
+      "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 131,
-          "SelectedChildIndex": 9,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAABgAAAAAAAAAAAAmwGkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-15T05:26:07.234Z",
+              "Title": "Gestion_Equipos.cshtml",
+              "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\Gestion_Equipos.cshtml",
+              "RelativeDocumentMoniker": "Views\\Administrador\\Gestion_Equipos.cshtml",
+              "ToolTip": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\Gestion_Equipos.cshtml",
+              "RelativeToolTip": "Views\\Administrador\\Gestion_Equipos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-17T17:29:10.629Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Principal.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\Principal.cshtml",
-              "RelativeDocumentMoniker": "Views\\Administrador\\Principal.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\Principal.cshtml",
-              "RelativeToolTip": "Views\\Administrador\\Principal.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-14T15:16:15.378Z",
+              "WhenOpened": "2025-11-17T17:06:16.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Principal.cshtml",
+              "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\Principal.cshtml",
+              "RelativeDocumentMoniker": "Views\\Administrador\\Principal.cshtml",
+              "ToolTip": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\Principal.cshtml",
+              "RelativeToolTip": "Views\\Administrador\\Principal.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-17T16:54:49.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAAMAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-17T16:43:38.818Z",
               "EditorCaption": ""
             }
           ]
