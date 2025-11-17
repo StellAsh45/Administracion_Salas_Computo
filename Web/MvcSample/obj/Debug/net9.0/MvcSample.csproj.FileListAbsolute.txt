@@ -1053,7 +1053,6 @@ C:\Users\USER\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\bin\De
 C:\Users\USER\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\USER\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\USER\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
-C:\Users\USER\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\compressed\0g9ctsh4i3-jmzst77kb8.gz
 C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\bin\Debug\net9.0\appsettings.json
 C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\bin\Debug\net9.0\MvcSample.staticwebassets.runtime.json
@@ -1398,3 +1397,4 @@ C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSa
 C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\MvcSample.pdb
 C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\MvcSample.genruntimeconfig.cache
 C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\ref\MvcSample.dll
+C:\Users\USER\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\compressed\0g9ctsh4i3-qa5qzpxt0e.gz
