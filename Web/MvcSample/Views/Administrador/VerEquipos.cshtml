@@ -1,0 +1,81 @@
+﻿<div class="equipos-table-container">
+
+    <div class="header-equipos">
+        <h2>Equipos registrados</h2>
+
+        <div class="acciones-derecha">
+            <a class="btn-agregar-equipo" asp-controller="Administrador" asp-action="RegistroEquipo">
+                + Registrar equipo
+            </a>
+
+            <a class="btn-agregar-equipo" asp-controller="Administrador" asp-action="Principal">
+                Volver
+            </a>
+        </div>
+
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+
+    <table class="table table-striped equipos-table">
+        <thead>
+            <tr>
+                <th>ID del Equipo</th>
+                <th>Estado</th>
+                <th>Sala</th>
+                <th>Asignado a Usuario</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var equipo in Model)
+            {
+                <tr>
+                    <td>@equipo.Id</td>
+                    <td>@equipo.Estado</td>
+                    <td>@equipo.SalaId</td>
+                    <td>
+                        @if (equipo.UsuarioId == null)
+                        {
+                            <span>No asignado</span>
+                        }
+                        else
+                        {
+                            <span>@equipo.UsuarioId</span>
+                        }
+                    </td>
+
+                    <td>
+
+                        <a class="icon-btn"
+                           asp-controller="Administrador"
+                           asp-action="EditarEquipo"
+                           asp-route-id="@equipo.Id">
+                            Editar
+                        </a>
+
+                        <form asp-controller="Administrador"
+                              asp-action="BorrarEquipo"
+                              method="post"
+                              style="display:inline;">
+
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="id" value="@equipo.Id" />
+
+                            <button type="submit"
+                                    class="icon-btn delete"
+                                    onclick="return confirm('¿Está seguro que desea eliminar el equipo con ID @equipo.Id?');">
+                                Eliminar
+                            </button>
+                        </form>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

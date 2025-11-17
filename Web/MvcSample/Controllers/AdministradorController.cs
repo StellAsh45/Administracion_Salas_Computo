@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Services;
 using Services.Models.ModelosUsuario;
 using Services.Models.ModelosSala;
+using Services.Models.ModelosComputador;
 
 namespace MvcSample.Controllers
 {
@@ -12,11 +13,13 @@ namespace MvcSample.Controllers
     {
         private readonly IUsuarioService _usuarioService;
         private readonly ISalaService _salaService;
+        private readonly IComputadorService _computadorService;
 
-        public AdministradorController(IUsuarioService usuarioService, ISalaService salaService)
+        public AdministradorController(IUsuarioService usuarioService, ISalaService salaService, IComputadorService computadorService)
         {
             _usuarioService = usuarioService;
-            _salaService = salaService;   
+            _salaService = salaService;
+            _computadorService = computadorService;
         }
 
         [HttpGet]
@@ -74,7 +77,7 @@ namespace MvcSample.Controllers
         {
             var usuario = await _usuarioService.GetUsuario(id);
             if (usuario == null) return NotFound();
-            return View("EditarUsuario", usuario); 
+            return View("EditarUsuario", usuario);
         }
 
         // Editar - POST
@@ -82,7 +85,7 @@ namespace MvcSample.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditarUsuario(ModeloUsuario model)
         {
-            if (!ModelState.IsValid) return View("EditarUsuario", model); 
+            if (!ModelState.IsValid) return View("EditarUsuario", model);
 
             try
             {
@@ -93,7 +96,7 @@ namespace MvcSample.Controllers
             catch (Exception ex)
             {
                 ModelState.AddModelError(string.Empty, ex.Message);
-                return View("EditarUsuario", model); 
+                return View("EditarUsuario", model);
             }
         }
 
@@ -114,11 +117,95 @@ namespace MvcSample.Controllers
             salas ??= new List<ModeloSala>();
             return View("VerSalas", salas);
         }
-
         [HttpGet]
-        public IActionResult RegistroSala()
+        public async Task<IActionResult> VerEquipos()
         {
-            return View(new AñadirModeloSala());
+            var equipos = await _computadorService.GetComputadores();
+            equipos ??= new List<ModeloComputador>();
+
+            return View("VerEquipos", equipos);
+        }
+
+        // REGISTRO GET
+        [HttpGet]
+        public async Task<IActionResult> RegistroEquipos()
+        {
+            var salas = await _salaService.GetSalas();
+            ViewBag.Salas = salas.Select(s => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+            {
+                Value = s.Id.ToString(),
+                //Text = s.NumeroSalon
+            }).ToList();
+
+            return View(new AñadirModeloComputador());
+        }
+
+        // REGISTRO POST
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> RegistroEquipos(AñadirModeloComputador model)
+        {
+            if (!ModelState.IsValid)
+            {
+                await CargarSalas();
+                return View(model);
+            }
+
+            await _computadorService.AddComputador(model);
+
+            TempData["Success"] = "Equipo registrado correctamente.";
+            return RedirectToAction("VerEquipos");
+        }
+
+        // EDITAR GET
+        [HttpGet]
+        public async Task<IActionResult> EditarEquipo(Guid id)
+        {
+            var equipo = await _computadorService.GetComputador(id);
+            if (equipo == null) return NotFound();
+
+            await CargarSalas();
+
+            return View("EditarEquipo", equipo);
+        }
+
+        // EDITAR POST
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditarEquipo(ModeloComputador model)
+        {
+            if (!ModelState.IsValid)
+            {
+                await CargarSalas();
+                return View("EditarEquipo", model);
+            }
+
+            await _computadorService.UpdateComputador(model);
+            TempData["Success"] = "Equipo actualizado correctamente.";
+            return RedirectToAction("VerEquipos");
+        }
+
+        // ELIMINAR
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> BorrarEquipo(Guid id)
+        {
+            await _computadorService.DeleteComputador(id);
+            TempData["Success"] = "Equipo eliminado correctamente.";
+            return RedirectToAction("VerEquipos");
+        }
+
+        // --------------------------------------
+        // MÉTODO PARA LLENAR DROPDOWN
+        // --------------------------------------
+        private async Task CargarSalas()
+        {
+            var salas = await _salaService.GetSalas();
+            ViewBag.Salas = salas.Select(s => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+            {
+                Value = s.Id.ToString(),
+                //Text = s.NumeroSalon
+            }).ToList();
         }
     }
 }
