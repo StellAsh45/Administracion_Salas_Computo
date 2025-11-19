@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Usuarios registrados";
+    var correoActual = User.Identity?.Name;
 }
 
 <div class="usuarios-container">
@@ -24,6 +25,11 @@
     @if (TempData["Success"] != null)
     {
         <div class="alert alert-success">@TempData["Success"]</div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
     }
 
     <table class="table usuarios-table">
@@ -61,9 +67,17 @@
                         <a class="icon-btn" asp-controller="Administrador" asp-action="EditarUsuario" asp-route-id="@u.Id">
                             <i class="bi bi-pencil"></i>
                         </a>
-                        <a class="icon-btn delete" asp-controller="Administrador" asp-action="BorrarUsuario" asp-route-id="@u.Id">
-                            <i class="bi bi-trash"></i>
-                        </a>
+
+                        @if (u.Rol != "Administrador")
+                        {
+                            <form asp-controller="Administrador" asp-action="BorrarUsuario" method="post" style="display:inline;">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@u.Id" />
+                                <button type="submit" class="icon-btn delete" onclick="return confirm('¿Está seguro que desea eliminar al usuario @u.Nombre?');">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </form>
+                        }
                     </td>
                 </tr>
             }

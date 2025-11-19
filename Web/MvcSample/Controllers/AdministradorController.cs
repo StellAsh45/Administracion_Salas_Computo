@@ -104,7 +104,7 @@ namespace MvcSample.Controllers
         // Eliminar - POST
         [HttpPost, ActionName("BorrarUsuario")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> BorrarUsuarioConfirmed(Guid id)
+        public async Task<IActionResult> BorrarUsuario(Guid id)
         {
             await _usuarioService.DeleteUsuario(id);
             TempData["Success"] = "Usuario eliminado correctamente.";
