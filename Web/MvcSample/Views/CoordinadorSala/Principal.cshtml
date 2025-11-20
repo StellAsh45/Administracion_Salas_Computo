@@ -18,7 +18,7 @@
     <!-- CARDS -->
     <div class="d-flex justify-content-center mt-5 gap-5 flex-wrap">
 
-        <!-- TARJETA USUARIOS -->
+        <!-- TARJETA SOLICITUDES -->
         <div class="panel-card">
             <div class="icon-wrapper">
                 <i class="bi bi-people-fill"></i>
@@ -26,7 +26,7 @@
             <h5 class="fw-bold">Solicitudes de Usuarios</h5>
             <p class="text-muted">Ver solicitudes de Prestamo</p>
 
-            <a asp-controller="CoordinadorSala" asp-action="VerUsuarios" class="btn btn-open">
+            <a asp-controller="CoordinadorSala" asp-action="Solicitudes" class="btn btn-open">
                 Abrir
             </a>
         </div>
@@ -39,7 +39,7 @@
             <h5 class="fw-bold">Disponibilidad de Salas</h5>
             <p class="text-muted">Administrar salas</p>
 
-            <a asp-controller="CoordinadorSala" asp-action="VerSalas" class="btn btn-open">
+            <a asp-controller="CoordinadorSala" asp-action="OcupacionDiaria" class="btn btn-open">
                 Abrir
             </a>
         </div>
@@ -53,6 +53,32 @@
             <p class="text-muted">Disponibilidad de equipos</p>
 
             <a asp-controller="CoordinadorSala" asp-action="VerEquipos" class="btn btn-open">
+                Abrir
+            </a>
+        </div>
+
+        <!-- TARJETA OCUPACIÓN SEMANAL -->
+        <div class="panel-card">
+            <div class="icon-wrapper">
+                <i class="bi bi-calendar-week"></i>
+            </div>
+            <h5 class="fw-bold">Ocupación Semanal</h5>
+            <p class="text-muted">Planifica horarios</p>
+
+            <a asp-controller="CoordinadorSala" asp-action="OcupacionSemanal" class="btn btn-open">
+                Abrir
+            </a>
+        </div>
+
+        <!-- TARJETA REPORTES -->
+        <div class="panel-card">
+            <div class="icon-wrapper">
+                <i class="bi bi-file-earmark-bar-graph"></i>
+            </div>
+            <h5 class="fw-bold">Reportes</h5>
+            <p class="text-muted">Estados de equipos y salas</p>
+
+            <a asp-controller="CoordinadorSala" asp-action="ReportesEquipos" class="btn btn-open">
                 Abrir
             </a>
         </div>

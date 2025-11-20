@@ -1,0 +1,76 @@
+@using System
+@using System.Collections.Generic
+@model IList<Services.Models.ModelosReporte.ModeloReporte>
+@{
+    var usuarios = ViewBag.Usuarios as IDictionary<Guid, string> ?? new Dictionary<Guid, string>();
+}
+
+<div class="equipos-table-container">
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+        <div>
+            <h2>Reportes de equipos</h2>
+            <p>Genera y consulta el estado de los equipos</p>
+        </div>
+        <div class="d-flex gap-2">
+            <form asp-action="GenerarReporteEquipos" method="post">
+                @Html.AntiForgeryToken()
+                <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-arrow-repeat me-1"></i>Generar nuevo
+                </button>
+            </form>
+            <a class="btn btn-light text-primary fw-bold" asp-action="ReportesSalas">
+                Reportes de salas
+            </a>
+            <a class="btn-agregar-equipo" asp-action="Principal">
+                <i class="bi bi-arrow-left me-1"></i>Volver
+            </a>
+        </div>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+
+    <table class="table equipos-table">
+        <thead>
+            <tr>
+                <th>Fecha de generación</th>
+                <th>Generado por</th>
+                <th>Contenido</th>
+                <th class="text-end">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model == null || Model.Count == 0)
+            {
+                <tr>
+                    <td colspan="3" class="text-center text-muted py-4">No hay reportes registrados</td>
+                </tr>
+            }
+            else
+            {
+                foreach (var reporte in Model)
+                {
+                    <tr>
+                        <td>@reporte.FechaGeneracion.ToString("g")</td>
+                        <td>@(usuarios.TryGetValue(reporte.UsuarioId, out var nombre) ? nombre : reporte.UsuarioId.ToString())</td>
+                        <td>
+                            <pre class="bg-light rounded p-3 mb-0">@reporte.Contenido</pre>
+                        </td>
+                        <td class="text-end">
+                            <form asp-action="EliminarReporteEquipos" method="post">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@reporte.Id" />
+                                <button type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('¿Deseas eliminar este reporte?');">
+                                    <i class="bi bi-trash me-1"></i>Eliminar
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+

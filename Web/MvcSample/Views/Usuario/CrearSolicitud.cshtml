@@ -1,0 +1,65 @@
+@model Services.Models.ModelosSolicitud.AñadirModeloSolicitud
+
+@{
+    ViewData["Title"] = "Solicitud de equipo";
+    var tipo = ViewBag.TipoSolicitud as string ?? "Asignación de equipo";
+    var salas = ViewBag.Salas as SelectList ?? new SelectList(Enumerable.Empty<SelectListItem>());
+    var computadores = ViewBag.Computadores as SelectList ?? new SelectList(Enumerable.Empty<SelectListItem>());
+}
+
+<div class="registro-card">
+    <h2 class="mb-3">@tipo</h2>
+    <p class="text-muted">Completa el formulario y envía tu solicitud al coordinador</p>
+
+    <form asp-action="CrearSolicitud" method="post">
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="tipo" value="@Model.Tipo" />
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Sala (opcional)</label>
+                @Html.DropDownListFor(m => m.SalaId, salas, "-- Selecciona una sala --", new { @class = "form-select" })
+            </div>
+            <div class="col-md-6 mb-3">
+                <label asp-for="ComputadorId" class="form-label">Equipo</label>
+                @Html.DropDownListFor(m => m.ComputadorId, computadores, "-- Selecciona un equipo --", new { @class = "form-select" })
+                <span asp-validation-for="ComputadorId" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label asp-for="FechaInicio" class="form-label">Fecha de inicio</label>
+                <input asp-for="FechaInicio" type="datetime-local" class="form-control" />
+                <span asp-validation-for="FechaInicio" class="text-danger"></span>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label asp-for="FechaFin" class="form-label">Fecha de finalización</label>
+                <input asp-for="FechaFin" type="datetime-local" class="form-control" />
+                <span asp-validation-for="FechaFin" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Descripcion" class="form-label">Descripción / Observaciones</label>
+            <textarea asp-for="Descripcion" class="form-control" rows="4" placeholder="Motivo, horario o detalles adicionales"></textarea>
+            <span asp-validation-for="Descripcion" class="text-danger"></span>
+        </div>
+
+        <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+        <div class="d-flex gap-3">
+            <button type="submit" class="btn btn-primary">
+                <i class="bi bi-send-check me-1"></i>Enviar solicitud
+            </button>
+            <a asp-action="Principal" class="btn btn-light text-primary fw-bold">Cancelar</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

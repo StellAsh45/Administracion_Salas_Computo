@@ -9,6 +9,8 @@ namespace Services.Models.ModelosReporte
     public class AñadirModeloReporte
     {
         public Guid UsuarioId { get; set; }
-        public string Contenido { get; set; }
+        public string Tipo { get; set; } = string.Empty;
+        public string Contenido { get; set; } = string.Empty;
+        public DateTime FechaGeneracion { get; set; } = DateTime.Now;
     }
 }

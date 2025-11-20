@@ -14,5 +14,6 @@ namespace Services
         Task AddReporte(AñadirModeloReporte model);
         Task DeleteReporte(Guid id);
         Task<IList<ModeloReporte>> GetByUsuario(Guid usuarioId);
+        Task<IList<ModeloReporte>> GetByTipo(string tipo);
     }
 }

@@ -17,6 +17,7 @@ namespace Infrastructure.Repositories
             return await context.Solicitudes
                 .Include(s => s.Usuario)
                 .Include(s => s.Computador)
+                .Include(s => s.Sala)
                 .ToListAsync();
         }
 
@@ -25,6 +26,7 @@ namespace Infrastructure.Repositories
             return await context.Solicitudes
                 .Include(s => s.Usuario)
                 .Include(s => s.Computador)
+                .Include(s => s.Sala)
                 .FirstOrDefaultAsync(s => s.Id == id);
         }
 
@@ -86,6 +88,7 @@ namespace Infrastructure.Repositories
                 .Where(s => s.Estado == estado)
                 .Include(s => s.Usuario)
                 .Include(s => s.Computador)
+                .Include(s => s.Sala)
                 .ToListAsync();
         }
 

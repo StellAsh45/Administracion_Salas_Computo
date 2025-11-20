@@ -1,0 +1,63 @@
+@using Services.Models.ModelosComputador
+@model OcupacionDiariaModel
+
+@{
+    ViewData["Title"] = "Ocupación diaria";
+}
+
+<div class="equipos-table-container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2>Ocupación diaria</h2>
+            <p>Consulta la disponibilidad sala por sala</p>
+        </div>
+        <a class="btn-agregar-equipo" asp-action="Principal">
+            <i class="bi bi-arrow-left me-1"></i>Volver
+        </a>
+    </div>
+
+    <form method="get" class="row g-3 mb-4">
+        <div class="col-md-4">
+            <label class="form-label text-muted">Selecciona una fecha</label>
+            <input class="form-control" type="date" name="fecha" value="@Model.Fecha.ToString("yyyy-MM-dd")" onchange="this.form.submit()" />
+        </div>
+    </form>
+
+    <table class="table equipos-table">
+        <thead>
+            <tr>
+                <th>Sala</th>
+                <th>Capacidad</th>
+                <th>Equipos registrados</th>
+                <th>Equipos en uso</th>
+                <th>Disponibles</th>
+                <th>Ocupación</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Detalles == null || Model.Detalles.Count == 0)
+            {
+                <tr>
+                    <td colspan="6" class="text-center text-muted py-4">No hay salas registradas</td>
+                </tr>
+            }
+            else
+            {
+                foreach (var detalle in Model.Detalles)
+                {
+                    <tr>
+                        <td>@detalle.SalaNombre</td>
+                        <td>@detalle.Capacidad</td>
+                        <td>@detalle.EquiposRegistrados</td>
+                        <td>@detalle.EquiposOcupados</td>
+                        <td>@detalle.EquiposDisponibles</td>
+                        <td>
+                            <span class="tag tag-mantenimiento">@detalle.PorcentajeOcupacion %</span>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+

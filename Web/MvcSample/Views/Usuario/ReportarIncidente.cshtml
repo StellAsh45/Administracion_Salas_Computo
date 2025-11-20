@@ -1,0 +1,52 @@
+@model Services.Models.ModelosSolicitud.AñadirModeloSolicitud
+
+@{
+    ViewData["Title"] = "Reporte al coordinador";
+    var tipo = ViewBag.TipoSolicitud as string ?? "Reporte de incidente";
+    var salas = ViewBag.Salas as SelectList ?? new SelectList(Enumerable.Empty<SelectListItem>());
+    var computadores = ViewBag.Computadores as SelectList ?? new SelectList(Enumerable.Empty<SelectListItem>());
+}
+
+<div class="registro-card">
+    <h2 class="mb-3">@tipo</h2>
+    <p class="text-muted">Describe el problema para que el coordinador pueda ayudarte</p>
+
+    <form asp-action="ReportarIncidente" method="post">
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="tipo" value="@Model.Tipo" />
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Sala</label>
+                @Html.DropDownListFor(m => m.SalaId, salas, "-- Selecciona una sala --", new { @class = "form-select" })
+            </div>
+            <div class="col-md-6 mb-3">
+                <label asp-for="ComputadorId" class="form-label">Equipo</label>
+                @Html.DropDownListFor(m => m.ComputadorId, computadores, "-- Selecciona un equipo --", new { @class = "form-select" })
+                <span asp-validation-for="ComputadorId" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Descripcion" class="form-label">Descripción del incidente</label>
+            <textarea asp-for="Descripcion" class="form-control" rows="5" placeholder="Describe el daño, problema técnico o solicitud de apoyo"></textarea>
+            <span asp-validation-for="Descripcion" class="text-danger"></span>
+        </div>
+
+        <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+        <div class="d-flex gap-3">
+            <button type="submit" class="btn btn-primary">
+                <i class="bi bi-flag me-1"></i>Enviar reporte
+            </button>
+            <a asp-action="Principal" class="btn btn-light text-primary fw-bold">Cancelar</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

@@ -16,34 +16,78 @@
     }
 
     <!-- TARJETAS DEL USUARIO -->
-    <div class="d-flex justify-content-center mt-5 gap-5 flex-wrap">
+    <div class="d-flex justify-content-center mt-5 gap-4 flex-wrap">
 
-        <!-- VER EQUIPOS -->
+        <div class="panel-card">
+            <div class="icon-wrapper">
+                <i class="bi bi-door-open"></i>
+            </div>
+            <h5 class="fw-bold">Salas</h5>
+            <p class="text-muted">Consulta disponibilidad</p>
+            <a asp-controller="Usuario" asp-action="VerSalas" class="btn btn-open">Abrir</a>
+        </div>
+
         <div class="panel-card">
             <div class="icon-wrapper">
                 <i class="bi bi-display"></i>
             </div>
-
-            <h5 class="fw-bold">Ver equipos</h5>
-            <p class="text-muted">Consultar los equipos disponibles</p>
-
-            <a asp-controller="Usuario" asp-action="VerEquipos" class="btn btn-open">
-                Abrir
-            </a>
+            <h5 class="fw-bold">Equipos</h5>
+            <p class="text-muted">Ver estado y salas</p>
+            <a asp-controller="Usuario" asp-action="VerEquipos" class="btn btn-open">Abrir</a>
         </div>
 
-        <!-- SOLICITUDES -->
         <div class="panel-card">
             <div class="icon-wrapper">
-                <i class="bi bi-envelope-fill"></i>
+                <i class="bi bi-send-check"></i>
             </div>
+            <h5 class="fw-bold">Solicitar equipo</h5>
+            <p class="text-muted">Asignación inmediata</p>
+            <a asp-controller="Usuario" asp-action="CrearSolicitud" asp-route-tipo="Asignacion" class="btn btn-open">Abrir</a>
+        </div>
 
-            <h5 class="fw-bold">Mis Solicitudes</h5>
-            <p class="text-muted">Ver el estado de tus solicitudes</p>
+        <div class="panel-card">
+            <div class="icon-wrapper">
+                <i class="bi bi-calendar-check"></i>
+            </div>
+            <h5 class="fw-bold">Préstamo anticipado</h5>
+            <p class="text-muted">Reserva con tiempo</p>
+            <a asp-controller="Usuario" asp-action="CrearSolicitud" asp-route-tipo="Prestamo" class="btn btn-open">Abrir</a>
+        </div>
 
-            <a asp-controller="Usuario" asp-action="VerSolicitudes" class="btn btn-open">
-                Abrir
-            </a>
+        <div class="panel-card">
+            <div class="icon-wrapper">
+                <i class="bi bi-unlock"></i>
+            </div>
+            <h5 class="fw-bold">Liberar equipo</h5>
+            <p class="text-muted">Notifica disponibilidad</p>
+            <a asp-controller="Usuario" asp-action="CrearSolicitud" asp-route-tipo="Liberacion" class="btn btn-open">Abrir</a>
+        </div>
+
+        <div class="panel-card">
+            <div class="icon-wrapper">
+                <i class="bi bi-tools"></i>
+            </div>
+            <h5 class="fw-bold">Reportar daño</h5>
+            <p class="text-muted">Notifícalo al coordinador</p>
+            <a asp-controller="Usuario" asp-action="ReportarIncidente" asp-route-tipo="Danio" class="btn btn-open">Abrir</a>
+        </div>
+
+        <div class="panel-card">
+            <div class="icon-wrapper">
+                <i class="bi bi-chat-dots"></i>
+            </div>
+            <h5 class="fw-bold">Asesoría técnica</h5>
+            <p class="text-muted">Solicita ayuda</p>
+            <a asp-controller="Usuario" asp-action="ReportarIncidente" asp-route-tipo="Asesoria" class="btn btn-open">Abrir</a>
+        </div>
+
+        <div class="panel-card">
+            <div class="icon-wrapper">
+                <i class="bi bi-list-check"></i>
+            </div>
+            <h5 class="fw-bold">Mis solicitudes</h5>
+            <p class="text-muted">Consulta su estado</p>
+            <a asp-controller="Usuario" asp-action="VerSolicitudes" class="btn btn-open">Abrir</a>
         </div>
 
     </div>

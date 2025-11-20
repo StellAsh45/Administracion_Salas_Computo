@@ -14,6 +14,7 @@ namespace Infrastructure.Repositories
         Task Save(Reporte reporte);
         Task Delete(Guid id);
         Task<IList<Reporte>> GetByUsuario(Guid usuarioId);
+        Task<IList<Reporte>> GetByTipo(string tipo);
     }
 }
 

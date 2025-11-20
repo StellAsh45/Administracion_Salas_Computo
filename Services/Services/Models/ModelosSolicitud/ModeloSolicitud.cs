@@ -11,8 +11,11 @@ namespace Services.Models.ModelosSolicitud
         public Guid Id { get; set; }
         public Guid UsuarioId { get; set; }
         public Guid ComputadorId { get; set; }
+        public Guid? SalaId { get; set; }
         public DateTime FechaInicio { get; set; }
         public DateTime FechaFin { get; set; }
-        public string Estado { get; set; }
+        public string Estado { get; set; } = string.Empty;
+        public string Tipo { get; set; } = string.Empty;
+        public string Descripcion { get; set; } = string.Empty;
     }
 }

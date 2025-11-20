@@ -14,5 +14,6 @@ namespace Services
         Task AddComputador(AñadirModeloComputador model);
         Task UpdateComputador(ModeloComputador model);
         Task DeleteComputador(Guid id);
+        Task SetEstado(Guid computadorId, string estado);
     }
 }

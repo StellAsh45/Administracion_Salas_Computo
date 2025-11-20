@@ -123,6 +123,10 @@ namespace Infrastructure.Migrations
                     b.Property<DateTime>("FechaGeneracion")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Tipo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<Guid>("UsuarioId")
                         .HasColumnType("uniqueidentifier");
 

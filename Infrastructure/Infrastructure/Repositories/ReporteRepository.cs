@@ -69,5 +69,13 @@ namespace Infrastructure.Repositories
                 .Include(r => r.Usuario)
                 .ToListAsync();
         }
+
+        public async Task<IList<Reporte>> GetByTipo(string tipo)
+        {
+            return await context.Reportes
+                .Where(r => r.Tipo == tipo)
+                .Include(r => r.Usuario)
+                .ToListAsync();
+        }
     }
 }

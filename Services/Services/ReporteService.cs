@@ -32,6 +32,10 @@ namespace Services
 
         public async Task AddReporte(AñadirModeloReporte model)
         {
+            if (model.FechaGeneracion == default)
+            {
+                model.FechaGeneracion = DateTime.Now;
+            }
             await repo.Save(mapper.Map<Domain.Reporte>(model));
         }
 
@@ -43,6 +47,11 @@ namespace Services
         public async Task<IList<ModeloReporte>> GetByUsuario(Guid usuarioId)
         {
             return mapper.Map<IList<ModeloReporte>>(await repo.GetByUsuario(usuarioId));
+        }
+
+        public async Task<IList<ModeloReporte>> GetByTipo(string tipo)
+        {
+            return mapper.Map<IList<ModeloReporte>>(await repo.GetByTipo(tipo));
         }
     }
 }

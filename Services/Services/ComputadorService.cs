@@ -53,6 +53,16 @@ namespace Services
         {
             await repo.Delete(id);
         }
+
+        public async Task SetEstado(Guid computadorId, string estado)
+        {
+            if (string.IsNullOrWhiteSpace(estado))
+            {
+                throw new ArgumentException("El estado no puede estar vacío.", nameof(estado));
+            }
+
+            await repo.SetEstado(computadorId, estado);
+        }
     }
 }
 

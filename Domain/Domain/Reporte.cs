@@ -12,6 +12,7 @@ namespace Domain
         [Key]
         public Guid Id { get; set; }
         public Guid UsuarioId { get; set; }
+        public string Tipo { get; set; } = string.Empty;
         public Usuario Usuario { get; set; }
         public DateTime FechaGeneracion { get; set; }
         public string Contenido { get; set; }

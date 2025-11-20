@@ -32,6 +32,14 @@ namespace Services
 
         public async Task AddSolicitud(AñadirModeloSolicitud model)
         {
+            if (string.IsNullOrWhiteSpace(model.Estado))
+            {
+                model.Estado = "Pendiente";
+            }
+            if (string.IsNullOrWhiteSpace(model.Tipo))
+            {
+                model.Tipo = "Asignacion";
+            }
             await repo.Save(mapper.Map<Domain.Solicitud>(model));
         }
 

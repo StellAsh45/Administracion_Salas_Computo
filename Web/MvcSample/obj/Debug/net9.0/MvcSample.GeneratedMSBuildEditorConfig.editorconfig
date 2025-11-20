@@ -68,8 +68,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxWZXJVc3Vhcmlvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/CoordinadorSala/AsignarEquipo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29vcmRpbmFkb3JTYWxhXEFzaWduYXJFcXVpcG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/CoordinadorSala/OcupacionDiaria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29vcmRpbmFkb3JTYWxhXE9jdXBhY2lvbkRpYXJpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/CoordinadorSala/OcupacionSemanal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29vcmRpbmFkb3JTYWxhXE9jdXBhY2lvblNlbWFuYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/CoordinadorSala/Principal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29vcmRpbmFkb3JTYWxhXFByaW5jaXBhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/CoordinadorSala/ReportesEquipos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29vcmRpbmFkb3JTYWxhXFJlcG9ydGVzRXF1aXBvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/CoordinadorSala/ReportesSalas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29vcmRpbmFkb3JTYWxhXFJlcG9ydGVzU2FsYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/CoordinadorSala/Solicitudes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29vcmRpbmFkb3JTYWxhXFNvbGljaXR1ZGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/CoordinadorSala/VerEquipos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29vcmRpbmFkb3JTYWxhXFZlckVxdWlwb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Farm/AddCow.cshtml]
@@ -104,8 +132,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Usuario/CrearSolicitud.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmVhclNvbGljaXR1ZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Usuario/Equipos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFcXVpcG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Usuario/Principal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xQcmluY2lwYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Usuario/ReportarIncidente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xSZXBvcnRhckluY2lkZW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Usuario/Salas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xTYWxhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/Usuario/Solicitudes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xTb2xpY2l0dWRlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Miguel Polo/Documents/GitHub/Administracion_Salas_Computo/Web/MvcSample/Views/_ViewImports.cshtml]

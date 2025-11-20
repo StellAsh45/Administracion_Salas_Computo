@@ -1,0 +1,61 @@
+@model Services.Models.ModelosComputador.AsignarComputadorModel
+
+@{
+    ViewData["Title"] = "Asignar equipo";
+}
+
+<div class="registro-card">
+    <h2 class="mb-3">Asignar equipo a usuario</h2>
+    <p class="text-muted">Selecciona un usuario, un equipo y define el rango de uso</p>
+
+    <form asp-action="AsignarEquipo" asp-controller="CoordinadorSala" method="post">
+        @Html.AntiForgeryToken()
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label asp-for="UsuarioId" class="form-label">Usuario</label>
+                <select asp-for="UsuarioId" class="form-select" asp-items="@(new SelectList(Model.Usuarios, nameof(SelectOption.Value), nameof(SelectOption.Text), Model.UsuarioId))">
+                    <option value="">-- Selecciona un usuario --</option>
+                </select>
+                <span asp-validation-for="UsuarioId" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <label asp-for="ComputadorId" class="form-label">Equipo</label>
+                <select asp-for="ComputadorId" class="form-select" asp-items="@(new SelectList(Model.Computadores, nameof(SelectOption.Value), nameof(SelectOption.Text), Model.ComputadorId))">
+                    <option value="">-- Selecciona un equipo --</option>
+                </select>
+                <span asp-validation-for="ComputadorId" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label asp-for="FechaInicio" class="form-label">Fecha de inicio</label>
+                <input asp-for="FechaInicio" type="datetime-local" class="form-control" />
+                <span asp-validation-for="FechaInicio" class="text-danger"></span>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label asp-for="FechaFin" class="form-label">Fecha de fin</label>
+                <input asp-for="FechaFin" type="datetime-local" class="form-control" />
+                <span asp-validation-for="FechaFin" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+        <div class="d-flex gap-3">
+            <button type="submit" class="btn btn-primary">
+                <i class="bi bi-send-check me-1"></i>Asignar
+            </button>
+            <a asp-action="VerEquipos" class="btn btn-light text-primary fw-bold">Cancelar</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

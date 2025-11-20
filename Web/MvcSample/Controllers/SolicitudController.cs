@@ -51,6 +51,11 @@ namespace MvcSample.Controllers
         public async Task<IActionResult> Create(AñadirModeloSolicitud model)
         {
             if (!ModelState.IsValid) return View(model);
+            model.Estado = "Pendiente";
+            if (string.IsNullOrWhiteSpace(model.Tipo))
+            {
+                model.Tipo = "Asignacion";
+            }
             await _solicitudService.AddSolicitud(model);
             return RedirectToAction(nameof(MyRequests));
         }
