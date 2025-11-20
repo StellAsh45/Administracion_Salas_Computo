@@ -29,8 +29,9 @@
                 <th>Sala</th>
                 <th>Capacidad</th>
                 <th>Equipos registrados</th>
-                <th>Equipos en uso</th>
                 <th>Disponibles</th>
+                <th>En uso</th>
+                <th>Ocupados</th>
                 <th>Ocupación</th>
             </tr>
         </thead>
@@ -38,7 +39,7 @@
             @if (Model.Detalles == null || Model.Detalles.Count == 0)
             {
                 <tr>
-                    <td colspan="6" class="text-center text-muted py-4">No hay salas registradas</td>
+                    <td colspan="7" class="text-center text-muted py-4">No hay salas registradas</td>
                 </tr>
             }
             else
@@ -49,8 +50,9 @@
                         <td>@detalle.SalaNombre</td>
                         <td>@detalle.Capacidad</td>
                         <td>@detalle.EquiposRegistrados</td>
-                        <td>@detalle.EquiposOcupados</td>
                         <td>@detalle.EquiposDisponibles</td>
+                        <td>@detalle.EquiposEnUso</td>
+                        <td>@detalle.EquiposOcupados</td>
                         <td>
                             <span class="tag tag-mantenimiento">@detalle.PorcentajeOcupacion %</span>
                         </td>

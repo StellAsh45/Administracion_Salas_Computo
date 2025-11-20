@@ -21,12 +21,42 @@ namespace Services
 
         public async Task<IList<ModeloComputador>> GetComputadores()
         {
-            return mapper.Map<IList<ModeloComputador>>(await repo.GetComputadores());
+            var computadoresDomain = await repo.GetComputadores();
+            var computadores = mapper.Map<IList<ModeloComputador>>(computadoresDomain);
+            
+            // Poblar SalaDisplay para cada computador usando la relación ya cargada
+            foreach (var comp in computadores)
+            {
+                var compDomain = computadoresDomain.FirstOrDefault(c => c.Id == comp.Id);
+                if (compDomain?.Sala != null)
+                {
+                    comp.SalaDisplay = $"Sala {compDomain.Sala.NumeroSalon}";
+                }
+                else
+                {
+                    comp.SalaDisplay = "Sin sala";
+                }
+            }
+            
+            return computadores;
         }
 
         public async Task<ModeloComputador> GetComputador(Guid id)
         {
-            return mapper.Map<ModeloComputador>(await repo.GetComputador(id));
+            var computadorDomain = await repo.GetComputador(id);
+            var computador = mapper.Map<ModeloComputador>(computadorDomain);
+            
+            // Poblar SalaDisplay
+            if (computadorDomain?.Sala != null)
+            {
+                computador.SalaDisplay = $"Sala {computadorDomain.Sala.NumeroSalon}";
+            }
+            else
+            {
+                computador.SalaDisplay = "Sin sala";
+            }
+            
+            return computador;
         }
 
         public async Task AddComputador(AñadirModeloComputador model)

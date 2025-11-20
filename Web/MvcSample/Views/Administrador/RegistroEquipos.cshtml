@@ -37,7 +37,13 @@
                 <span asp-validation-for="Estado" class="text-danger"></span>
             </div>
 
-            <input type="hidden" asp-for="SalaId" />
+            <div class="form-group">
+                <label asp-for="SalaId" class="text-black">Sala</label>
+                <select asp-for="SalaId" class="form-control" asp-items="ViewBag.Salas">
+                    <option value="">-- No asignada --</option>
+                </select>
+                <span asp-validation-for="SalaId" class="text-danger"></span>
+            </div>
 
             <div asp-validation-summary="All" class="text-danger"></div>
 

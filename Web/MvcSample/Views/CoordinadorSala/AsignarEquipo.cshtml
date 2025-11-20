@@ -22,11 +22,22 @@
             </div>
 
             <div class="col-md-6 mb-3">
+                <label asp-for="SalaId" class="form-label">Sala</label>
+                <select asp-for="SalaId" id="salaSelect" class="form-select" asp-items="@(new SelectList(Model.Salas ?? new List<SelectOption>(), nameof(SelectOption.Value), nameof(SelectOption.Text), Model.SalaId))">
+                    <option value="">-- Selecciona una sala --</option>
+                </select>
+                <span asp-validation-for="SalaId" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
                 <label asp-for="ComputadorId" class="form-label">Equipo</label>
-                <select asp-for="ComputadorId" class="form-select" asp-items="@(new SelectList(Model.Computadores, nameof(SelectOption.Value), nameof(SelectOption.Text), Model.ComputadorId))">
+                <select asp-for="ComputadorId" id="computadorSelect" class="form-select" asp-items="@(new SelectList(Model.Computadores, nameof(SelectOption.Value), nameof(SelectOption.Text), Model.ComputadorId))">
                     <option value="">-- Selecciona un equipo --</option>
                 </select>
                 <span asp-validation-for="ComputadorId" class="text-danger"></span>
+                <small class="text-muted">Se mostrarán solo equipos disponibles de la sala seleccionada</small>
             </div>
         </div>
 
@@ -56,5 +67,22 @@
 
 @section Scripts {
     @await Html.PartialAsync("_ValidationScriptsPartial")
+    <script>
+        // Actualizar equipos cuando se selecciona una sala
+        document.getElementById('salaSelect')?.addEventListener('change', function() {
+            var salaId = this.value;
+            if (salaId) {
+                // Recargar la página con la sala seleccionada para actualizar los equipos
+                var url = new URL(window.location.href);
+                url.searchParams.set('salaId', salaId);
+                window.location.href = url.toString();
+            } else {
+                // Si no hay sala seleccionada, recargar sin parámetro
+                var url = new URL(window.location.href);
+                url.searchParams.delete('salaId');
+                window.location.href = url.toString();
+            }
+        });
+    </script>
 }
 

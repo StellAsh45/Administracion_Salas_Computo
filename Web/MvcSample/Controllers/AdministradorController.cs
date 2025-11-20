@@ -223,14 +223,7 @@ namespace MvcSample.Controllers
         [HttpGet]
         public async Task<IActionResult> RegistroEquipos()
         {
-            var salas = await _salaService.GetSalas();
-
-            ViewBag.Salas = salas.Select(s => new SelectListItem
-            {
-                Value = s.Id.ToString(),
-                Text = s.NumeroSalon.ToString()
-            }).ToList();
-
+            await CargarSalas();
             return View(new AñadirModeloComputador());
         }
 
@@ -246,6 +239,22 @@ namespace MvcSample.Controllers
                 return View(model);
             }
 
+            // Validar capacidad de la sala
+            if (model.SalaId.HasValue)
+            {
+                var sala = await _salaService.GetSala(model.SalaId.Value);
+                if (sala != null)
+                {
+                    var equiposEnSala = await _salaService.GetComputadoresBySala(model.SalaId.Value);
+                    if (equiposEnSala.Count >= sala.Capacidad)
+                    {
+                        ModelState.AddModelError(nameof(model.SalaId), $"La sala {sala.NumeroSalon} ya tiene el máximo de equipos permitidos ({sala.Capacidad}).");
+                        await CargarSalas();
+                        return View(model);
+                    }
+                }
+            }
+
             await _computadorService.AddComputador(model);
 
             TempData["Success"] = "Equipo registrado correctamente.";
@@ -259,7 +268,7 @@ namespace MvcSample.Controllers
             var equipo = await _computadorService.GetComputador(id);
             if (equipo == null) return NotFound();
 
-            await CargarSalas();
+            await CargarSalas(id, equipo.SalaId);
 
             return View("EditarEquipo", equipo);
         }
@@ -274,8 +283,24 @@ namespace MvcSample.Controllers
 
             if (!ModelState.IsValid)
             {
-                await CargarSalas();
+                await CargarSalas(model.Id, existente.SalaId);
                 return View("EditarEquipo", model);
+            }
+
+            // Validar capacidad de la sala si se está cambiando
+            if (model.SalaId.HasValue && model.SalaId != existente.SalaId)
+            {
+                var sala = await _salaService.GetSala(model.SalaId.Value);
+                if (sala != null)
+                {
+                    var equiposEnSala = await _salaService.GetComputadoresBySala(model.SalaId.Value);
+                    if (equiposEnSala.Count >= sala.Capacidad)
+                    {
+                        ModelState.AddModelError(nameof(model.SalaId), $"La sala {sala.NumeroSalon} ya tiene el máximo de equipos permitidos ({sala.Capacidad}).");
+                        await CargarSalas(model.Id, existente.SalaId);
+                        return View("EditarEquipo", model);
+                    }
+                }
             }
 
             existente.Nombre = model.Nombre;
@@ -300,14 +325,28 @@ namespace MvcSample.Controllers
         // --------------------------------------
         // MÉTODO PARA LLENAR DROPDOWN
         // --------------------------------------
-        private async Task CargarSalas()
+        private async Task CargarSalas(Guid? equipoId = null, Guid? salaActualId = null)
         {
             var salas = await _salaService.GetSalas();
-            ViewBag.Salas = salas.Select(s => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+            var salasDisponibles = new List<Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>();
+            
+            foreach (var sala in salas)
             {
-                Value = s.Id.ToString(),
-                Text = s.NumeroSalon.ToString()
-            }).ToList();
+                var equiposEnSala = await _salaService.GetComputadoresBySala(sala.Id);
+                // Si es edición y es la sala actual, siempre incluirla
+                bool esSalaActual = salaActualId.HasValue && sala.Id == salaActualId.Value;
+                // Si la sala no está llena o es la sala actual del equipo, incluirla
+                if (equiposEnSala.Count < sala.Capacidad || esSalaActual)
+                {
+                    salasDisponibles.Add(new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+                    {
+                        Value = sala.Id.ToString(),
+                        Text = $"Sala {sala.NumeroSalon} ({equiposEnSala.Count}/{sala.Capacidad})"
+                    });
+                }
+            }
+            
+            ViewBag.Salas = salasDisponibles;
         }
 
     }

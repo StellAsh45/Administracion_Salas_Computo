@@ -18,6 +18,7 @@ namespace Infrastructure.Repositories
         Task<IList<Solicitud>> GetByEstado(string estado);
         Task AcceptSolicitud(Guid solicitudId);
         Task DenySolicitud(Guid solicitudId);
+        Task CerrarSolicitudesActivasPorEquipo(Guid computadorId);
     }
 }
 

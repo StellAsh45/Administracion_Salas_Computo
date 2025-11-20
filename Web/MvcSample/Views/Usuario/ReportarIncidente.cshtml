@@ -18,12 +18,25 @@
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label class="form-label">Sala</label>
-                @Html.DropDownListFor(m => m.SalaId, salas, "-- Selecciona una sala --", new { @class = "form-select" })
+                @Html.DropDownListFor(m => m.SalaId, salas, "-- Selecciona una sala --", new { @class = "form-select", id = "salaSelect" })
+                <small class="text-muted">@(tipo.ToLower() == "danio" ? "Primero selecciona la sala del equipo con daño" : "Primero selecciona la sala")</small>
             </div>
             <div class="col-md-6 mb-3">
                 <label asp-for="ComputadorId" class="form-label">Equipo</label>
-                @Html.DropDownListFor(m => m.ComputadorId, computadores, "-- Selecciona un equipo --", new { @class = "form-select" })
+                @{
+                    var tieneSala = Model.SalaId.HasValue;
+                    var tieneEquipos = computadores != null && computadores.Any();
+                }
+                @if (tieneSala && tieneEquipos)
+                {
+                    @Html.DropDownListFor(m => m.ComputadorId, computadores, "-- Selecciona un equipo --", new { @class = "form-select", id = "computadorSelect" })
+                }
+                else
+                {
+                    @Html.DropDownListFor(m => m.ComputadorId, computadores, "-- Selecciona un equipo --", new { @class = "form-select", id = "computadorSelect", @disabled = "disabled" })
+                }
                 <span asp-validation-for="ComputadorId" class="text-danger"></span>
+                <small class="text-muted">@(tipo.ToLower() == "danio" ? "Luego selecciona el equipo de la sala" : "Luego selecciona el equipo de la sala")</small>
             </div>
         </div>
 
@@ -48,6 +61,45 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+    <script>
+        // Actualizar equipos cuando se selecciona una sala (para daño y asesoría)
+        document.getElementById('salaSelect')?.addEventListener('change', function() {
+            var salaId = this.value;
+            var computadorSelect = document.getElementById('computadorSelect');
+            
+            if (salaId) {
+                // Habilitar el select de equipos
+                if (computadorSelect) {
+                    computadorSelect.disabled = false;
+                }
+                // Recargar la página con la sala seleccionada para actualizar los equipos
+                var url = new URL(window.location.href);
+                url.searchParams.set('salaId', salaId);
+                window.location.href = url.toString();
+            } else {
+                // Deshabilitar el select de equipos si no hay sala seleccionada
+                if (computadorSelect) {
+                    computadorSelect.disabled = true;
+                    computadorSelect.value = '';
+                }
+            }
+        });
+        
+        // Habilitar/deshabilitar select de equipos según si hay sala seleccionada al cargar
+        document.addEventListener('DOMContentLoaded', function() {
+            var salaSelect = document.getElementById('salaSelect');
+            var computadorSelect = document.getElementById('computadorSelect');
+            if (salaSelect && computadorSelect) {
+                // Si hay sala seleccionada, habilitar (los equipos ya se cargaron del servidor)
+                if (salaSelect.value) {
+                    computadorSelect.disabled = false;
+                } else {
+                    computadorSelect.disabled = true;
+                }
+            }
+        });
+    </script>
 }
+
 
 

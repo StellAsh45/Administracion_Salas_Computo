@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Services;
 using Services.Models.ModelosComputador;
+using Services.Models.ModelosSala;
 using Services.Models.ModelosSolicitud;
 using System;
 using System.Linq;
@@ -86,6 +87,43 @@ namespace MvcSample.Controllers
         [HttpGet]
         public async Task<IActionResult> CrearSolicitud(string tipo = "Asignacion", Guid? computadorId = null, Guid? salaId = null)
         {
+            // Para liberación, verificar que el usuario tenga un equipo asignado
+            if (tipo.Equals("Liberacion", StringComparison.OrdinalIgnoreCase))
+            {
+                var usuarioId = GetUsuarioIdActual();
+                var solicitudes = await _solicitudService.GetSolicitudes();
+                var hoy = DateTime.Today;
+                var miEquipoOcupado = solicitudes
+                    .Where(s => s.UsuarioId == usuarioId &&
+                               s.Estado == "Aceptado" &&
+                               s.Tipo != "Liberacion" &&
+                               s.FechaInicio.Date <= hoy &&
+                               s.FechaFin.Date >= hoy)
+                    .FirstOrDefault();
+                
+                if (miEquipoOcupado == null)
+                {
+                    TempData["Error"] = "No tienes ningún equipo asignado para liberar.";
+                    return RedirectToAction(nameof(Principal));
+                }
+                
+                // Prellenar sala y equipo del PC asignado
+                salaId = miEquipoOcupado.SalaId;
+                computadorId = miEquipoOcupado.ComputadorId;
+            }
+            else
+            {
+                // Si viene desde la vista de equipos, obtener salaId del computador
+                if (computadorId.HasValue && !salaId.HasValue)
+                {
+                    var computador = await _computadorService.GetComputador(computadorId.Value);
+                    if (computador != null && computador.SalaId.HasValue)
+                    {
+                        salaId = computador.SalaId;
+                    }
+                }
+            }
+            
             var modelo = await BuildSolicitudModelo(tipo, salaId, computadorId);
             return View("CrearSolicitud", modelo);
         }
@@ -125,8 +163,14 @@ namespace MvcSample.Controllers
         [HttpGet]
         public async Task<IActionResult> ReportarIncidente(string tipo = "Danio", Guid? computadorId = null, Guid? salaId = null)
         {
-            await PopulateSolicitudCombos(tipo, salaId, computadorId);
             ViewBag.TipoSolicitud = ObtenerTituloSolicitud(tipo);
+            ViewBag.Tipo = tipo;
+            
+            // NO prellenar nada para Danio y Asesoria - el usuario debe seleccionar primero la sala
+            // Solo usar salaId si viene como parámetro (cuando el usuario selecciona una sala)
+            
+            await PopulateSolicitudCombos(tipo, salaId, computadorId);
+            
             var model = new AñadirModeloSolicitud
             {
                 UsuarioId = GetUsuarioIdActual(),
@@ -171,12 +215,15 @@ namespace MvcSample.Controllers
         {
             await PopulateSolicitudCombos(tipo, salaId, computadorId);
             ViewBag.TipoSolicitud = ObtenerTituloSolicitud(tipo);
+            var ahora = DateTime.Now;
+            // Redondear a minutos para evitar problemas con segundos
+            ahora = new DateTime(ahora.Year, ahora.Month, ahora.Day, ahora.Hour, ahora.Minute, 0);
             return new AñadirModeloSolicitud
             {
                 UsuarioId = GetUsuarioIdActual(),
                 Tipo = tipo,
-                FechaInicio = DateTime.Now,
-                FechaFin = DateTime.Now.AddHours(2),
+                FechaInicio = ahora,
+                FechaFin = ahora.AddHours(2),
                 SalaId = salaId,
                 ComputadorId = computadorId ?? Guid.Empty
             };
@@ -185,15 +232,115 @@ namespace MvcSample.Controllers
         private async Task PopulateSolicitudCombos(string tipo, Guid? salaId, Guid? computadorId)
         {
             var salas = await _salaService.GetSalas();
-            var salaOptions = salas.Select(s => new { s.Id, Display = $"Sala {s.NumeroSalon}" }).ToList();
-            ViewBag.Salas = new SelectList(salaOptions, "Id", "Display", salaId);
-
+            var usuarioId = GetUsuarioIdActual();
+            var solicitudes = await _solicitudService.GetSolicitudes();
+            var hoy = DateTime.Today;
+            
             var computadores = await _computadorService.GetComputadores();
+            
+            // Obtener solicitudes activas para verificar disponibilidad real
+            var solicitudesActivas = solicitudes
+                .Where(s => s.Estado == "Aceptado" &&
+                           s.FechaInicio.Date <= hoy &&
+                           s.FechaFin.Date >= hoy)
+                .Select(s => s.ComputadorId)
+                .ToHashSet();
+            
             if (tipo.Equals("Asignacion", StringComparison.OrdinalIgnoreCase) ||
                 tipo.Equals("Prestamo", StringComparison.OrdinalIgnoreCase))
             {
-                computadores = computadores.Where(c => c.Estado.Equals("Disponible", StringComparison.OrdinalIgnoreCase)).ToList();
+                // NO mostrar equipos hasta que se seleccione una sala
+                if (salaId.HasValue)
+                {
+                    // Filtrar equipos disponibles (estado Disponible y no tienen solicitud activa) de la sala seleccionada
+                    computadores = computadores
+                        .Where(c => c.SalaId == salaId.Value &&
+                                   c.Estado.Equals("Disponible", StringComparison.OrdinalIgnoreCase) &&
+                                   !solicitudesActivas.Contains(c.Id))
+                        .ToList();
+                }
+                else
+                {
+                    // Si no hay sala seleccionada, no mostrar equipos
+                    computadores = new List<ModeloComputador>();
+                }
             }
+            else if (tipo.Equals("Liberacion", StringComparison.OrdinalIgnoreCase))
+            {
+                // Para liberación, mostrar solo los equipos que el usuario tiene asignados (ocupados por él)
+                var misEquiposOcupados = solicitudes
+                    .Where(s => s.UsuarioId == usuarioId &&
+                               s.Estado == "Aceptado" &&
+                               s.FechaInicio.Date <= hoy &&
+                               s.FechaFin.Date >= hoy)
+                    .Select(s => s.ComputadorId)
+                    .ToHashSet();
+                
+                computadores = computadores
+                    .Where(c => misEquiposOcupados.Contains(c.Id))
+                    .ToList();
+                
+                // Si hay un computador seleccionado, asegurarse de que pertenece al usuario
+                if (computadorId.HasValue)
+                {
+                    computadores = computadores
+                        .Where(c => c.Id == computadorId.Value)
+                        .ToList();
+                }
+            }
+            else if (tipo.Equals("Danio", StringComparison.OrdinalIgnoreCase))
+            {
+                // Para reporte de daño: NO mostrar equipos al inicio, solo después de seleccionar sala
+                // Excluir equipos bloqueados o en mantenimiento
+                computadores = computadores
+                    .Where(c => c.Estado != "Bloqueado" && c.Estado != "Mantenimiento")
+                    .ToList();
+                
+                // Si hay una sala seleccionada, filtrar solo equipos de esa sala
+                if (salaId.HasValue)
+                {
+                    computadores = computadores
+                        .Where(c => c.SalaId == salaId.Value)
+                        .ToList();
+                }
+                else
+                {
+                    // Si no hay sala seleccionada, no mostrar equipos
+                    computadores = new List<ModeloComputador>();
+                }
+            }
+            else if (tipo.Equals("Asesoria", StringComparison.OrdinalIgnoreCase))
+            {
+                // Para asesoría técnica: primero seleccionar sala, luego PCs de esa sala
+                // Excluir equipos bloqueados o en mantenimiento
+                computadores = computadores
+                    .Where(c => c.Estado != "Bloqueado" && c.Estado != "Mantenimiento")
+                    .ToList();
+                
+                // Si hay una sala seleccionada, filtrar solo equipos de esa sala
+                if (salaId.HasValue)
+                {
+                    computadores = computadores
+                        .Where(c => c.SalaId == salaId.Value)
+                        .ToList();
+                }
+                else
+                {
+                    // Si no hay sala seleccionada, no mostrar equipos
+                    computadores = new List<ModeloComputador>();
+                }
+            }
+
+            // Para asignación y préstamo, solo mostrar salas disponibles (no en mantenimiento)
+            if (tipo.Equals("Asignacion", StringComparison.OrdinalIgnoreCase) ||
+                tipo.Equals("Prestamo", StringComparison.OrdinalIgnoreCase))
+            {
+                salas = salas.Where(s => s.Estado == "Disponible").ToList();
+            }
+            
+            // Crear SelectList de salas después de todos los filtros
+            var salaOptions = salas.Select(s => new { s.Id, Display = $"Sala {s.NumeroSalon}" }).ToList();
+            ViewBag.Salas = new SelectList(salaOptions, "Id", "Display", salaId);
 
             var compOptions = computadores
                 .Select(c => new

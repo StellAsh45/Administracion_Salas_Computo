@@ -38,6 +38,7 @@
                 <th>Equipo</th>
                 <th>Estado</th>
                 <th>Sala</th>
+                <th>Usuario</th>
                 <th class="text-end">Acciones</th>
             </tr>
         </thead>
@@ -45,7 +46,7 @@
             @if (Model == null || Model.Count == 0)
             {
                 <tr>
-                    <td colspan="4" class="text-center text-muted py-4">No hay equipos registrados</td>
+                    <td colspan="5" class="text-center text-muted py-4">No hay equipos registrados</td>
                 </tr>
             }
             else
@@ -68,6 +69,16 @@
                             <span class="@estadoClase">@estado</span>
                         </td>
                         <td>@(string.IsNullOrWhiteSpace(equipo.SalaDisplay) ? "Sin sala" : equipo.SalaDisplay)</td>
+                        <td>
+                            @if (!string.IsNullOrWhiteSpace(equipo.UsuarioOcupando))
+                            {
+                                <span class="text-muted">@equipo.UsuarioOcupando</span>
+                            }
+                            else
+                            {
+                                <span class="text-muted">-</span>
+                            }
+                        </td>
                         <td class="text-end">
                             @if (!string.Equals(equipo.Estado, "Bloqueado", StringComparison.OrdinalIgnoreCase))
                             {

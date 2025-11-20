@@ -73,9 +73,16 @@
                         <td>@(string.IsNullOrWhiteSpace(equipo.SalaDisplay) ? "Sin sala" : equipo.SalaDisplay)</td>
                         <td><span class="@estadoClase">@equipo.Estado</span></td>
                         <td class="text-end">
-                            <a class="btn btn-sm btn-outline-primary" asp-action="CrearSolicitud" asp-route-tipo="Asignacion" asp-route-computadorId="@equipo.Id">
-                                Solicitar uso
-                            </a>
+                            @if (equipo.Estado == "Disponible")
+                            {
+                                <a class="btn btn-sm btn-outline-primary" asp-action="CrearSolicitud" asp-route-tipo="Asignacion" asp-route-computadorId="@equipo.Id" asp-route-salaId="@equipo.SalaId">
+                                    Solicitar uso
+                                </a>
+                            }
+                            else
+                            {
+                                <span class="text-muted">No disponible</span>
+                            }
                         </td>
                     </tr>
                 }

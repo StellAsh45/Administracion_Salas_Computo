@@ -18,6 +18,7 @@ namespace Services
         Task<IList<ModeloSolicitud>> GetByEstado(string estado);
         Task AcceptSolicitud(Guid id);
         Task DenySolicitud(Guid id);
+        Task CerrarSolicitudesActivasPorEquipo(Guid computadorId);
     }
 }
 

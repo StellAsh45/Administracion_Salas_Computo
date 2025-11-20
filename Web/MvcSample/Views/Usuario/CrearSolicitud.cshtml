@@ -26,28 +26,62 @@
             <input type="hidden" name="tipo" value="@Model.Tipo" />
 
             <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label class="form-label fw-semibold">Sala (opcional)</label>
-                    @Html.DropDownListFor(m => m.SalaId, salas, "-- Selecciona una Sala --", new { @class = "form-select" })
-                </div>
+                @if (tipo.ToLower() == "liberacion")
+                {
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-semibold">Sala</label>
+                        @Html.DropDownListFor(m => m.SalaId, salas, "-- Selecciona una Sala --", new { @class = "form-select", id = "salaSelect", @disabled = "disabled" })
+                        <input type="hidden" asp-for="SalaId" />
+                        <small class="text-muted">Sala del equipo que estás usando</small>
+                    </div>
+                }
+                else
+                {
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-semibold">Sala</label>
+                        @Html.DropDownListFor(m => m.SalaId, salas, "-- Selecciona una Sala --", new { @class = "form-select", id = "salaSelect" })
+                        <small class="text-muted">@(tipo.ToLower() == "asignacion" || tipo.ToLower() == "prestamo" ? "Primero selecciona la sala" : "Selecciona la sala")</small>
+                    </div>
+                }
 
                 <div class="col-md-6 mb-3">
                     <label asp-for="ComputadorId" class="form-label fw-semibold">Equipo</label>
-                    @Html.DropDownListFor(m => m.ComputadorId, computadores, "-- Selecciona un equipo --", new { @class = "form-select" })
-                    <span asp-validation-for="ComputadorId" class="text-danger"></span>
+                    @{
+                        var tieneSala = Model.SalaId.HasValue;
+                        var tieneEquipos = computadores != null && computadores.Any();
+                        var puedeSeleccionar = tieneSala && tieneEquipos;
+                    }
+                    @if (tipo.ToLower() == "liberacion")
+                    {
+                        @Html.DropDownListFor(m => m.ComputadorId, computadores, "-- Selecciona un equipo --", new { @class = "form-select", id = "computadorSelect", @disabled = "disabled" })
+                        <input type="hidden" asp-for="ComputadorId" />
+                        <small class="text-muted">Equipo que estás usando actualmente</small>
+                    }
+                    else if (puedeSeleccionar)
+                    {
+                        @Html.DropDownListFor(m => m.ComputadorId, computadores, "-- Selecciona un equipo --", new { @class = "form-select", id = "computadorSelect" })
+                        <span asp-validation-for="ComputadorId" class="text-danger"></span>
+                        <small class="text-muted">Luego selecciona el equipo disponible de la sala</small>
+                    }
+                    else
+                    {
+                        @Html.DropDownListFor(m => m.ComputadorId, computadores, "-- Selecciona un equipo --", new { @class = "form-select", id = "computadorSelect", @disabled = "disabled" })
+                        <span asp-validation-for="ComputadorId" class="text-danger"></span>
+                        <small class="text-muted">Primero debes seleccionar una sala</small>
+                    }
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label asp-for="FechaInicio" class="form-label fw-semibold">Fecha de Inicio</label>
-                    <input asp-for="FechaInicio" type="datetime-local" class="form-control custom-input">
+                    <label asp-for="FechaInicio" class="form-label fw-semibold">Fecha y Hora de Inicio</label>
+                    <input asp-for="FechaInicio" type="datetime-local" class="form-control custom-input" value="@(Model.FechaInicio.ToString("yyyy-MM-ddTHH:mm"))">
                     <span asp-validation-for="FechaInicio" class="text-danger"></span>
                 </div>
 
                 <div class="col-md-6 mb-3">
-                    <label asp-for="FechaFin" class="form-label fw-semibold">Fecha de Finalización</label>
-                    <input asp-for="FechaFin" type="datetime-local" class="form-control custom-input">
+                    <label asp-for="FechaFin" class="form-label fw-semibold">Fecha y Hora de Finalización</label>
+                    <input asp-for="FechaFin" type="datetime-local" class="form-control custom-input" value="@(Model.FechaFin.ToString("yyyy-MM-ddTHH:mm"))">
                     <span asp-validation-for="FechaFin" class="text-danger"></span>
                 </div>
             </div>
@@ -79,6 +113,35 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+    <script>
+        // Actualizar equipos cuando se selecciona una sala (para Asignacion y Prestamo)
+        var salaSelect = document.getElementById('salaSelect');
+        var computadorSelect = document.getElementById('computadorSelect');
+        
+        if (salaSelect && computadorSelect) {
+            salaSelect.addEventListener('change', function() {
+                var salaId = this.value;
+                if (salaId) {
+                    // Recargar la página con la sala seleccionada para actualizar los equipos
+                    var url = new URL(window.location.href);
+                    url.searchParams.set('salaId', salaId);
+                    window.location.href = url.toString();
+                } else {
+                    // Si no hay sala, deshabilitar y limpiar el select de equipos
+                    computadorSelect.disabled = true;
+                    computadorSelect.value = '';
+                }
+            });
+            
+            // Al cargar, deshabilitar si no hay sala seleccionada
+            document.addEventListener('DOMContentLoaded', function() {
+                if (!salaSelect.value) {
+                    computadorSelect.disabled = true;
+                }
+            });
+        }
+    </script>
 }
+
 
 

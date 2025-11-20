@@ -48,15 +48,49 @@ namespace MvcSample.Controllers
         public async Task<IActionResult> VerEquipos()
         {
             var equipos = await _computadorService.GetComputadores();
+            var solicitudes = await _solicitudService.GetSolicitudes();
+            var usuarios = await _usuarioService.GetUsuarios();
+            var hoy = DateTime.Today;
+            
+            // Obtener solicitudes activas (aceptadas y dentro del rango de fechas)
+            // Excluir solicitudes de liberación que ya fueron aceptadas
+            var solicitudesActivas = solicitudes
+                .Where(s => s.Estado == "Aceptado" &&
+                           s.Tipo != "Liberacion" &&
+                           s.FechaInicio.Date <= hoy &&
+                           s.FechaFin.Date >= hoy)
+                .ToList();
+            
+            var usuariosDic = usuarios.ToDictionary(
+                u => u.Id,
+                u => string.IsNullOrWhiteSpace(u.Nombre) ? u.Correo : u.Nombre);
+            
+            // Asignar usuario que está usando cada equipo
+            foreach (var equipo in equipos)
+            {
+                var solicitudActiva = solicitudesActivas
+                    .FirstOrDefault(s => s.ComputadorId == equipo.Id);
+                
+                if (solicitudActiva != null && usuariosDic.TryGetValue(solicitudActiva.UsuarioId, out var nombreUsuario))
+                {
+                    equipo.UsuarioOcupando = nombreUsuario;
+                }
+            }
+            
             ViewBag.Success = TempData["Success"];
             ViewBag.Error = TempData["Error"];
             return View(equipos);
         }
 
         [HttpGet]
-        public async Task<IActionResult> AsignarEquipo()
+        public async Task<IActionResult> AsignarEquipo(Guid? salaId = null)
         {
             var vm = await BuildAsignarComputadorModel();
+            if (salaId.HasValue)
+            {
+                vm.SalaId = salaId.Value;
+                vm = await BuildAsignarComputadorModel(vm);
+            }
             return View(vm);
         }
 
@@ -85,10 +119,13 @@ namespace MvcSample.Controllers
                 return View(vm);
             }
 
+            // Obtener el computador para obtener su SalaId
+            var computador = await _computadorService.GetComputador(model.ComputadorId);
             var solicitud = new AñadirModeloSolicitud
             {
                 UsuarioId = model.UsuarioId,
                 ComputadorId = model.ComputadorId,
+                SalaId = computador?.SalaId,
                 FechaInicio = model.FechaInicio,
                 FechaFin = model.FechaFin,
                 Estado = "Aceptado"
@@ -105,8 +142,11 @@ namespace MvcSample.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> BloquearEquipo(Guid id)
         {
+            // Cerrar cualquier solicitud activa que tenga este equipo ocupado
+            await _solicitudService.CerrarSolicitudesActivasPorEquipo(id);
+            
             await _computadorService.SetEstado(id, "Bloqueado");
-            TempData["Success"] = "Equipo bloqueado.";
+            TempData["Success"] = "Equipo bloqueado y usuario removido.";
             return RedirectToAction(nameof(VerEquipos));
         }
 
@@ -114,8 +154,11 @@ namespace MvcSample.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> LiberarEquipo(Guid id)
         {
+            // Cerrar cualquier solicitud activa que tenga este equipo ocupado
+            await _solicitudService.CerrarSolicitudesActivasPorEquipo(id);
+            
             await _computadorService.SetEstado(id, "Disponible");
-            TempData["Success"] = "Equipo liberado.";
+            TempData["Success"] = "Equipo liberado y usuario removido.";
             return RedirectToAction(nameof(VerEquipos));
         }
 
@@ -125,6 +168,7 @@ namespace MvcSample.Controllers
             var solicitudes = await _solicitudService.GetByEstado(estado);
             var usuarios = await _usuarioService.GetUsuarios();
             var computadores = await _computadorService.GetComputadores();
+            var salas = await _salaService.GetSalas();
 
             ViewBag.Usuarios = usuarios.ToDictionary(
                 u => u.Id,
@@ -133,6 +177,10 @@ namespace MvcSample.Controllers
             ViewBag.Computadores = computadores.ToDictionary(
                 c => c.Id,
                 c => c.Nombre);
+
+            ViewBag.SalasDic = salas.ToDictionary(
+                s => s.Id,
+                s => $"Sala {s.NumeroSalon}");
 
             ViewBag.Estado = estado;
             ViewBag.Success = TempData["Success"];
@@ -164,23 +212,38 @@ namespace MvcSample.Controllers
             var targetDate = fecha?.Date ?? DateTime.Today;
             var salas = await _salaService.GetSalas();
             var solicitudes = await _solicitudService.GetByEstado("Aceptado");
+            var solicitudesActivas = solicitudes.Where(s =>
+                s.FechaInicio.Date <= targetDate &&
+                s.FechaFin.Date >= targetDate).ToList();
 
             var detalles = new List<OcupacionSalaDetalle>();
 
             foreach (var sala in salas)
             {
                 var computadores = sala.Computadores ?? new List<ModeloComputador>();
-                var ocupadas = solicitudes.Count(s =>
-                    s.FechaInicio.Date <= targetDate &&
-                    s.FechaFin.Date >= targetDate &&
-                    computadores.Any(c => c.Id == s.ComputadorId));
+                var idsComputadores = computadores.Select(c => c.Id).ToHashSet();
+                
+                // Equipos en uso (con solicitud aceptada activa)
+                var equiposEnUso = solicitudesActivas
+                    .Count(s => idsComputadores.Contains(s.ComputadorId));
+                
+                // Equipos ocupados (en mantenimiento o bloqueados)
+                var equiposOcupados = computadores
+                    .Count(c => c.Estado == "Mantenimiento" || c.Estado == "Bloqueado");
+                
+                // Equipos disponibles (disponibles y no en uso)
+                var equiposDisponibles = computadores
+                    .Count(c => c.Estado == "Disponible" && 
+                               !solicitudesActivas.Any(s => s.ComputadorId == c.Id));
 
                 detalles.Add(new OcupacionSalaDetalle
                 {
                     SalaNombre = $"Sala {sala.NumeroSalon}",
                     Capacidad = sala.Capacidad,
                     EquiposRegistrados = computadores.Count,
-                    EquiposOcupados = Math.Min(ocupadas, computadores.Count)
+                    EquiposDisponibles = equiposDisponibles,
+                    EquiposEnUso = equiposEnUso,
+                    EquiposOcupados = equiposOcupados
                 });
             }
 
@@ -229,7 +292,8 @@ namespace MvcSample.Controllers
 
                 foreach (var dia in diasSemana)
                 {
-                    var ocupadas = solicitudesSemana.Count(s =>
+                    // Equipos en uso (con solicitud aceptada activa)
+                    var equiposEnUso = solicitudesSemana.Count(s =>
                         s.FechaInicio.Date <= dia &&
                         s.FechaFin.Date >= dia &&
                         idsSala.Contains(s.ComputadorId));
@@ -237,7 +301,7 @@ namespace MvcSample.Controllers
                     salaVm.OcupacionPorDia[dia] = new OcupacionSemanalDia
                     {
                         EquiposRegistrados = computadores.Count,
-                        EquiposOcupados = Math.Min(ocupadas, computadores.Count)
+                        EquiposOcupados = Math.Min(equiposEnUso, computadores.Count)
                     };
                 }
 
@@ -343,6 +407,7 @@ namespace MvcSample.Controllers
         {
             var usuarios = await _usuarioService.GetUsuarios();
             var computadores = await _computadorService.GetComputadores();
+            var salas = await _salaService.GetSalas();
 
             var viewModel = current ?? new AsignarComputadorModel();
 
@@ -357,12 +422,36 @@ namespace MvcSample.Controllers
                 })
                 .ToList();
 
+            // Filtrar solo salas disponibles
+            var salasDisponibles = salas.Where(s => s.Estado == "Disponible").ToList();
+            viewModel.Salas = salasDisponibles
+                .Select(s => new SelectOption
+                {
+                    Value = s.Id.ToString(),
+                    Text = $"Sala {s.NumeroSalon}"
+                })
+                .ToList();
+
+            // Si hay una sala seleccionada, mostrar solo equipos de esa sala
+            if (current?.SalaId.HasValue == true)
+            {
+                computadores = computadores
+                    .Where(c => c.SalaId == current.SalaId.Value &&
+                               string.Equals(c.Estado, "Disponible", StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+            }
+            else
+            {
+                computadores = computadores
+                    .Where(c => string.Equals(c.Estado, "Disponible", StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+            }
+
             viewModel.Computadores = computadores
-                .Where(c => string.Equals(c.Estado, "Disponible", StringComparison.OrdinalIgnoreCase))
                 .Select(c => new SelectOption
                 {
                     Value = c.Id.ToString(),
-                    Text = c.Nombre
+                    Text = string.IsNullOrWhiteSpace(c.SalaDisplay) ? c.Nombre : $"{c.Nombre} ({c.SalaDisplay})"
                 })
                 .ToList();
 

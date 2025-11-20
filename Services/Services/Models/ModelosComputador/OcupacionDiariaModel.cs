@@ -14,14 +14,15 @@ namespace Services.Models.ModelosComputador
         public string SalaNombre { get; set; } = string.Empty;
         public int Capacidad { get; set; }
         public int EquiposRegistrados { get; set; }
-        public int EquiposOcupados { get; set; }
-
-        public int EquiposDisponibles => Math.Max(EquiposRegistrados - EquiposOcupados, 0);
+        public int EquiposDisponibles { get; set; }
+        public int EquiposEnUso { get; set; }
+        public int EquiposOcupados { get; set; } // Equipos en mantenimiento/bloqueados
 
         public double PorcentajeOcupacion => EquiposRegistrados == 0
             ? 0
-            : Math.Round((double)EquiposOcupados / EquiposRegistrados * 100, 2);
+            : Math.Round((double)EquiposEnUso / EquiposRegistrados * 100, 2);
     }
 }
+
 
 

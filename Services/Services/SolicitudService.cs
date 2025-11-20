@@ -67,6 +67,11 @@ namespace Services
         {
             await repo.DenySolicitud(id);
         }
+
+        public async Task CerrarSolicitudesActivasPorEquipo(Guid computadorId)
+        {
+            await repo.CerrarSolicitudesActivasPorEquipo(computadorId);
+        }
     }
 }
 
