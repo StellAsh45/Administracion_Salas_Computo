@@ -318,4 +318,42 @@ body {
     font-weight: 500;
     border: none;
 }
+/*Estilos Asignación Equipo*/
+.asignacion-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.asignacion-card h2 {
+    color: #1a1a1a !important; /* negro suave */
+}
+
+.asignacion-card {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.icon-bg {
+    background: #eaf3ff;
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-input {
+    border-radius: 12px !important;
+    padding: 10px 14px !important;
+    background-color: #f7f9fc;
+    border: 1px solid #dbe1ea;
+}
+
+    .custom-input:focus {
+        box-shadow: 0 0 0 0.15rem rgba(13,110,253,.25);
+    }
 

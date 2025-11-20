@@ -1377,7 +1377,6 @@ C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSa
 C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\MvcSample.genruntimeconfig.cache
 C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\ref\MvcSample.dll
 C:\Users\USER\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\compressed\0g9ctsh4i3-qa5qzpxt0e.gz
-C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\compressed\0g9ctsh4i3-qa5qzpxt0e.gz
 C:\Users\estudiante\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\bin\Debug\net9.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\estudiante\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\bin\Debug\net9.0\Microsoft.Build.dll
 C:\Users\estudiante\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\bin\Debug\net9.0\Microsoft.Build.Framework.dll
@@ -1614,3 +1613,4 @@ C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\compressed\0g9ctsh4i3-9l5qmfw9a9.gz
+C:\Users\maoch\OneDrive\Documentos\GitHub\Administracion_Salas_Computo\Web\MvcSample\obj\Debug\net9.0\compressed\0g9ctsh4i3-46fv7stds7.gz
