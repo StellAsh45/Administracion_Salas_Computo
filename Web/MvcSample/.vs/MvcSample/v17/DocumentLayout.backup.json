@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\registrosala.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\administrador\\registrosala.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\registrousuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\administrador\\registrousuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\registrosala.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\administrador\\registrosala.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\registroequipos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -51,30 +51,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "RegistroUsuarios.cshtml",
               "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\RegistroUsuarios.cshtml",
               "RelativeDocumentMoniker": "Views\\Administrador\\RegistroUsuarios.cshtml",
               "ToolTip": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\RegistroUsuarios.cshtml",
               "RelativeToolTip": "Views\\Administrador\\RegistroUsuarios.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-20T16:17:21.382Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RegistroSala.cshtml",
               "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\RegistroSala.cshtml",
               "RelativeDocumentMoniker": "Views\\Administrador\\RegistroSala.cshtml",
               "ToolTip": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\RegistroSala.cshtml",
               "RelativeToolTip": "Views\\Administrador\\RegistroSala.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-20T16:06:11.643Z",
               "EditorCaption": ""
@@ -89,8 +89,7 @@
               "RelativeToolTip": "Views\\Usuario\\CrearSolicitud.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-20T14:22:36.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T14:22:36.107Z"
             },
             {
               "$type": "Document",
@@ -199,8 +198,7 @@
               "RelativeToolTip": "wwwroot\\css\\site.css",
               "ViewState": "AgIAAEgBAAAAAAAAAAAcwEgBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-17T16:43:38.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T16:43:38.818Z"
             }
           ]
         }
