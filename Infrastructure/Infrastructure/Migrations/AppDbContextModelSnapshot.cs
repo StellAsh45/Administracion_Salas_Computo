@@ -167,6 +167,10 @@ namespace Infrastructure.Migrations
                     b.Property<Guid>("ComputadorId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Estado")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -177,12 +181,21 @@ namespace Infrastructure.Migrations
                     b.Property<DateTime>("FechaInicio")
                         .HasColumnType("datetime2");
 
+                    b.Property<Guid?>("SalaId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Tipo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<Guid>("UsuarioId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ComputadorId");
+
+                    b.HasIndex("SalaId");
 
                     b.HasIndex("UsuarioId");
 
@@ -266,6 +279,10 @@ namespace Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Domain.Sala", "Sala")
+                        .WithMany()
+                        .HasForeignKey("SalaId");
+
                     b.HasOne("Domain.Usuario", "Usuario")
                         .WithMany("Solicitudes")
                         .HasForeignKey("UsuarioId")
@@ -273,6 +290,8 @@ namespace Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("Computador");
+
+                    b.Navigation("Sala");
 
                     b.Navigation("Usuario");
                 });

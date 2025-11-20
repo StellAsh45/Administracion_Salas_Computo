@@ -3,8 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Services;
 using Services.Models.ModelosComputador;
-using Services.Models.ModelosSolicitud;
 using Services.Models.ModelosReporte;
+using Services.Models.ModelosSolicitud;
+using Services.Models.ModelosUsuario;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -349,7 +350,7 @@ namespace MvcSample.Controllers
                 .Where(u => !string.IsNullOrWhiteSpace(u.Rol) &&
                             (u.Rol.Contains("Usuario", StringComparison.OrdinalIgnoreCase) ||
                              u.Rol.Contains("Investigador", StringComparison.OrdinalIgnoreCase)))
-                .Select(u => new SelectListItem
+                .Select(u => new SelectOption
                 {
                     Value = u.Id.ToString(),
                     Text = string.IsNullOrWhiteSpace(u.Nombre) ? u.Correo : u.Nombre
@@ -358,7 +359,7 @@ namespace MvcSample.Controllers
 
             viewModel.Computadores = computadores
                 .Where(c => string.Equals(c.Estado, "Disponible", StringComparison.OrdinalIgnoreCase))
-                .Select(c => new SelectListItem
+                .Select(c => new SelectOption
                 {
                     Value = c.Id.ToString(),
                     Text = c.Nombre

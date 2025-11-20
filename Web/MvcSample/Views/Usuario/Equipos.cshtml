@@ -5,6 +5,12 @@
     ViewData["Title"] = "Equipos disponibles";
     var estadoActual = ViewBag.Estado as string ?? "Todos";
     var salas = ViewBag.Salas as SelectList ?? new SelectList(Enumerable.Empty<SelectListItem>());
+
+    string OptionHtml(string value, string label)
+    {
+        var sel = estadoActual == value ? " selected" : "";
+        return $"<option value=\"{value}\"{sel}>{label}</option>";
+    }
 }
 
 <div class="equipos-table-container">
@@ -26,10 +32,10 @@
         <div class="col-md-4">
             <label class="form-label text-muted">Estado</label>
             <select name="estado" class="form-select" onchange="this.form.submit()">
-                <option value="Todos" @(estadoActual == "Todos" ? "selected" : "")>Todos</option>
-                <option value="Disponible" @(estadoActual == "Disponible" ? "selected" : "")>Disponible</option>
-                <option value="Ocupado" @(estadoActual == "Ocupado" ? "selected" : "")>Ocupado</option>
-                <option value="Bloqueado" @(estadoActual == "Bloqueado" ? "selected" : "")>Bloqueado</option>
+                @Html.Raw(OptionHtml("Todos", "Todos"))
+                @Html.Raw(OptionHtml("Disponible", "Disponible"))
+                @Html.Raw(OptionHtml("Ocupado", "Ocupado"))
+                @Html.Raw(OptionHtml("Bloqueado", "Bloqueado"))
             </select>
         </div>
     </form>

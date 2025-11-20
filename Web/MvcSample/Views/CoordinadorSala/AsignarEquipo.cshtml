@@ -1,3 +1,4 @@
+@using Services.Models.ModelosUsuario
 @model Services.Models.ModelosComputador.AsignarComputadorModel
 
 @{
@@ -54,8 +55,6 @@
 </div>
 
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    @await Html.PartialAsync("_ValidationScriptsPartial")
 }
 

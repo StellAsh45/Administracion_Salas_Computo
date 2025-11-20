@@ -3,12 +3,37 @@
   "WorkspaceRootPath": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Migrations\\20251120095242_007.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\views\\usuario\\equipos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\usuario\\equipos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\views\\coordinadorsala\\asignarequipo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\coordinadorsala\\asignarequipo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\controllers\\coordinadorsalacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:controllers\\coordinadorsalacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\services\\services\\models\\modeloscomputador\\asignarcomputadormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\services\\services\\models\\modelosusuario\\selectoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\views\\coordinadorsala\\solicitudes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\coordinadorsala\\solicitudes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\views\\coordinadorsala\\ocupaciondiaria.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\coordinadorsala\\ocupaciondiaria.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\web\\mvcsample\\views\\coordinadorsala\\ocupacionsemanal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\coordinadorsala\\ocupacionsemanal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2070EAED-8793-4790-AA35-B5B37C3AA180}|..\\..\\Infrastructure\\Infrastructure\\Infrastructure.csproj|c:\\users\\miguel polo\\documents\\github\\administracion_salas_computo\\infrastructure\\infrastructure\\migrations\\20251120075718_006.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -88,7 +113,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 131,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -116,106 +141,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20251120075718_006.cs",
-              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Migrations\\20251120075718_006.cs",
-              "RelativeDocumentMoniker": "..\\..\\Infrastructure\\Infrastructure\\Migrations\\20251120075718_006.cs",
-              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Migrations\\20251120075718_006.cs",
-              "RelativeToolTip": "..\\..\\Infrastructure\\Infrastructure\\Migrations\\20251120075718_006.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T07:57:19.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Principal.cshtml",
-              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\Principal.cshtml",
-              "RelativeDocumentMoniker": "Views\\CoordinadorSala\\Principal.cshtml",
-              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\Principal.cshtml",
-              "RelativeToolTip": "Views\\CoordinadorSala\\Principal.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-20T07:52:09.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CoordinadorSalaController.cs",
-              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Controllers\\CoordinadorSalaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CoordinadorSalaController.cs",
-              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Controllers\\CoordinadorSalaController.cs",
-              "RelativeToolTip": "Controllers\\CoordinadorSalaController.cs",
-              "ViewState": "AgIAAEYBAAAAAAAAAAAQwFsBAAAWAAAAAAAAAA==",
+              "Title": "20251120095242_007.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Migrations\\20251120095242_007.cs",
+              "RelativeDocumentMoniker": "..\\..\\Infrastructure\\Infrastructure\\Migrations\\20251120095242_007.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Migrations\\20251120095242_007.cs",
+              "RelativeToolTip": "..\\..\\Infrastructure\\Infrastructure\\Migrations\\20251120095242_007.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T07:51:56.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ModeloUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosUsuario\\ModeloUsuario.cs",
-              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosUsuario\\ModeloUsuario.cs",
-              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosUsuario\\ModeloUsuario.cs",
-              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\ModelosUsuario\\ModeloUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T07:51:49.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "A\u00F1adirModeloUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosUsuario\\A\u00F1adirModeloUsuario.cs",
-              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosUsuario\\A\u00F1adirModeloUsuario.cs",
-              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosUsuario\\A\u00F1adirModeloUsuario.cs",
-              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\ModelosUsuario\\A\u00F1adirModeloUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T07:51:48.131Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Usuario.cs",
-              "RelativeDocumentMoniker": "..\\..\\Domain\\Domain\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Usuario.cs",
-              "RelativeToolTip": "..\\..\\Domain\\Domain\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T07:51:31.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "VerEquipos.cshtml",
-              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\VerEquipos.cshtml",
-              "RelativeDocumentMoniker": "Views\\CoordinadorSala\\VerEquipos.cshtml",
-              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\VerEquipos.cshtml",
-              "RelativeToolTip": "Views\\CoordinadorSala\\VerEquipos.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEMAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-20T07:47:27.218Z",
+              "WhenOpened": "2025-11-20T09:52:44.461Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Solicitudes.cshtml",
-              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\Solicitudes.cshtml",
-              "RelativeDocumentMoniker": "Views\\CoordinadorSala\\Solicitudes.cshtml",
-              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\Solicitudes.cshtml",
-              "RelativeToolTip": "Views\\CoordinadorSala\\Solicitudes.cshtml",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAowBkAAACIAAAAAAAAAA==",
+              "Title": "Equipos.cshtml",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Usuario\\Equipos.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuario\\Equipos.cshtml",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Usuario\\Equipos.cshtml",
+              "RelativeToolTip": "Views\\Usuario\\Equipos.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAFQAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-20T07:46:48.897Z",
+              "WhenOpened": "2025-11-20T09:45:17.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SelectOption.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosUsuario\\SelectOption.cs",
+              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosUsuario\\SelectOption.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosUsuario\\SelectOption.cs",
+              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\ModelosUsuario\\SelectOption.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T09:42:24.787Z",
               "EditorCaption": ""
             },
             {
@@ -224,7 +184,155 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 8,
+              "Title": "OcupacionSemanal.cshtml",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\OcupacionSemanal.cshtml",
+              "RelativeDocumentMoniker": "Views\\CoordinadorSala\\OcupacionSemanal.cshtml",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\OcupacionSemanal.cshtml",
+              "RelativeToolTip": "Views\\CoordinadorSala\\OcupacionSemanal.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T09:21:04.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OcupacionDiaria.cshtml",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\OcupacionDiaria.cshtml",
+              "RelativeDocumentMoniker": "Views\\CoordinadorSala\\OcupacionDiaria.cshtml",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\OcupacionDiaria.cshtml",
+              "RelativeToolTip": "Views\\CoordinadorSala\\OcupacionDiaria.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T09:20:14.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AsignarEquipo.cshtml",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\AsignarEquipo.cshtml",
+              "RelativeDocumentMoniker": "Views\\CoordinadorSala\\AsignarEquipo.cshtml",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\AsignarEquipo.cshtml",
+              "RelativeToolTip": "Views\\CoordinadorSala\\AsignarEquipo.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T09:20:10.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AsignarComputadorModel.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosComputador\\AsignarComputadorModel.cs",
+              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosComputador\\AsignarComputadorModel.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosComputador\\AsignarComputadorModel.cs",
+              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\ModelosComputador\\AsignarComputadorModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T09:19:45.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20251120075718_006.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Migrations\\20251120075718_006.cs",
+              "RelativeDocumentMoniker": "..\\..\\Infrastructure\\Infrastructure\\Migrations\\20251120075718_006.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Migrations\\20251120075718_006.cs",
+              "RelativeToolTip": "..\\..\\Infrastructure\\Infrastructure\\Migrations\\20251120075718_006.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T07:57:19.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Principal.cshtml",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\Principal.cshtml",
+              "RelativeDocumentMoniker": "Views\\CoordinadorSala\\Principal.cshtml",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\Principal.cshtml",
+              "RelativeToolTip": "Views\\CoordinadorSala\\Principal.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T07:52:09.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CoordinadorSalaController.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Controllers\\CoordinadorSalaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CoordinadorSalaController.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Controllers\\CoordinadorSalaController.cs",
+              "RelativeToolTip": "Controllers\\CoordinadorSalaController.cs",
+              "ViewState": "AgIAAE4BAAAAAAAAAAA1wHEBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T07:51:56.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ModeloUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosUsuario\\ModeloUsuario.cs",
+              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosUsuario\\ModeloUsuario.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosUsuario\\ModeloUsuario.cs",
+              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\ModelosUsuario\\ModeloUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T07:51:49.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "A\u00F1adirModeloUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosUsuario\\A\u00F1adirModeloUsuario.cs",
+              "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosUsuario\\A\u00F1adirModeloUsuario.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosUsuario\\A\u00F1adirModeloUsuario.cs",
+              "RelativeToolTip": "..\\..\\Services\\Services\\Models\\ModelosUsuario\\A\u00F1adirModeloUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T07:51:48.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Usuario.cs",
+              "RelativeDocumentMoniker": "..\\..\\Domain\\Domain\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Usuario.cs",
+              "RelativeToolTip": "..\\..\\Domain\\Domain\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T07:51:31.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "VerEquipos.cshtml",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\VerEquipos.cshtml",
+              "RelativeDocumentMoniker": "Views\\CoordinadorSala\\VerEquipos.cshtml",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\VerEquipos.cshtml",
+              "RelativeToolTip": "Views\\CoordinadorSala\\VerEquipos.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEMAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T07:47:27.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Solicitudes.cshtml",
+              "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\Solicitudes.cshtml",
+              "RelativeDocumentMoniker": "Views\\CoordinadorSala\\Solicitudes.cshtml",
+              "ToolTip": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\Solicitudes.cshtml",
+              "RelativeToolTip": "Views\\CoordinadorSala\\Solicitudes.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAowBkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T07:46:48.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "20251120064608_005.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Migrations\\20251120064608_005.cs",
               "RelativeDocumentMoniker": "..\\..\\Infrastructure\\Infrastructure\\Migrations\\20251120064608_005.cs",
@@ -236,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "AdministradorController.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Controllers\\AdministradorController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdministradorController.cs",
@@ -248,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "ComputadorService.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\ComputadorService.cs",
               "RelativeDocumentMoniker": "..\\..\\Services\\Services\\ComputadorService.cs",
@@ -260,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "A\u00F1adirModeloComputador.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosComputador\\A\u00F1adirModeloComputador.cs",
               "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosComputador\\A\u00F1adirModeloComputador.cs",
@@ -272,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "IComputadorRepository.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Repositories\\IComputadorRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\Infrastructure\\Infrastructure\\Repositories\\IComputadorRepository.cs",
@@ -284,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "Computador.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Computador.cs",
               "RelativeDocumentMoniker": "..\\..\\Domain\\Domain\\Computador.cs",
@@ -296,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "RegistroEquipos.cshtml",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\RegistroEquipos.cshtml",
               "RelativeDocumentMoniker": "Views\\Administrador\\RegistroEquipos.cshtml",
@@ -308,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "VerEquipos.cshtml",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\VerEquipos.cshtml",
               "RelativeDocumentMoniker": "Views\\Administrador\\VerEquipos.cshtml",
@@ -320,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "VerSalas.cshtml",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\VerSalas.cshtml",
               "RelativeDocumentMoniker": "Views\\Administrador\\VerSalas.cshtml",
@@ -328,12 +436,11 @@
               "RelativeToolTip": "Views\\Administrador\\VerSalas.cshtml",
               "ViewState": "AgIAADYAAAAAAAAAAAAAADYAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-20T06:11:26.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T06:11:26.157Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "EditarEquipo.cshtml",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\EditarEquipo.cshtml",
               "RelativeDocumentMoniker": "Views\\Administrador\\EditarEquipo.cshtml",
@@ -345,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "RegistroSala.cshtml",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\RegistroSala.cshtml",
               "RelativeDocumentMoniker": "Views\\Administrador\\RegistroSala.cshtml",
@@ -357,7 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "EditarSala.cshtml",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\EditarSala.cshtml",
               "RelativeDocumentMoniker": "Views\\Administrador\\EditarSala.cshtml",
@@ -369,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -381,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "ModeloComputador.cs",
               "DocumentMoniker": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosComputador\\ModeloComputador.cs",
               "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosComputador\\ModeloComputador.cs",
