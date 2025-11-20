@@ -42,6 +42,7 @@ namespace Services
                 throw new InvalidOperationException("Computador no encontrado.");
             }
 
+            existente.Nombre = model.Nombre;
             existente.SalaId = model.SalaId;
             existente.Estado = model.Estado;
 

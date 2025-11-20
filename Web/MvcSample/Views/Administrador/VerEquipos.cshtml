@@ -25,7 +25,7 @@
     <table class="table equipos-table">
         <thead>
             <tr>
-                <th>ID del Equipo</th>
+                <th>Nombre del equipo</th>
                 <th>Estado</th>
                 <th>Sala</th>
                 <th>Acciones</th>
@@ -36,7 +36,7 @@
             @foreach (var equipo in Model)
             {
                 <tr>
-                    <td>@equipo.Id</td>
+                    <td>@equipo.Nombre</td>
                     <td>
                         @if (equipo.Estado == "Disponible")
                         {

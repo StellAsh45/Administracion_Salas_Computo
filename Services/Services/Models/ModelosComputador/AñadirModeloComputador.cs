@@ -8,6 +8,7 @@ namespace Services.Models.ModelosComputador
 {
     public class AñadirModeloComputador
     {
+        public string Nombre { get; set; }
         public string Estado { get; set; }
         public Guid? SalaId { get; set; }
     }

@@ -1,4 +1,5 @@
-﻿<div class="salas-table-container">
+﻿@using System.Linq
+<div class="salas-table-container">
 
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
@@ -28,6 +29,7 @@
                 <th>Número de Salón</th>
                 <th>Capacidad (Equipos)</th>
                 <th>Estado</th>
+                <th>PCs asignados</th>
                 <th>Acciones</th>
             </tr>
         </thead>
@@ -45,6 +47,22 @@
                         else
                         {
                             <span class="tag tag-mantenimiento">Mantenimiento</span>
+                        }
+                    </td>
+                    <td>
+                        @{
+                            var pcs = sala.Computadores as IEnumerable<Services.Models.ModelosComputador.ModeloComputador> ?? new List<Services.Models.ModelosComputador.ModeloComputador>();
+                            var nombres = pcs.Where(p => !string.IsNullOrWhiteSpace(p.Nombre))
+                                             .Select(p => p.Nombre)
+                                             .ToList();
+                        }
+                        @if (nombres.Any())
+                        {
+                            @string.Join(", ", nombres)
+                        }
+                        else
+                        {
+                            <span>No asignados</span>
                         }
                     </td>
                     <td>

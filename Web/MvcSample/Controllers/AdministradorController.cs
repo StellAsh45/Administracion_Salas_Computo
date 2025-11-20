@@ -278,6 +278,7 @@ namespace MvcSample.Controllers
                 return View("EditarEquipo", model);
             }
 
+            existente.Nombre = model.Nombre;
             existente.Estado = model.Estado;
             existente.SalaId = model.SalaId;
 

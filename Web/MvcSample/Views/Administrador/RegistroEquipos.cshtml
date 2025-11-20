@@ -9,7 +9,12 @@
 <form asp-action="RegistroEquipos" asp-controller="Administrador" method="post">
     @Html.AntiForgeryToken()
 
-    <!-- Estado del equipo -->
+    <div class="form-group">
+        <label asp-for="Nombre" class="text-white">Nombre del equipo</label>
+        <input asp-for="Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+
     <div class="form-group">
         <label asp-for="Estado" class="text-white">Estado del equipo</label>
         <select asp-for="Estado" class="form-control">
