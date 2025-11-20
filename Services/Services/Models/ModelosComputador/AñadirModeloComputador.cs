@@ -9,6 +9,6 @@ namespace Services.Models.ModelosComputador
     public class AñadirModeloComputador
     {
         public string Estado { get; set; }
-        public Guid SalaId { get; set; }
+        public Guid? SalaId { get; set; }
     }
 }

@@ -1,0 +1,45 @@
+﻿@model Services.Models.ModelosSala.ModeloSala
+
+@{
+    ViewData["Title"] = "Editar sala";
+}
+
+<h2>Editar sala</h2>
+
+<form asp-action="EditarSala" asp-controller="Administrador" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group mb-3">
+        <label asp-for="NumeroSalon" class="text-dark">Número de salón</label>
+        <input asp-for="NumeroSalon" class="form-control" readonly />
+        <span asp-validation-for="NumeroSalon" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Capacidad" class="text-dark">Capacidad</label>
+        <input asp-for="Capacidad" type="number" min="1" max="30" class="form-control" />
+        <span asp-validation-for="Capacidad" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Estado" class="text-dark">Estado</label>
+        <select asp-for="Estado" class="form-control">
+            <option value="">-- Selecciona un estado --</option>
+            <option value="Disponible">Disponible</option>
+            <option value="Mantenimiento">Mantenimiento</option>
+        </select>
+        <span asp-validation-for="Estado" class="text-danger"></span>
+    </div>
+
+    <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a class="btn btn-light text-primary fw-bold" asp-controller="Administrador" asp-action="VerSalas">Volver</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

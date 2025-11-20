@@ -14,8 +14,6 @@ namespace Infrastructure.Repositories
         Task Save(Computador computador);
         Task Update(Computador computador);
         Task Delete(Guid id);
-        Task AssignToUser(Guid computadorId, Guid usuarioId);
-        Task Release(Guid computadorId);
         Task SetEstado(Guid computadorId, string estado);
     }
 }

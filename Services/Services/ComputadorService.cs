@@ -3,7 +3,6 @@ using Infrastructure.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Services.Models.ModelosComputador;
 
@@ -37,28 +36,21 @@ namespace Services
 
         public async Task UpdateComputador(ModeloComputador model)
         {
-            await repo.Update(mapper.Map<Domain.Computador>(model));
+            var existente = await repo.GetComputador(model.Id);
+            if (existente == null)
+            {
+                throw new InvalidOperationException("Computador no encontrado.");
+            }
+
+            existente.SalaId = model.SalaId;
+            existente.Estado = model.Estado;
+
+            await repo.Update(existente);
         }
 
         public async Task DeleteComputador(Guid id)
         {
             await repo.Delete(id);
-        }
-
-        public async Task AssignComputador(Guid computadorId, Guid usuarioId)
-        {
-            await repo.AssignToUser(computadorId, usuarioId);
-        }
-
-        public async Task ReleaseComputador(Guid computadorId)
-        {
-            await repo.Release(computadorId);
-        }
-
-        public async Task BlockComputador(Guid computadorId, string reason)
-        {
-            // almacena motivo en un reporte opcional o simplemente marca estado
-            await repo.SetEstado(computadorId, "Mantenimiento");
         }
     }
 }

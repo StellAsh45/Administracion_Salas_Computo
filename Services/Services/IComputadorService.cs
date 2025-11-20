@@ -14,9 +14,5 @@ namespace Services
         Task AddComputador(AñadirModeloComputador model);
         Task UpdateComputador(ModeloComputador model);
         Task DeleteComputador(Guid id);
-
-        Task AssignComputador(Guid computadorId, Guid usuarioId);
-        Task ReleaseComputador(Guid computadorId);
-        Task BlockComputador(Guid computadorId, string reason);
     }
 }

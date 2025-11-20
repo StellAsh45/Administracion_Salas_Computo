@@ -1,18 +1,20 @@
-﻿<div class="equipos-table-container">
+﻿@model IList<Services.Models.ModelosComputador.ModeloComputador>
 
-    <div class="header-equipos">
-        <h2>Equipos registrados</h2>
+<div class="equipos-table-container">
 
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2>Equipos registrados</h2>
+            <p>Añade equipos a una sala y administra su estado</p>
+        </div>
         <div class="acciones-derecha">
             <a class="btn-agregar-equipo" asp-controller="Administrador" asp-action="RegistroEquipos">
-                + Registrar equipo
+                <i class="bi bi-plus-lg me-1"></i>Agregar Equipo
             </a>
-
             <a class="btn-agregar-equipo" asp-controller="Administrador" asp-action="Principal">
-                Volver
+                <i class="bi me-1"></i>Volver
             </a>
         </div>
-
     </div>
 
     @if (TempData["Success"] != null)
@@ -20,13 +22,12 @@
         <div class="alert alert-success">@TempData["Success"]</div>
     }
 
-    <table class="table table-striped equipos-table">
+    <table class="table equipos-table">
         <thead>
             <tr>
                 <th>ID del Equipo</th>
                 <th>Estado</th>
                 <th>Sala</th>
-                <th>Asignado a Usuario</th>
                 <th>Acciones</th>
             </tr>
         </thead>
@@ -36,43 +37,29 @@
             {
                 <tr>
                     <td>@equipo.Id</td>
-                    <td>@equipo.Estado</td>
-                    <td>@equipo.SalaId</td>
                     <td>
-                        @if (equipo.UsuarioId == null)
+                        @if (equipo.Estado == "Disponible")
                         {
-                            <span>No asignado</span>
+                            <span class="tag tag-disponible">Disponible</span>
                         }
                         else
                         {
-                            <span>@equipo.UsuarioId</span>
+                            <span class="tag tag-mantenimiento">Mantenimiento</span>
                         }
                     </td>
-
+                    <td>@(string.IsNullOrWhiteSpace(equipo.SalaDisplay) ? "No asignada" : equipo.SalaDisplay)</td>
                     <td>
-
-                        <a class="icon-btn"
-                           asp-controller="Administrador"
-                           asp-action="EditarEquipo"
-                           asp-route-id="@equipo.Id">
-                            Editar
+                        <a class="icon-btn" asp-controller="Administrador" asp-action="EditarEquipo" asp-route-id="@equipo.Id">
+                            <i class="bi bi-pencil"></i>
                         </a>
 
-                        <form asp-controller="Administrador"
-                              asp-action="BorrarEquipo"
-                              method="post"
-                              style="display:inline;">
-
+                        <form asp-controller="Administrador" asp-action="BorrarEquipo" method="post" style="display:inline;">
                             @Html.AntiForgeryToken()
                             <input type="hidden" name="id" value="@equipo.Id" />
-
-                            <button type="submit"
-                                    class="icon-btn delete"
-                                    onclick="return confirm('¿Está seguro que desea eliminar el equipo con ID @equipo.Id?');">
-                                Eliminar
+                            <button type="submit" class="icon-btn delete" onclick="return confirm('¿Está seguro que desea eliminar el equipo con ID @equipo.Id?');">
+                                <i class="bi bi-trash"></i>
                             </button>
                         </form>
-
                     </td>
                 </tr>
             }

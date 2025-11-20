@@ -15,8 +15,5 @@ namespace Domain
 
         public Guid? SalaId { get; set; } // Puede ser nulo si el computador no está asignado a ninguna sala
         public Sala? Sala { get; set; }
-
-        public Guid? UsuarioId { get; set; }
-        public Usuario Usuario { get; set; }
     }
 }

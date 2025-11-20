@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\MvcSample.csproj": {}
+    "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\MvcSample.csproj": {}
   },
   "projects": {
-    "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Domain.csproj": {
+    "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\estudiante\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Miguel Polo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\estudiante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Miguel Polo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,24 +66,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\estudiante\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Miguel Polo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\estudiante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Miguel Polo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -91,14 +92,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Domain.csproj"
+              "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Domain\\Domain\\Domain.csproj"
               }
             }
           }
@@ -158,24 +160,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Services.csproj": {
+    "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\estudiante\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\obj\\",
+        "projectPath": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\Miguel Polo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\estudiante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Miguel Polo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -184,14 +186,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Infrastructure\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -237,24 +240,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\MvcSample.csproj": {
+    "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\MvcSample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\MvcSample.csproj",
+        "projectUniqueName": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\MvcSample.csproj",
         "projectName": "MvcSample",
-        "projectPath": "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\MvcSample.csproj",
-        "packagesPath": "C:\\Users\\estudiante\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\obj\\",
+        "projectPath": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\MvcSample.csproj",
+        "packagesPath": "C:\\Users\\Miguel Polo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\estudiante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Miguel Polo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -263,14 +266,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\estudiante\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Services.csproj"
+              "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\Miguel Polo\\Documents\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Services.csproj"
               }
             }
           }
@@ -331,7 +335,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

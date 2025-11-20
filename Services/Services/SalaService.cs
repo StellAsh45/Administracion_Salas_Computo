@@ -35,14 +35,43 @@ namespace Services
 
         public async Task AddSala(AñadirModeloSala model)
         {
+            if (model.NumeroSalon <= 0)
+            {
+                throw new InvalidOperationException("El número de salón debe ser mayor que 0.");
+            }
+
+            if (model.Capacidad < 1 || model.Capacidad > 30)
+            {
+                throw new InvalidOperationException("La capacidad debe estar entre 1 y 30 dispositivos.");
+            }
+
+            var salasExistentes = await repo.GetSalas();
+            if (salasExistentes.Any(s => s.NumeroSalon == model.NumeroSalon))
+            {
+                throw new InvalidOperationException($"Ya existe una sala con el número {model.NumeroSalon}.");
+            }
+
             var entity = mapper.Map<Domain.Sala>(model);
             await repo.Save(entity);
         }
 
         public async Task UpdateSala(ModeloSala model)
         {
-            var entity = mapper.Map<Domain.Sala>(model);
-            await repo.Update(entity);
+            if (model.Capacidad < 1 || model.Capacidad > 30)
+            {
+                throw new InvalidOperationException("La capacidad debe estar entre 1 y 30 dispositivos.");
+            }
+
+            var existente = await repo.GetSala(model.Id);
+            if (existente == null)
+            {
+                throw new InvalidOperationException("Sala no encontrada.");
+            }
+
+            existente.Capacidad = model.Capacidad;
+            existente.Estado = model.Estado;
+
+            await repo.Update(existente);
         }
 
         public async Task DeleteSala(Guid id)

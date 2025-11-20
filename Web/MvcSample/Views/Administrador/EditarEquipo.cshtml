@@ -1,0 +1,39 @@
+﻿@model Services.Models.ModelosComputador.ModeloComputador
+
+@{
+    ViewData["Title"] = "Editar equipo";
+}
+
+<h2>Editar equipo</h2>
+
+<form asp-action="EditarEquipo" asp-controller="Administrador" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group mb-3">
+        <label asp-for="Estado" class="text-white">Estado</label>
+        <select asp-for="Estado" class="form-control">
+            <option value="" disabled>-- Selecciona un estado --</option>
+            <option value="Disponible">Disponible</option>
+            <option value="Mantenimiento">Mantenimiento</option>
+        </select>
+        <span asp-validation-for="Estado" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="SalaId" class="text-white">Sala</label>
+        <select asp-for="SalaId" class="form-control" asp-items="ViewBag.Salas" id="SalaId">
+            <option value="">-- No asignada --</option>
+        </select>
+        <span asp-validation-for="SalaId" class="text-danger"></span>
+    </div>
+
+    <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a class="btn btn-light text-primary fw-bold" asp-controller="Administrador" asp-action="VerEquipos">Volver</a>
+</form>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

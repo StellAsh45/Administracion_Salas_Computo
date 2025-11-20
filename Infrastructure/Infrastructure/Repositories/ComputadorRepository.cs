@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories
@@ -16,7 +15,6 @@ namespace Infrastructure.Repositories
         {
             return await context.Computadores
                 .Include(c => c.Sala)
-                .Include(c => c.Usuario)
                 .ToListAsync();
         }
 
@@ -24,7 +22,6 @@ namespace Infrastructure.Repositories
         {
             return await context.Computadores
                 .Include(c => c.Sala)
-                .Include(c => c.Usuario)
                 .FirstOrDefaultAsync(c => c.Id == id);
         }
 
@@ -69,50 +66,6 @@ namespace Infrastructure.Repositories
                 if (entity != null)
                 {
                     context.Computadores.Remove(entity);
-                    await context.SaveChangesAsync();
-                }
-                await Comit();
-            }
-            catch
-            {
-                await RollBack();
-                throw;
-            }
-        }
-
-        public async Task AssignToUser(Guid computadorId, Guid usuarioId)
-        {
-            try
-            {
-                await Beguin();
-                var comp = await context.Computadores.FirstOrDefaultAsync(c => c.Id == computadorId);
-                if (comp != null)
-                {
-                    comp.UsuarioId = usuarioId;
-                    comp.Estado = "Ocupado";
-                    context.Computadores.Update(comp);
-                    await context.SaveChangesAsync();
-                }
-                await Comit();
-            }
-            catch
-            {
-                await RollBack();
-                throw;
-            }
-        }
-
-        public async Task Release(Guid computadorId)
-        {
-            try
-            {
-                await Beguin();
-                var comp = await context.Computadores.FirstOrDefaultAsync(c => c.Id == computadorId);
-                if (comp != null)
-                {
-                    comp.UsuarioId = null;
-                    comp.Estado = "Disponible";
-                    context.Computadores.Update(comp);
                     await context.SaveChangesAsync();
                 }
                 await Comit();

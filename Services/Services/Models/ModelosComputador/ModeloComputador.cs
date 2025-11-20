@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Services.Models.ModelosComputador
 {
@@ -10,7 +7,7 @@ namespace Services.Models.ModelosComputador
     {
         public Guid Id { get; set; }
         public string Estado { get; set; }
-        public Guid SalaId { get; set; }
-        public Guid? UsuarioId { get; set; }
+        public Guid? SalaId { get; set; }
+        public string SalaDisplay { get; set; } = string.Empty;
     }
 }

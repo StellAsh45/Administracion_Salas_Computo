@@ -32,17 +32,12 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("SalaId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("UsuarioId")
+                    b.Property<Guid?>("SalaId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
                     b.HasIndex("SalaId");
-
-                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Computadores");
                 });
@@ -217,17 +212,9 @@ namespace Infrastructure.Migrations
                 {
                     b.HasOne("Domain.Sala", "Sala")
                         .WithMany("Computadores")
-                        .HasForeignKey("SalaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Domain.Usuario", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("UsuarioId");
+                        .HasForeignKey("SalaId");
 
                     b.Navigation("Sala");
-
-                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("Domain.Cow", b =>

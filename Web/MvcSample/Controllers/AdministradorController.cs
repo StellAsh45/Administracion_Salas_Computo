@@ -24,7 +24,7 @@ namespace MvcSample.Controllers
         }
 
         [HttpGet]
-        public IActionResult Principal()
+        public async Task<IActionResult> Principal()
         {
             ViewBag.Success = TempData["Success"];
             return View();
@@ -134,19 +134,87 @@ namespace MvcSample.Controllers
             if (!ModelState.IsValid)
                 return View("RegistroSala", model);
 
-            await _salaService.AddSala(model);
+            try
+            {
+                await _salaService.AddSala(model);
+                TempData["Success"] = "Sala registrada correctamente.";
+                return RedirectToAction("VerSalas");
+            }
+            catch (InvalidOperationException ex)
+            {
+                ModelState.AddModelError(string.Empty, ex.Message);
+                return View("RegistroSala", model);
+            }
+            catch (Exception)
+            {
+                ModelState.AddModelError(string.Empty, "Ocurrió un error al registrar la sala.");
+                return View("RegistroSala", model);
+            }
+        }
 
-            TempData["Success"] = "Sala registrada correctamente.";
+        // EDITAR SALAS - GET
+        [HttpGet]
+        public async Task<IActionResult> EditarSala(Guid id)
+        {
+            var sala = await _salaService.GetSala(id);
+            if (sala == null) return NotFound();
+            return View("EditarSala", sala);
+        }
+
+        // EDITAR SALAS - POST
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditarSala(ModeloSala model)
+        {
+            var existente = await _salaService.GetSala(model.Id);
+            if (existente == null) return NotFound();
+
+            if (!ModelState.IsValid)
+            {
+                return View("EditarSala", model);
+            }
+            existente.Capacidad = model.Capacidad;
+            existente.Estado = model.Estado;
+
+            await _salaService.UpdateSala(existente);
+            TempData["Success"] = "Sala actualizada correctamente.";
             return RedirectToAction("VerSalas");
         }
 
-
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> BorrarSala(Guid id)
+        {
+            await _salaService.DeleteSala(id);
+            TempData["Success"] = "Sala eliminada correctamente.";
+            return RedirectToAction("VerSalas");
+        }
 
         [HttpGet]
         public async Task<IActionResult> VerEquipos()
         {
             var equipos = await _computadorService.GetComputadores();
-            equipos ??= new List<ModeloComputador>();
+            equipos ??= new List<Services.Models.ModelosComputador.ModeloComputador>();
+
+            var salas = await _salaService.GetSalas();
+            salas ??= new List<Services.Models.ModelosSala.ModeloSala>();
+            var salaDict = salas.ToDictionary(s => s.Id, s => s.NumeroSalon.ToString());
+
+            foreach (var e in equipos)
+            {
+                if (!e.SalaId.HasValue || e.SalaId == Guid.Empty)
+                {
+                    e.SalaDisplay = "No asignada";
+                }
+                else if (salaDict.TryGetValue(e.SalaId.Value, out var salaText))
+                {
+                    e.SalaDisplay = salaText;
+                }
+                else
+                {
+                    e.SalaDisplay = "No asignada";
+                }
+            }
 
             return View("VerEquipos", equipos);
         }
@@ -160,7 +228,7 @@ namespace MvcSample.Controllers
             ViewBag.Salas = salas.Select(s => new SelectListItem
             {
                 Value = s.Id.ToString(),
-                Text = s.NumeroSalon.ToString()   // <-- ESTO ES LO QUE FALTABA
+                Text = s.NumeroSalon.ToString()
             }).ToList();
 
             return View(new AñadirModeloComputador());
@@ -201,13 +269,19 @@ namespace MvcSample.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditarEquipo(ModeloComputador model)
         {
+            var existente = await _computadorService.GetComputador(model.Id);
+            if (existente == null) return NotFound();
+
             if (!ModelState.IsValid)
             {
                 await CargarSalas();
                 return View("EditarEquipo", model);
             }
 
-            await _computadorService.UpdateComputador(model);
+            existente.Estado = model.Estado;
+            existente.SalaId = model.SalaId;
+
+            await _computadorService.UpdateComputador(existente);
             TempData["Success"] = "Equipo actualizado correctamente.";
             return RedirectToAction("VerEquipos");
         }
@@ -231,7 +305,7 @@ namespace MvcSample.Controllers
             ViewBag.Salas = salas.Select(s => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
             {
                 Value = s.Id.ToString(),
-                //Text = s.NumeroSalon
+                Text = s.NumeroSalon.ToString()
             }).ToList();
         }
 

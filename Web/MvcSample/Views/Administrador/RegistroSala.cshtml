@@ -1,42 +1,40 @@
 ﻿@model Services.Models.ModelosSala.AñadirModeloSala
 
 @{
-    ViewData["Title"] = "Registro de salas";
+    ViewData["Title"] = "Registro de sala";
 }
 
-<h2>Registro de salas</h2>
+<h2>Registro de sala</h2>
 
 <form asp-action="RegistroSala" asp-controller="Administrador" method="post">
     @Html.AntiForgeryToken()
 
-    <div class="form-group">
-        <label for="NumeroSalon" class="text-white">Numero de salón</label>
-        <input asp-for="NumeroSalon" class="form-control" />
+    <div class="form-group mb-3">
+        <label asp-for="NumeroSalon" class="text-dark">Número de salón</label>
+        <input asp-for="NumeroSalon" type="number" min="1" class="form-control" />
         <span asp-validation-for="NumeroSalon" class="text-danger"></span>
     </div>
 
-    <div class="form-group">
-        <label for="Capacidad" class="text-white">Capacidad</label>
-        <input asp-for="Capacidad" class="form-control" />
+    <div class="form-group mb-3">
+        <label asp-for="Capacidad" class="text-dark">Capacidad</label>
+        <input asp-for="Capacidad" type="number" min="1" max="30" class="form-control" />
         <span asp-validation-for="Capacidad" class="text-danger"></span>
     </div>
 
-    <div class="form-group">
-        <label asp-for="Estado">Estado</label>
+    <div class="form-group mb-3">
+        <label asp-for="Estado" class="text-dark">Estado</label>
         <select asp-for="Estado" class="form-control">
-            <option value="" selected disabled>-- Selecciona una opción --</option>
+            <option value="">-- Selecciona un estado --</option>
             <option value="Disponible">Disponible</option>
-            <option value="Ocupada">Ocupada</option>
             <option value="Mantenimiento">Mantenimiento</option>
         </select>
         <span asp-validation-for="Estado" class="text-danger"></span>
     </div>
 
-    <div asp-validation-summary="All" class="text-danger"></div>
+    <div asp-validation-summary="All" class="text-danger mb-3"></div>
 
-    <button type="submit" class="btn btn-primary">Registrar</button>
+    <button type="submit" class="btn btn-primary">Registrar sala</button>
     <a class="btn btn-light text-primary fw-bold" asp-controller="Administrador" asp-action="VerSalas">Volver</a>
-
 </form>
 
 @section Scripts {

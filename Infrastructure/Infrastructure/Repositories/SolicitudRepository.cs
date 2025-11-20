@@ -101,7 +101,6 @@ namespace Infrastructure.Repositories
                 var computador = await context.Computadores.FirstOrDefaultAsync(c => c.Id == solicitud.ComputadorId);
                 if (computador != null)
                 {
-                    computador.UsuarioId = solicitud.UsuarioId;
                     computador.Estado = "Ocupado";
                     context.Computadores.Update(computador);
                 }

@@ -15,7 +15,7 @@ namespace MvcSample.Controllers
         }
 
         [HttpGet]
-        public IActionResult Principal()
+        public async Task<IActionResult> Principal()
         {
             ViewBag.Success = TempData["Success"];
             return View();

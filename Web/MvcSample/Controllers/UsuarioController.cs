@@ -9,9 +9,17 @@ namespace MvcSample.Controllers
     [Authorize(Roles = "Usuario")]
     public class UsuarioController : Controller
     {
-        // PANEL PRINCIPAL
-        public IActionResult Principal()
+        private readonly IUsuarioService _usuarioService;
+
+        public UsuarioController(IUsuarioService usuarioService)
         {
+            _usuarioService = usuarioService;
+        }
+        // PANEL PRINCIPAL
+        [HttpGet]
+        public async Task<IActionResult> Principal()
+        {
+            ViewBag.Success = TempData["Success"];
             return View();
         }
     }

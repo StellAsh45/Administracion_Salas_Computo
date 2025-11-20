@@ -50,10 +50,10 @@ body {
     font-size: 18px;
 }
 
-    .custom-navbar a {
-        color: #1e5bd4;
-        text-decoration: none;
-    }
+.custom-navbar a {
+    color: #1e5bd4;
+    text-decoration: none;
+}
 
 /* Tarjetas */
 .panel-card {
@@ -65,34 +65,36 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-    .panel-card .icon-wrapper {
-        width: 70px;
-        height: 70px;
-        background: #e4edff;
-        color: #1e5bd4;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 32px;
-        margin: 0 auto 15px;
-    }
-    .panel-card .fw-bold{
-        color: black;
-    }
-    /* Botón Abrir */
-    .btn-open {
-        width: 100%;
-        background: #1e5bd4;
-        color: white;
-        padding: 10px;
-        border-radius: 8px;
-        margin-top: 20px;
-    }
+.panel-card .icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background: #e4edff;
+    color: #1e5bd4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin: 0 auto 15px;
+}
 
-    .btn-open:hover {
-        background: #144aaf;
-    }
+.panel-card .fw-bold{
+    color: black;
+}
+
+/* Botón Abrir */
+.btn-open {
+    width: 100%;
+    background: #1e5bd4;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.btn-open:hover {
+    background: #144aaf;
+}
 
 /* Texto blanco superior */
 .panel-title {
@@ -100,13 +102,13 @@ body {
     padding-left: 40px;
 }
 
-    .panel-title h1 {
-        font-weight: 600;
-    }
+.panel-title h1 {
+    font-weight: 600;
+}
 
-    .panel-title h4 {
-        font-weight: 300;
-    }
+.panel-title h4 {
+    font-weight: 300;
+}
 
  /* Estilos de VerUsuarios*/  
 .usuarios-container {
@@ -168,16 +170,6 @@ body {
     color: #444;
 }
 
-.icon-btn {
-    background: #f1f1f5;
-    border-radius: 8px;
-    padding: 6px 10px;
-    margin-right: 6px;
-    text-decoration: none;
-    display: inline-block;
-    color: #000;
-}
-
 .icon-btn:hover {
     background: #e4e4e6;
 }
@@ -190,9 +182,6 @@ body {
     background: #ffbaba;
 }
 
-/*Nav-bar*/
-
-
 /*Estilos verSalas*/
 
 .salas-table-container {
@@ -203,12 +192,17 @@ body {
     margin-top: 20px;
 }
 
-    /* Título */
-    .salas-table-container h2 {
-        font-size: 22px;
-        font-weight: bold;
-        color: #000;
-    }
+/* Título */
+.salas-table-container h2 {
+   font-size: 22px;
+   font-weight: bold;
+   color: #000;
+}
+
+.salas-table-container p {
+    margin: 0;
+    color: #000;
+}
 
 /* Botón Registrar sala */
 .btn-agregar-sala {
@@ -220,27 +214,17 @@ body {
     text-decoration: none;
 }
 
-    .btn-agregar-sala:hover {
-        background: #121241;
-    }
+.btn-agregar-sala:hover {
+    background: #121241;
+}
 
-    .btn-volver-sala:hover {
-        background: #e4e4e6;
-    }
+.btn-volver-sala:hover {
+    background: #e4e4e6;
+}
 
 .salas-table th {
     color: #000 !important;
     font-weight: bold;
-}
-
-.icon-btn {
-    background: #f1f1f5;
-    border-radius: 8px;
-    padding: 6px 10px;
-    margin-right: 6px;
-    text-decoration: none;
-    display: inline-block;
-    color: #000;
 }
 
 .header-salas {
@@ -257,19 +241,6 @@ body {
     margin-bottom: 15px;
 }
 
-    .icon-btn:hover {
-        background: #e4e4e6;
-    }
-
-    .icon-btn.delete {
-        background: #ffe0e0;
-    }
-
-        .icon-btn.delete:hover {
-            background: #ffbaba;
-        }
-
-
 /*Estilos verEquipos */
 .equipos-table-container {
     background: #fff;
@@ -279,6 +250,16 @@ body {
     margin-top: 20px;
 }
 
+.equipos-table-container h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+}
+
+.equipos-table-container p {
+    margin: 0;
+    color: #000;
+}
 
 .header-equipos {
     display: flex;
@@ -287,37 +268,43 @@ body {
     margin-bottom: 15px;
 }
 
-    .header-equipos h2 {
-        font-size: 22px;
-        font-weight: bold;
-        color: #000;
+.header-equipos h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
     }
-
-
-.acciones-derecha {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-}
 
 .btn-agregar-equipo {
     background: #0b0b32;
     color: white !important;
-    padding: 10px 14px;
-    margin: 5px 0;
+    padding: 10px 10px;
+    margin: 5px;
     border-radius: 10px;
     text-decoration: none;
-    display: inline-block;
-    font-weight: 600;
 }
 
-    .btn-agregar-equipo:hover {
-        background: #121241;
-    }
+.btn-agregar-equipo:hover {
+    background: #121241;
+}
 
 .equipos-table th {
     color: #000 !important;
     font-weight: bold;
+}
+
+.tag-disponible {
+    background: #d7f7db;
+    color: #2d8a2d;
+}
+
+.tag-ocupado {
+    background: #fff3b2;
+    color: #a8860f;
+}
+
+.tag-mantenimiento {
+    background: #f8c6c6;
+    color: #b12a2a;
 }
 
 .icon-btn {
@@ -332,14 +319,3 @@ body {
     border: none;
 }
 
-    .icon-btn:hover {
-        background: #e4e4e6;
-    }
-
-    .icon-btn.delete {
-        background: #ffe0e0;
-    }
-
-        .icon-btn.delete:hover {
-            background: #ffbaba;
-        }
