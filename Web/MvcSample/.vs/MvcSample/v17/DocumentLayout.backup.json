@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\registrosala.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\administrador\\registrosala.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\registrousuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\administrador\\registrousuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\registroequipos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\administrador\\registroequipos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\views\\usuario\\crearsolicitud.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\usuario\\crearsolicitud.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\services\\services\\models\\modelosusuario\\modelousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -24,30 +32,10 @@
       "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\services\\services\\models\\modeloscomputador\\a\u00F1adirmodelocomputador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\registroequipos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\administrador\\registroequipos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\verequipos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\administrador\\verequipos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\services\\services\\isalaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\views\\coordinadorsala\\principal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\coordinadorsala\\principal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\services\\services\\models\\modelosusuario\\a\u00F1adirmodelousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\controllers\\coordinadorsalacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:controllers\\coordinadorsalacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\principal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\administrador\\principal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\services\\services\\models\\modelossala\\a\u00F1adirmodelosala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -63,56 +51,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "RegistroUsuarios.cshtml",
+              "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\RegistroUsuarios.cshtml",
+              "RelativeDocumentMoniker": "Views\\Administrador\\RegistroUsuarios.cshtml",
+              "ToolTip": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\RegistroUsuarios.cshtml",
+              "RelativeToolTip": "Views\\Administrador\\RegistroUsuarios.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T16:17:21.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegistroSala.cshtml",
+              "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\RegistroSala.cshtml",
+              "RelativeDocumentMoniker": "Views\\Administrador\\RegistroSala.cshtml",
+              "ToolTip": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\RegistroSala.cshtml",
+              "RelativeToolTip": "Views\\Administrador\\RegistroSala.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T16:06:11.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CrearSolicitud.cshtml",
               "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Usuario\\CrearSolicitud.cshtml",
               "RelativeDocumentMoniker": "Views\\Usuario\\CrearSolicitud.cshtml",
               "ToolTip": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Usuario\\CrearSolicitud.cshtml",
               "RelativeToolTip": "Views\\Usuario\\CrearSolicitud.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-20T14:22:36.107Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "VerEquipos.cshtml",
-              "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\VerEquipos.cshtml",
-              "RelativeDocumentMoniker": "Views\\Administrador\\VerEquipos.cshtml",
-              "ToolTip": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\VerEquipos.cshtml",
-              "RelativeToolTip": "Views\\Administrador\\VerEquipos.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAYAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-19T21:01:00.397Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CoordinadorSalaController.cs",
-              "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Controllers\\CoordinadorSalaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CoordinadorSalaController.cs",
-              "ToolTip": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Controllers\\CoordinadorSalaController.cs",
-              "RelativeToolTip": "Controllers\\CoordinadorSalaController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T22:28:26.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Principal.cshtml",
-              "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\Principal.cshtml",
-              "RelativeDocumentMoniker": "Views\\CoordinadorSala\\Principal.cshtml",
-              "ToolTip": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\Principal.cshtml",
-              "RelativeToolTip": "Views\\CoordinadorSala\\Principal.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-17T22:26:08.355Z"
             },
             {
               "$type": "Document",
@@ -128,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ModeloUsuario.cs",
               "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosUsuario\\ModeloUsuario.cs",
               "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosUsuario\\ModeloUsuario.cs",
@@ -140,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 11,
               "Title": "ModeloSala.cs",
               "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosSala\\ModeloSala.cs",
               "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosSala\\ModeloSala.cs",
@@ -152,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "A\u00F1adirModeloUsuario.cs",
               "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosUsuario\\A\u00F1adirModeloUsuario.cs",
               "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosUsuario\\A\u00F1adirModeloUsuario.cs",
@@ -164,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 10,
               "Title": "A\u00F1adirModeloSala.cs",
               "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosSala\\A\u00F1adirModeloSala.cs",
               "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosSala\\A\u00F1adirModeloSala.cs",
@@ -176,19 +154,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "RegistroEquipos.cshtml",
               "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\RegistroEquipos.cshtml",
               "RelativeDocumentMoniker": "Views\\Administrador\\RegistroEquipos.cshtml",
               "ToolTip": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\RegistroEquipos.cshtml",
               "RelativeToolTip": "Views\\Administrador\\RegistroEquipos.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-17T19:43:13.156Z"
+              "WhenOpened": "2025-11-17T19:43:13.156Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ModeloComputador.cs",
               "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosComputador\\ModeloComputador.cs",
               "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosComputador\\ModeloComputador.cs",
@@ -200,19 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdministradorController.cs",
-              "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Controllers\\AdministradorController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AdministradorController.cs",
-              "ToolTip": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Controllers\\AdministradorController.cs",
-              "RelativeToolTip": "Controllers\\AdministradorController.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAYwI0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T17:30:41.846Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "A\u00F1adirModeloComputador.cs",
               "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Services\\Services\\Models\\ModelosComputador\\A\u00F1adirModeloComputador.cs",
               "RelativeDocumentMoniker": "..\\..\\Services\\Services\\Models\\ModelosComputador\\A\u00F1adirModeloComputador.cs",
@@ -224,25 +191,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Principal.cshtml",
-              "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\Principal.cshtml",
-              "RelativeDocumentMoniker": "Views\\Administrador\\Principal.cshtml",
-              "ToolTip": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\Principal.cshtml",
-              "RelativeToolTip": "Views\\Administrador\\Principal.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-17T16:54:49.169Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAADYBAAAAAAAAAAAcwEgBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAEgBAAAAAAAAAAAcwEgBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-11-17T16:43:38.818Z",
               "EditorCaption": ""
