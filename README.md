@@ -23,13 +23,16 @@ Desarrollar una aplicación web en ASP.NET Core MVC para la administración de l
 ## Requisitos
 
 - .NET9 SDK instalado.
-- Visual Studio o VS Code con extensiones de C# (opcional).
+- Visual Studio
 
 ## Configuración local
 
 - Clonar el repositorio:
 - Configurar la cadena de conexión en `appsettings.json` dentro del proyecto `Web/MvcSample/`:
-`ConnectionStrings__DefaultConnection="Server=...;Database=...;User Id=...;Password=...;"`
+
+`"ConnectionStrings": {` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"DefaultConnection": "Server=...;Database=...;User Id=...;Password=..."` <br>
+`},` <br>
 
 ## Estructura del repositorio
 
@@ -62,7 +65,7 @@ Desarrollar una aplicación web en ASP.NET Core MVC para la administración de l
 ## Autenticación y roles
 
 - El sistema utiliza roles: Usuario, Coordinador de Sala, Administrador.
-- Si no hay usuarios pre-registrados, registra uno y asigna rol vía interfaz de administración o implementa un seeder.
+- Si no hay usuarios pre-registrados, debes crear un administrador en la base de datos para iniciar seccion y acceder al panel de registro usuarios o implementa un seeder.
 - Asegúrate de configurar correctamente la autenticación en `Program.cs`.
 
 ## Pruebas unitarias
