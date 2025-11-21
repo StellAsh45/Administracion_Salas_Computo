@@ -1,0 +1,52 @@
+﻿# Administracion_Salas_Computo
+
+Aplicación web en ASP.NET Core (MVC) para administrar salas y equipos de cómputo en la universidad. Permite gestionar salas, equipos, usuarios y solicitudes, con control de roles y reportes básicos.
+
+
+## Características
+
+- Gestión de salas: número, capacidad y estado.
+- Gestión de equipos: registro, edición, asignación y estados (Disponible, Ocupado, Bloqueado, Mantenimiento).
+- Gestión de usuarios y roles: Usuario, Coordinador de Sala, Administrador.
+- Flujo de solicitudes: solicitar uso de un equipo y proceso de aceptación/denegación.
+- Reportes simples y vistas de ocupación (diaria y semanal).
+
+
+## Estructura del repositorio
+
+- `Domain/` — Entidades del dominio.
+- `Infrastructure/` — Repositorios y acceso a datos.
+- `Services/` — Lógica de negocio.
+- `Web/MvcSample/` — Proyecto web (controladores y vistas).
+- `Test/ServicesTest/` — Pruebas unitarias (xUnit + Moq).
+
+
+## Requisitos
+
+- .NET9 SDK instalado.
+- Visual Studio o VS Code con extensiones de C# (opcional).
+
+
+## Ejecutar la aplicación (rápido)
+
+- Restaurar y compilar:
+
+ `dotnet restore`
+ `dotnet build`
+
+- Ejecutar el proyecto web:
+
+ `dotnet run --project Web/MvcSample/MvcSample.csproj`
+
+
+## Pruebas unitarias
+
+- Ejecutar todas las pruebas del proyecto de tests:
+
+ `dotnet test Test/ServicesTest/ServicesTest.csproj`
+
+
+## Licencia y contacto
+
+- Añade un `LICENSE` si deseas publicar bajo una licencia concreta.
+- Para dudas o colaboración, abre un issue o un pull request en el repositorio.
