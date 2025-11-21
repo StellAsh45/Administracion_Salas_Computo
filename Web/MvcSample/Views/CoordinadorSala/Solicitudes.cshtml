@@ -21,12 +21,12 @@
         </a>
     </div>
 
-    <form method="get" class="row g-3 mb-4">
+    <!--<form method="get" class="row g-3 mb-4">
         <div class="col-md-4">
             <label class="form-label text-muted">Estado</label>
-            @Html.DropDownList("estado", estadosSelect, htmlAttributes: new { @class = "form-select", onchange = "this.form.submit()" })
+            /*@Html.DropDownList("estado", estadosSelect, htmlAttributes: new { @class = "form-select", onchange = "this.form.submit()" })*/
         </div>
-    </form>
+    </form>-->
 
     @if (TempData["Success"] != null)
     {
@@ -51,7 +51,7 @@
             @if (Model == null || Model.Count == 0)
             {
                 <tr>
-                    <td colspan="6" class="text-center text-muted py-4">No hay solicitudes en este estado</td>
+                    <td colspan="6" class="text-center text-muted py-4">No hay solicitudes en este momento</td>
                 </tr>
             }
             else
