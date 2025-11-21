@@ -1,12 +1,6 @@
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\CoverletSourceRootsMapping_ServicesTest
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\testhost.dll
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\testhost.exe
-C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\NUnit3.TestAdapter.dll
-C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\NUnit3.TestAdapter.pdb
-C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\nunit.engine.dll
-C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\nunit.engine.api.dll
-C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\nunit.engine.core.dll
-C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\testcentric.engine.metadata.dll
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\ServicesTest.deps.json
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\ServicesTest.runtimeconfig.json
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\ServicesTest.dll
@@ -52,7 +46,6 @@ C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\Services
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\Moq.dll
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\NuGet.Frameworks.dll
-C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\nunit.framework.dll
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\System.ClientModel.dll
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
 C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\System.Diagnostics.EventLog.dll
@@ -324,3 +317,10 @@ C:\Users\glori\Downloads\GestionProyecto\Proyecto-Gestion\Administracion_Salas_C
 C:\Users\glori\Downloads\GestionProyecto\Proyecto-Gestion\Administracion_Salas_Computo\Test\ServicesTest\obj\Debug\net9.0\ServicesTest.pdb
 C:\Users\glori\Downloads\GestionProyecto\Proyecto-Gestion\Administracion_Salas_Computo\Test\ServicesTest\obj\Debug\net9.0\ServicesTest.genruntimeconfig.cache
 C:\Users\glori\Downloads\GestionProyecto\Proyecto-Gestion\Administracion_Salas_Computo\Test\ServicesTest\obj\Debug\net9.0\ref\ServicesTest.dll
+C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\xunit.runner.visualstudio.testadapter.dll
+C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\xunit.abstractions.dll
+C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\xunit.assert.dll
+C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\xunit.core.dll
+C:\Users\Miguel Polo\Documents\GitHub\Administracion_Salas_Computo\Test\ServicesTest\bin\Debug\net9.0\xunit.execution.dotnet.dll
