@@ -6,55 +6,67 @@
     var salas = ViewBag.Salas as SelectList ?? new SelectList(Enumerable.Empty<SelectListItem>());
     var computadores = ViewBag.Computadores as SelectList ?? new SelectList(Enumerable.Empty<SelectListItem>());
 }
+<div class="container mt-5 d-flex justify-content-center">
+    <div class="card shadow-lg p-4" style="max-width: 750px; width:100%;">
 
-<div class="registro-card">
-    <h2 class="mb-3">@tipo</h2>
-    <p class="text-muted">Describe el problema para que el coordinador pueda ayudarte</p>
-
-    <form asp-action="ReportarIncidente" method="post">
-        @Html.AntiForgeryToken()
-        <input type="hidden" name="tipo" value="@Model.Tipo" />
-
-        <div class="row">
-            <div class="col-md-6 mb-3">
-                <label class="form-label">Sala</label>
-                @Html.DropDownListFor(m => m.SalaId, salas, "-- Selecciona una sala --", new { @class = "form-select", id = "salaSelect" })
-                <small class="text-muted">@(tipo.ToLower() == "danio" ? "Primero selecciona la sala del equipo con daño" : "Primero selecciona la sala")</small>
-            </div>
-            <div class="col-md-6 mb-3">
-                <label asp-for="ComputadorId" class="form-label">Equipo</label>
-                @{
-                    var tieneSala = Model.SalaId.HasValue;
-                    var tieneEquipos = computadores != null && computadores.Any();
-                }
-                @if (tieneSala && tieneEquipos)
-                {
-                    @Html.DropDownListFor(m => m.ComputadorId, computadores, "-- Selecciona un equipo --", new { @class = "form-select", id = "computadorSelect" })
-                }
-                else
-                {
-                    @Html.DropDownListFor(m => m.ComputadorId, computadores, "-- Selecciona un equipo --", new { @class = "form-select", id = "computadorSelect", @disabled = "disabled" })
-                }
-                <span asp-validation-for="ComputadorId" class="text-danger"></span>
-                <small class="text-muted">@(tipo.ToLower() == "danio" ? "Luego selecciona el equipo de la sala" : "Luego selecciona el equipo de la sala")</small>
+        <!-- Ícono -->
+        <div class="text-center mb-3">
+            <div class="icon-wrapper mb-2"
+                 style="width:70px;height:70px;border-radius:50%;
+                        background:#e8f0ff;display:flex;
+                        align-items:center;justify-content:center;margin:auto;">
+                <i class="bi bi-tools" style="font-size: 2.2rem; color:#0d6efd;"></i>
             </div>
         </div>
 
-        <div class="mb-3">
-            <label asp-for="Descripcion" class="form-label">Descripción del incidente</label>
-            <textarea asp-for="Descripcion" class="form-control" rows="5" placeholder="Describe el daño, problema técnico o solicitud de apoyo"></textarea>
-            <span asp-validation-for="Descripcion" class="text-danger"></span>
-        </div>
+        <h2 class="text-dark mb-2 text-center">@tipo</h2>
+        <p class="text-muted text-center mb-4">Describe el problema para que el coordinador pueda ayudarte</p>
 
-        <div asp-validation-summary="All" class="text-danger mb-3"></div>
+        <form asp-action="ReportarIncidente" method="post">
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="tipo" value="@Model.Tipo" />
 
-        <div class="d-flex gap-3">
-            <button type="submit" class="btn btn-primary">
-                <i class="bi bi-flag me-1"></i>Enviar reporte
-            </button>
-            <a asp-action="Principal" class="btn btn-light text-primary fw-bold">Cancelar</a>
-        </div>
-    </form>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="text-dark form-label">Sala</label>
+                    @Html.DropDownListFor(m => m.SalaId, salas, "-- Selecciona una sala --", new { @class = "form-select", id = "salaSelect" })
+                    <small class="text-muted">@(tipo.ToLower() == "danio" ? "Primero selecciona la sala del equipo con daño" : "Primero selecciona la sala")</small>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="ComputadorId" class="text-dark form-label">Equipo</label>
+                    @{
+                        var tieneSala = Model.SalaId.HasValue;
+                        var tieneEquipos = computadores != null && computadores.Any();
+                    }
+                    @if (tieneSala && tieneEquipos)
+                    {
+                        @Html.DropDownListFor(m => m.ComputadorId, computadores, "-- Selecciona un equipo --", new { @class = "form-select", id = "computadorSelect" })
+                    }
+                    else
+                    {
+                        @Html.DropDownListFor(m => m.ComputadorId, computadores, "-- Selecciona un equipo --", new { @class = "form-select", id = "computadorSelect", @disabled = "disabled" })
+                    }
+                    <span asp-validation-for="ComputadorId" class="text-danger"></span>
+                    <small class="text-muted">@(tipo.ToLower() == "danio" ? "Luego selecciona el equipo de la sala" : "Luego selecciona el equipo de la sala")</small>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Descripcion" class="text-dark form-label">Descripción del incidente</label>
+                <textarea asp-for="Descripcion" class="form-control" rows="5" placeholder="Describe el daño, problema técnico o solicitud de apoyo"></textarea>
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+
+            <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+            <div class="d-flex gap-3">
+                <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-flag me-1"></i>Enviar reporte
+                </button>
+                <a asp-action="Principal" class="btn btn-light text-primary fw-bold">Cancelar</a>
+            </div>
+        </form>
+    </div>
 </div>
 
 @section Scripts {

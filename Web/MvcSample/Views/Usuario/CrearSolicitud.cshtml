@@ -29,7 +29,7 @@
                 @if (tipo.ToLower() == "liberacion")
                 {
                     <div class="col-md-6 mb-3">
-                        <label class="form-label fw-semibold">Sala</label>
+                        <label class="text-dark form-label fw-semibold">Sala</label>
                         @Html.DropDownListFor(m => m.SalaId, salas, "-- Selecciona una Sala --", new { @class = "form-select", id = "salaSelect", @disabled = "disabled" })
                         <input type="hidden" asp-for="SalaId" />
                         <small class="text-muted">Sala del equipo que estás usando</small>
@@ -38,14 +38,14 @@
                 else
                 {
                     <div class="col-md-6 mb-3">
-                        <label class="form-label fw-semibold">Sala</label>
+                        <label class="text-dark form-label fw-semibold">Sala</label>
                         @Html.DropDownListFor(m => m.SalaId, salas, "-- Selecciona una Sala --", new { @class = "form-select", id = "salaSelect" })
                         <small class="text-muted">@(tipo.ToLower() == "asignacion" || tipo.ToLower() == "prestamo" ? "Primero selecciona la sala" : "Selecciona la sala")</small>
                     </div>
                 }
 
                 <div class="col-md-6 mb-3">
-                    <label asp-for="ComputadorId" class="form-label fw-semibold">Equipo</label>
+                    <label asp-for="ComputadorId" class="text-dark form-label fw-semibold">Equipo</label>
                     @{
                         var tieneSala = Model.SalaId.HasValue;
                         var tieneEquipos = computadores != null && computadores.Any();
@@ -74,20 +74,20 @@
 
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label asp-for="FechaInicio" class="form-label fw-semibold">Fecha y Hora de Inicio</label>
+                    <label asp-for="FechaInicio" class="text-dark form-label fw-semibold">Fecha y Hora de Inicio</label>
                     <input asp-for="FechaInicio" type="datetime-local" class="form-control custom-input" value="@(Model.FechaInicio.ToString("yyyy-MM-ddTHH:mm"))">
                     <span asp-validation-for="FechaInicio" class="text-danger"></span>
                 </div>
 
                 <div class="col-md-6 mb-3">
-                    <label asp-for="FechaFin" class="form-label fw-semibold">Fecha y Hora de Finalización</label>
+                    <label asp-for="FechaFin" class="text-dark form-label fw-semibold">Fecha y Hora de Finalización</label>
                     <input asp-for="FechaFin" type="datetime-local" class="form-control custom-input" value="@(Model.FechaFin.ToString("yyyy-MM-ddTHH:mm"))">
                     <span asp-validation-for="FechaFin" class="text-danger"></span>
                 </div>
             </div>
 
             <div class="mb-3">
-                <label asp-for="Descripcion" class="form-label fw-semibold">Descripción / Observaciones</label>
+                <label asp-for="Descripcion" class="text-dark form-label fw-semibold">Descripción / Observaciones</label>
                 <textarea asp-for="Descripcion"
                           class="form-control custom-input"
                           rows="4"
