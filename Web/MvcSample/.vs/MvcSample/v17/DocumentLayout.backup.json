@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "WorkspaceRootPath": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\",
   "Documents": [
     {
@@ -50,6 +51,21 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{C032BDD3-792E-4EE5-80B7-811F520FBA13}|..\\..\\Services\\Services\\Services.csproj|c:\\users\\maoch\\onedrive\\documentos\\github\\administracion_salas_computo\\services\\services\\models\\modelossala\\modelosala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\glori\\gloria\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\glori\\gloria\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\editarusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\administrador\\editarusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\glori\\gloria\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\editarsala.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\administrador\\editarsala.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|c:\\users\\glori\\gloria\\github\\administracion_salas_computo\\web\\mvcsample\\views\\administrador\\editarequipo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A82BDE7-4194-4C20-B168-D6BA8C241F53}|MvcSample.csproj|solutionrelative:views\\administrador\\editarequipo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -64,6 +80,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< Updated upstream
               "Title": "ReportarIncidente.cshtml",
               "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Usuario\\ReportarIncidente.cshtml",
               "RelativeDocumentMoniker": "Views\\Usuario\\ReportarIncidente.cshtml",
@@ -72,11 +89,35 @@
               "ViewState": "AgIAACQAAAAAAAAAAAAAADYAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-20T23:40:50.88Z",
+=======
+              "Title": "EditarUsuario.cshtml",
+              "DocumentMoniker": "C:\\Users\\glori\\gloria\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\EditarUsuario.cshtml",
+              "RelativeDocumentMoniker": "Views\\Administrador\\EditarUsuario.cshtml",
+              "ToolTip": "C:\\Users\\glori\\gloria\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\EditarUsuario.cshtml",
+              "RelativeToolTip": "Views\\Administrador\\EditarUsuario.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-22T00:27:26.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditarSala.cshtml",
+              "DocumentMoniker": "C:\\Users\\glori\\gloria\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\EditarSala.cshtml",
+              "RelativeDocumentMoniker": "Views\\Administrador\\EditarSala.cshtml",
+              "ToolTip": "C:\\Users\\glori\\gloria\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\EditarSala.cshtml",
+              "RelativeToolTip": "Views\\Administrador\\EditarSala.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAUwCEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-22T00:25:59.063Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< Updated upstream
               "Title": "AsignarEquipo.cshtml",
               "DocumentMoniker": "C:\\Users\\maoch\\OneDrive\\Documentos\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\CoordinadorSala\\AsignarEquipo.cshtml",
               "RelativeDocumentMoniker": "Views\\CoordinadorSala\\AsignarEquipo.cshtml",
@@ -231,6 +272,45 @@
               "ViewState": "AgIAAEgBAAAAAAAAAAAcwEgBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-11-17T16:43:38.818Z"
+=======
+              "Title": "EditarEquipo.cshtml",
+              "DocumentMoniker": "C:\\Users\\glori\\gloria\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\EditarEquipo.cshtml",
+              "RelativeDocumentMoniker": "Views\\Administrador\\EditarEquipo.cshtml",
+              "ToolTip": "C:\\Users\\glori\\gloria\\GitHub\\Administracion_Salas_Computo\\Web\\MvcSample\\Views\\Administrador\\EditarEquipo.cshtml",
+              "RelativeToolTip": "Views\\Administrador\\EditarEquipo.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-22T00:22:37.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+>>>>>>> Stashed changes
             }
           ]
         }
